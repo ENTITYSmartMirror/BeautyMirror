@@ -650,7 +650,7 @@ var config = {
 	
 	{
 		module: 'MMM-BeforeImage',
-		position: 'top_center',
+		position: 'middle_center',
 		header:"전 사진 ! ",
 		config: {
 			imagePaths: ['modules/MMM-BeforeAfter/before']
@@ -658,7 +658,7 @@ var config = {
 	},
 	{
 		module: 'MMM-AfterImage',
-		position: 'top_center',
+		position: 'middle_center',
 		header:"후 사진! ",
 		config: {
 			imagePaths: ['modules/MMM-BeforeAfter/before']

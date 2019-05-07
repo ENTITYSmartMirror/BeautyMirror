@@ -19,7 +19,7 @@ Module.register("MMM-AfterImage", {
         // an array of strings, each is a path to a directory with images
         imagePaths: [ 'modules/MMM-ImageSlideshow/exampleImages' ],
         // the speed at which to switch between images, in milliseconds
-		slideshowSpeed: 10 * 500,
+		slideshowSpeed: 10 * 50,
         // if zero do nothing, otherwise set width to a pixel value
         fixedImageWidth: 0,
         // if zero do nothing, otherwise set height to a pixel value        
