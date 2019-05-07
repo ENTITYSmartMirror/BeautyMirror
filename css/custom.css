@@ -9,6 +9,178 @@
  * Changes to this files will be ignored by GIT. *
  *****************************************************/
 
- body {
- 	
- }
+ /* Aenderungen Wetter Icon */
+/* Aenderungen aktuelles Wetter */
+
+body {
+
+}
+.newsfeed .dimmed{
+     color:orange;
+}
+
+.currentweather .weathericon {
+  position: absolute;
+  z-index: 0;
+  height: 200px;
+  right: 180px;
+  margin-top: -65px;
+}
+
+.currentweather .wi-day-sunny {
+content: url("/css/icons/day.svg");
+}
+
+.currentweather .wi-day-cloudy {
+content: url("/css/icons/cloudy-day-1.svg");
+}
+
+.currentweather .wi-rain {
+content: url("/css/icons/rainy-6.svg");
+}
+
+.currentweather .wi-night-clear {
+content: url("/css/icons/night.svg");
+}
+
+.currentweather .wi-night-cloudy {
+content: url("/css/icons/cloudy-night-2.svg");
+padding-right: 15px;
+padding-top: 10px;
+}
+
+.currentweather .wi-cloudy {
+content: url("/css/icons/cloudy.svg");
+}
+
+.currentweather .wi-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.currentweather .wi-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.currentweather .wi-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.currentweather .wi-cloudy-windy {
+content: url("/css/icons/cloudy-day-3.svg");
+}
+
+.currentweather .wi-night-rain {
+content: url("/css/icons/rainy-6.svg");
+}
+
+.currentweather .wi-night-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.currentweather .wi-night-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.currentweather .wi-night-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.currentweather .wi-fog {
+content: url("/css/icons/cloudy.svg");
+}
+
+.currentweather .wi-night-alt-cloudy-windy {
+content: url("/css/icons/cloudy-night-1.svg");
+}
+
+/* Aenderungen Wettervorhersage */
+
+.weatherforecast .weathericon {
+  position: absolute;
+  left: 35px;
+  z-index: 1;
+  margin-top: -30px;
+  height: 60px;
+}
+
+.weatherforecast .wi-day-sunny {
+content: url("/css/icons/day.svg");
+padding-left: 6px;
+padding-top: 5px;
+height: 50px;
+}
+
+.weatherforecast .wi-day-cloudy {
+content: url("/css/icons/cloudy-day-1.svg");
+}
+
+.weatherforecast .wi-rain {
+content: url("/css/icons/rainy-6.svg");
+padding-left: 8px;
+padding-top: 5px;
+height: 45px;
+}
+
+.weatherforecast .wi-night-clear {
+content: url("/css/icons/night.svg");
+}
+
+.weatherforecast .wi-night-cloudy {
+content: url("/css/icons/cloudy-night-2.svg");
+height: 50px;
+padding-left: 5px;
+padding-top: 7px;
+}
+
+.weatherforecast .wi-cloudy {
+content: url("/css/icons/cloudy.svg");
+}
+
+.weatherforecast .wi-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.weatherforecast .wi-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.weatherforecast .wi-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.weatherforecast .wi-cloudy-windy {
+content: url("/css/icons/cloudy-day-3.svg");
+height: 45px;
+padding-left: 8px;
+padding-top: 7px;
+}
+
+.weatherforecast .wi-night-rain {
+content: url("/css/icons/rainy-6.svg");
+padding-left: 8px;
+padding-top: 5px;
+height: 45px;
+}
+
+.weatherforecast .wi-night-snow {
+content: url("/css/icons/snowy-6.svg");
+}
+
+.weatherforecast .wi-night-thunderstorm {
+content: url("/css/icons/thunder.svg");
+}
+
+.weatherforecast .wi-night-showers {
+content: url("/css/icons/rainy-7.svg");
+}
+
+.weatherforecast .wi-fog {
+content: url("/css/icons/cloudy.svg");
+}
+
+.weatherforecast .wi-night-alt-cloudy-windy {
+content: url("/css/icons/cloudy-night-1.svg");
+height: 50px;
+padding-left: 5px;
+padding-top: 7px;
+}

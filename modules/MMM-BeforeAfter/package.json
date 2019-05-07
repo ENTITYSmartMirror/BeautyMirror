@@ -1,0 +1,11 @@
+{
+	"name": "MMM-Testpython",
+	"description": "sample",
+	"keywords": [
+		"none"
+	],
+	"version": "0.0.1",
+	"dependencies": {
+		"python-shell": "latest"
+	}
+}
