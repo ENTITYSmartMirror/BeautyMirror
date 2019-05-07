@@ -208,7 +208,7 @@ var config = {
 			hide : "true",
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자펌글램.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -221,7 +221,7 @@ var config = {
 			hide : "true",
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자펌바디.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -234,7 +234,7 @@ var config = {
 			hide : "true",
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자펌히피.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -247,7 +247,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/남자10대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -260,7 +260,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/남자20대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -273,7 +273,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/남자30대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -286,7 +286,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/남자40대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -299,7 +299,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/남자50대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -312,7 +312,7 @@ var config = {
 			visible : 'false',
 			config: {
 				// See 'Configuration options' for more information.
-					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자10대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "2800", // width of iframe
 					height: "2800", // height of iframe
@@ -355,26 +355,77 @@ var config = {
 			}
 		},
 		//2	
-        {
-            module: "MMM-Modulebar5", //26
-            position: "top_left", 
+		{
+			module: "MMM-Modulebar5", //26
+			position: "top_left", 
 			classes: "default everyone",
-            config: {
-						
-                
-            }
+			config: {
+			}
 		},
 		//3
 		{
-            module: "MMM-Modulebar4", //27
-            position: "top_left",
-            classes: "default everyone", 
-            config: {
-						
-
-            
-            }
-        },
+			module: "MMM-Modulebar4", //27
+			position: "top_left",
+			classes: "default everyone", 
+			config: {
+			}
+		},
+		{
+			module: 'MMM-iFrame23',
+			position: 'center',	// This can be any of the regions.
+			visible : 'false',
+			config: {
+				// See 'Configuration options' for more information.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자20대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+					width: "3500", // width of iframe
+					height: "2000", // height of iframe
+					frameWidth: "950", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe		
+					hidden : "true",
+			}
+		},
+		{
+			module: 'MMM-iFrame24',
+			position: 'center',	// This can be any of the regions.
+			visible : 'false',
+			config: {
+				// See 'Configuration options' for more information.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자30대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+					width: "3500", // width of iframe
+					height: "2000", // height of iframe
+					frameWidth: "950", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe		
+					hidden : "true",
+			}
+		},
+		{
+			module: 'MMM-iFrame25',
+			position: 'center',	// This can be any of the regions.
+			visible : 'false',
+			config: {
+				// See 'Configuration options' for more information.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자40대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+					width: "3500", // width of iframe
+					height: "2000", // height of iframe
+					frameWidth: "950", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe		
+					hidden : "true",
+			}
+		},
+		{
+			module: 'MMM-iFrame26',
+			position: 'center',	// This can be any of the regions.
+			visible : 'false',
+			config: {
+				// See 'Configuration options' for more information.
+					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자50대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+					width: "3500", // width of iframe
+					height: "2000", // height of iframe
+					frameWidth: "950", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe		
+					hidden : "true",
+			}
+		},
 		{
 			module: "updatenotification",
 			position: "top_bar"
@@ -475,7 +526,7 @@ var config = {
 					main: ['internet-monitor',"MMM-soccer","MMM-Snow","clock","currentweather","weatherforecast","MMM-Globe","newsfeed"],
 					"Slide 2": ['MMM-Modulebar4','MMM-Modulebar5','MMM-EmbedYoutube1','MMM-EmbedYoutube2','MMM-iFrame40','mm-hide-all'],
 					"Slide 3": ['MMM-Modulebar', 'MMM-Modulebar1', 'MMM-Modulebar2', 'MMM-Modulebar3','mm-hide-all',],
-					"Slide 4": ['MMM-Testpython','MMM-iFrame17','MMM-iFrame18','MMM-iFrame19','MMM-iFrame20','MMM-iFrame21','MMM-iFrame22','MMM-Dynamic-Modules','mm-hide-all'],
+					"Slide 4": ['MMM-Testpython','MMM-iFrame17','MMM-iFrame18','MMM-iFrame19','MMM-iFrame20','MMM-iFrame21','MMM-iFrame22','MMM-iFrame23','MMM-iFrame24','MMM-iFrame25','MMM-iFrame26','MMM-Dynamic-Modules','mm-hide-all'],
 					"Slide 5": ['MMM-AfterImage','MMM-BeforeImage','MMM-BeforeAfter','mm-hide-all'],
 					"Slide 6": ['MMM-iFrame41','mm-hide-all','MMM-MovieInfo'],
 					"Slide 7": ['MMM-HistoryImage1','MMM-HistoryImage2','MMM-HistoryImage3','MMM-HistoryImage4'],

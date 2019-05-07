@@ -54,6 +54,22 @@ Module.register("MMM-Testpython", {
                 visible: 'false',
                 position: 'bottom_left',
               },
+              'MMM-iFrame23':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'MMM-iFrame24':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'MMM-iFrame25':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'MMM-iFrame26':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
             });
         console.log("hello~hello~hello~hello~hello~hello~hello~hello~hello~hello~")
       }) 
