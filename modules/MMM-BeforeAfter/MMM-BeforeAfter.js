@@ -59,18 +59,18 @@ Module.register("MMM-BeforeAfter", {
         //
         BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
         //
-        baelem.innerHTML = payload
+        baelem.innerHTML = "자르기 전 사진찍기 완료!"
         break
       case "AFTERCAPTURESUCCESS":
         console.log("Socket recevied payload1: "+payload)
-        var baelem2 = document.getElementById("BeforeAfterClickid")
+        var baelem2 = document.getElementById("BeforeAfterClickid2")
         BeforeAfterMoudule.sendNotification("AFTERIMAGE")
         //
         BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
         //
         BeforeAfterMoudule.sendNotification("CUTDAY",payload)
 
-        baelem2.innerHTML = payload
+        baelem2.innerHTML = "자르기 후 사진찍기 완료!"
       break
     }
   }
