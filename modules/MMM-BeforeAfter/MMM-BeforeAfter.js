@@ -10,13 +10,13 @@ Module.register("MMM-BeforeAfter", {
     var BAelement = document.createElement("div")
     BAelement.className = "BeforeAftercontent"
     BAelement.id="BeforeAfterdiv"
-    BAelement.innerHTML = "Hello, World!!! " + this.config.foo
+    BAelement.innerHTML = "전 후 사진 비교입니다 !"
     var BAsubElement = document.createElement("p")
-    BAsubElement.innerHTML = "Click test" 
+    BAsubElement.innerHTML = "전 사진 찍기" 
     BAsubElement.id = "BeforeAfterClickid"
     BAelement.appendChild(BAsubElement)
     var BAsubElement2 = document.createElement("p")
-    BAsubElement2.innerHTML = "Click2" 
+    BAsubElement2.innerHTML = "후 사진 찍기" 
     BAsubElement2.id = "BeforeAfterClickid2"
     BAelement.appendChild(BAsubElement2)
 
@@ -36,7 +36,7 @@ Module.register("MMM-BeforeAfter", {
           BeforeAfterMoudule.sendNotification("LOADINGBEFORE")
           
           
-          baelem.innerHTML = "click success"       
+          baelem.innerHTML = "카메라 로딩 중"       
         });
       
       var baelem2 = document.getElementById("BeforeAfterClickid2")
@@ -46,7 +46,7 @@ Module.register("MMM-BeforeAfter", {
         BeforeAfterMoudule.sendNotification("LOADINGAFTER")
         //
         console.log(" click2 successex !")
-        baelem2.innerHTML = "click2 success"       
+        baelem2.innerHTML = "카메라 로딩 중"       
       });
     }
   },
@@ -59,7 +59,7 @@ Module.register("MMM-BeforeAfter", {
         //
         BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
         //
-        baelem2.innerHTML = payload
+        baelem.innerHTML = payload
         break
       case "AFTERCAPTURESUCCESS":
         console.log("Socket recevied payload1: "+payload)

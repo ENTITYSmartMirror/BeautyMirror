@@ -666,7 +666,7 @@ var config = {
 	},
 	{
 			module: "MMM-BeforeAfter",
-			position: "bottom_left",
+			position: "top_center",
 			config:{
 				foo:"yellow"
 			}
