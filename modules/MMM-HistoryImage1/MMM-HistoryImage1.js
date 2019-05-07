@@ -353,7 +353,7 @@ Module.register("MMM-HistoryImage1", {
 							
 					}) 
 					*/					
-					image.src = this.imageList[0];
+					image.src = this.imageList[this.imageList.length-1];
 					
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")
@@ -380,9 +380,18 @@ Module.register("MMM-HistoryImage1", {
 		return wrapper;
 
 	},
+	getHeader: function() {
+		return '2019-05-'+this.data.header;
+	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
-		
+		if(notification === "CUTDAY"){
+			console.log("cut day notification success!", payload)
+			this.data.header=payload;
+			this.updateDom();
+			
+
+		}
 		
 	}
 

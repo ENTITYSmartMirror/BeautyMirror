@@ -40,7 +40,7 @@ Module.register("MMM-BeforeImage", {
 
         // the speed at which to switch between images, in milliseconds
 
-		slideshowSpeed: 10 * 500,
+		slideshowSpeed: 10 * 50,
 
         // if zero do nothing, otherwise set width to a pixel value
 
@@ -359,7 +359,7 @@ Module.register("MMM-BeforeImage", {
 					
 					}
 					if(this.config.a==1){
-						image.src = this.imageList[1];
+						image.src = this.imageList[this.imageList.length-1];
 						}
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-2];
