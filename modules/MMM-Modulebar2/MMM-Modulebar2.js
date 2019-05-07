@@ -124,13 +124,13 @@ Module.register("MMM-Modulebar2",{
 		// When a button is clicked, the module either gets hidden or shown depending on current module status.
 		item.addEventListener("click", function () {
 			// Lists through all modules for testing.
-			for (var i = 0; i < modules.length; i++) {
+			for (var i = 1; i < modules.length; i++) {
 				// Check if the curent module is the one.
 				if (modules[i].name === data.module) {
 					// Splits out the module number of the module with the same name.
 					var idnr = modules[i].data.identifier.split("_");
 					// Checks if idnum is set in config.js. If it is, it only hides that module, if not hides all modules with the same name.
-					if (idnr[1] == data.idnum || data.idnum == null) {
+					if (idnr[2] == data.idnum || data.idnum == null) {
 						// Check if the module is hidden.						if (!modules[i].hidden) {
 							// Hides the module.
 						if (!modules[i].hidden) {
@@ -155,27 +155,17 @@ Module.register("MMM-Modulebar2",{
 								console.log("Visiting show URL: "+data.showUrl);
 							}
 							if (modules[i].name == 'MMM-iFrame10') {
-								for(var num=0; num<17; num++ ){
+								for(var num=1; num<18; num++ ){
 								console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 								modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								}
-								console.log("Showing "+modules[10].name+" ID: "+idnr[1]);	
+								console.log("Showing "+modules[11].name+" ID: "+idnr[1]);	
 								setTimeout(function(){
-									modules[10].show(self.config.animationSpeed, {force: self.config.allowForce});
+									modules[11].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
 							else if (modules[i].name == 'MMM-iFrame11') {
-								for(var num=0; num<17; num++ ){
-									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
-									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
-									}
-									console.log("Showing "+modules[11].name+" ID: "+idnr[1]);	
-									setTimeout(function(){
-										modules[11].show(self.config.animationSpeed, {force: self.config.allowForce});
-									},500);
-							}
-							else if (modules[i].name == 'MMM-iFrame12') {
-								for(var num=0; num<17; num++ ){
+								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 									}
@@ -184,8 +174,8 @@ Module.register("MMM-Modulebar2",{
 										modules[12].show(self.config.animationSpeed, {force: self.config.allowForce});
 									},500);
 							}
-							else if (modules[i].name == 'MMM-iFrame13') {
-								for(var num=0; num<17; num++ ){
+							else if (modules[i].name == 'MMM-iFrame12') {
+								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 									}
@@ -194,8 +184,8 @@ Module.register("MMM-Modulebar2",{
 										modules[13].show(self.config.animationSpeed, {force: self.config.allowForce});
 									},500);
 							}
-							else if (modules[i].name == 'MMM-iFrame14') {
-								for(var num=0; num<17; num++ ){
+							else if (modules[i].name == 'MMM-iFrame13') {
+								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 									}
@@ -204,8 +194,8 @@ Module.register("MMM-Modulebar2",{
 										modules[14].show(self.config.animationSpeed, {force: self.config.allowForce});
 									},500);
 							}
-							else if (modules[i].name == 'MMM-iFrame15') {
-								for(var num=0; num<17; num++ ){
+							else if (modules[i].name == 'MMM-iFrame14') {
+								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 									}
@@ -214,14 +204,24 @@ Module.register("MMM-Modulebar2",{
 										modules[15].show(self.config.animationSpeed, {force: self.config.allowForce});
 									},500);
 							}
-							else {
-								for(var num=0; num<17; num++ ){
+							else if (modules[i].name == 'MMM-iFrame15') {
+								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 									}
-								console.log("Showing "+modules[16].name+" ID: "+idnr[1]);	
+									console.log("Showing "+modules[16].name+" ID: "+idnr[1]);	
+									setTimeout(function(){
+										modules[16].show(self.config.animationSpeed, {force: self.config.allowForce});
+									},500);
+							}
+							else {
+								for(var num=1; num<18; num++ ){
+									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
+									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
+									}
+								console.log("Showing "+modules[17].name+" ID: "+idnr[1]);	
 								setTimeout(function(){
-									modules[16].show(self.config.animationSpeed, {force: self.config.allowForce});
+									modules[17].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
 							modulebar2.sendNotification("Modulebar2 is Clicked");

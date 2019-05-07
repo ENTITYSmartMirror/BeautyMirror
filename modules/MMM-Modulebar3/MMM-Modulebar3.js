@@ -36,7 +36,7 @@ Module.register("MMM-Modulebar3",{
 		buttons: {
 			
 			"1": {
-				module: "MMM-Modulebar1",
+				module: "MMM-Modulebar",
 				img:"https://image.flaticon.com/icons/svg/137/137531.svg",
 				width:"50",
 				height:"50",
@@ -111,7 +111,7 @@ Module.register("MMM-Modulebar3",{
 		// When a button is clicked, the module either gets hidden or shown depending on current module status.
 		item.addEventListener("click", function () {
 			// Lists through all modules for testing.
-			for (var i = 0; i < modules.length; i++) {
+			for (var i = 1; i < modules.length; i++) {
 				// Check if the curent module is the one.
 				if (modules[i].name === data.module) {
 					// Splits out the module number of the module with the same name.
@@ -131,7 +131,7 @@ Module.register("MMM-Modulebar3",{
 								// Prints the visited hideURL.
 								console.log("Visiting hide URL: "+data.hideUrl);
 							}
-							for (var k = 0; k < 17; k++){
+							for (var k = 1; k < 18; k++){
 								console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
 								modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 							}
@@ -144,48 +144,46 @@ Module.register("MMM-Modulebar3",{
 								// Prints the visited hideURL.
 								console.log("Visiting show URL: "+data.showUrl);
 							}
-							if (modules[i].name === 'MMM-Modulebar1') {
-								
-								for (var k = 0; k < 17; k++){
+							if (modules[i].name === 'MMM-Modulebar') {
+								for (var k = 1; k < 18; k++){
 									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
 									modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								}
-								switch (module1) {
 
-								case 'Modulebar0 is Clicked' : 
-								console.log("Showing0 "+modules[0].name+" ID: "+idnr[1]);	
-								setTimeout(function(){
-									modules[0].show(self.config.animationSpeed, {force: self.config.allowForce});
-								},500);
-								break;
-
-								case 'Modulebar1 is Clicked' : 
-								console.log("Showing1 "+modules[1].name+" ID: "+idnr[1]);	
-								module1 = 'Modulebar0 is Clicked';
-								setTimeout(function(){
-									modules[1].show(self.config.animationSpeed, {force: self.config.allowForce});
-								},500);
-								break;
-
-								case 'Modulebar2 is Clicked' : 
-								console.log("Showing2 "+modules[2].name+" ID: "+idnr[1]);	
-								module1 = 'Modulebar0 is Clicked';
-								setTimeout(function(){
-									modules[2].show(self.config.animationSpeed, {force: self.config.allowForce});
-								},500);
-								break;
+								if (module1 === 'Modulebar0 is Clicked') {
+								console.log("Showing0 "+modules[1].name+" ID: "+idnr[1]);
+								module1 = 'Modulebar0 is Clicked';	
+									setTimeout(function(){
+										modules[1].show(self.config.animationSpeed, {force: self.config.allowForce});
+									},500);
 								}
+
+								else if (module1 === 'Modulebar1 is Clicked') { 
+								console.log("Showing1 "+modules[2].name+" ID: "+idnr[1]);	
+								module1 = 'Modulebar0 is Clicked';
+									setTimeout(function(){
+										modules[2].show(self.config.animationSpeed, {force: self.config.allowForce});
+									},500);
+								}
+								
+								else if (module1 === 'Modulebar2 is Clicked'){
+								console.log("Showing2 "+modules[3].name+" ID: "+idnr[1]);	
+								module1 = 'Modulebar0 is Clicked';
+									setTimeout(function(){
+										modules[3].show(self.config.animationSpeed, {force: self.config.allowForce});
+									},500);
+								}					
 							}
 							else {
-								console.log("Hiding opend "+ modules[2].name+" ID: "+idnr[1]);			
-								modules[2].hide(self.config.animationSpeed, {force: self.config.allowForce});
-								for (var k = 0; k < 17; k++){
+								console.log("Hiding opend "+ modules[3].name+" ID: "+idnr[1]);			
+								modules[3].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								for (var k = 1; k < 18; k++){
 									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
 									modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								}
 								console.log("Showing "+modules[i].name+" ID: "+idnr[1]);	
 								setTimeout(function(){
-								modules[0].show(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[1].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);								
 							}
 						}					

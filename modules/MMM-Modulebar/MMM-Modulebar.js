@@ -37,13 +37,17 @@ Module.register("MMM-Modulebar",{
 			"1": {
 				module: "MMM-Modulebar1",
 				text:   "남자헤어",
-				img:"https://image.flaticon.com/icons/svg/1751/1751434.svg"
+				img:"https://image.flaticon.com/icons/svg/1751/1751434.svg",
+				width: "400",
+				height: "400",
 			},
 
 			"2": {
 				module: "MMM-Modulebar2",
 				text:   "여자헤어",
-				img : "https://image.flaticon.com/icons/svg/1751/1751437.svg"
+				img : "https://image.flaticon.com/icons/svg/1751/1751437.svg",
+				width: "400",
+				height: "400",
 			}
 		}
 	},
@@ -89,19 +93,19 @@ Module.register("MMM-Modulebar",{
 		// When a button is clicked, the module either gets hidden or shown depending on current module status.
 		item.addEventListener("click", function () {
 			// Lists through all modules for testing.
-			for (var i = 0; i < modules.length; i++) {
+			for (var i = 1; i < modules.length; i++) {
 				// Check if the curent module is the one.
 				if (modules[i].name === data.module) {
 					// Splits out the module number of the module with the same name.
 					var idnr = modules[i].data.identifier.split("_");
 					// Checks if idnum is set in config.js. If it is, it only hides that module, if not hides all modules with the same name.
-					if (idnr[1] == data.idnum || data.idnum == null) {
+					if (idnr[2] == data.idnum || data.idnum == null) {
 						// Check if the module is hidden.
 						if (!modules[i].hidden) {
 							// Hides the module.
 							modules[i].hide(self.config.animationSpeed, {force: self.config.allowForce});
 							// Prints in the console what just happend (adding the ID). 
-							console.log("Hiding "+modules[i].name+" ID: "+idnr[1]);
+							console.log("Hiding "+modules[i].name+" ID: "+idnr[2]);
 							// Check if there is a "hideURL" defined.
 							if (data.hideUrl != null) {
 								// Visiting the the URL.
@@ -109,8 +113,8 @@ Module.register("MMM-Modulebar",{
 								// Prints the visited hideURL.
 								console.log("Visiting hide URL: "+data.hideUrl);
 							}
-							for (var k = 3; k < 17; k++){
-								console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
+							for (var k = 1; k < 18; k++){
+								console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[2]);
 								modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 							}
 						}
@@ -123,33 +127,33 @@ Module.register("MMM-Modulebar",{
 								console.log("Visiting show URL: "+data.showUrl);
 							}
 							if (modules[i].name == 'MMM-Modulebar2') {
-								console.log("Hiding opend "+ modules[1].name+" ID: "+idnr[1]);
-								modules[1].hide(self.config.animationSpeed, {force: self.config.allowForce});	
+								console.log("Hiding opend "+ modules[2].name+" ID: "+idnr[2]);
+								modules[2].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								
 								
-								for (var k = 0; k < 17; k++){
-									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
+								for (var k = 1; k < 18; k++){
+									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[2]);
 									modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								}
 
-								console.log("Showing "+modules[i].name+" ID: "+idnr[1]);	
+								console.log("Showing "+modules[i].name+" ID: "+idnr[2]);	
 								setTimeout(function(){
-									modules[2].show(self.config.animationSpeed, {force: self.config.allowForce});
+									modules[3].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 								modulebarr.sendNotification("Modulebar0 is Clicked");
 							}
 							else {
-								console.log("Hiding opend "+ modules[2].name+" ID: "+idnr[1]);			
-								modules[2].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								console.log("Hiding opend "+ modules[3].name+" ID: "+idnr[2]);			
+								modules[3].hide(self.config.animationSpeed, {force: self.config.allowForce});
 
-								for (var k = 0; k < 17; k++){
-									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[1]);
+								for (var k = 1; k < 18; k++){
+									console.log("Hiding opend "+ modules[k].name+" ID: "+idnr[2]);
 									modules[k].hide(self.config.animationSpeed, {force: self.config.allowForce});	
 								}
 
-								console.log("Showing "+modules[i].name+" ID: "+idnr[1]);	
+								console.log("Showing "+modules[i].name+" ID: "+idnr[2]);	
 								setTimeout(function(){
-								modules[1].show(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[2].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 								modulebarr.sendNotification("Modulebar0 is Clicked");
 							}
