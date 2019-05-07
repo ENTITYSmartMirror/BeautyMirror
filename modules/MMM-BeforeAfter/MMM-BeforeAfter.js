@@ -15,25 +15,31 @@ Module.register("MMM-BeforeAfter", {
     BAsubElement.innerHTML = "Click test" 
     BAsubElement.id = "BeforeAfterClickid"
     BAelement.appendChild(BAsubElement)
+    /*
     var BAsubElement2 = document.createElement("p")
     BAsubElement2.innerHTML = "Click2" 
     BAsubElement2.id = "BeforeAfterClickid2"
     BAelement.appendChild(BAsubElement2)
+    */
     return BAelement
   },
   
   notificationReceived: function(notification, payload, sender) {
     switch(notification) {
       case "Modules All Change" :
-      var baelem = document.getElementById("BeforeAfterClickid")
-      baelem.addEventListener("click", () => {
-        /*
-        BeforeAfterMoudule.sendSocketNotification("BEFORECAPTURE")
-        BeforeAfterMoudule.sendNotification("LOADINGBEFORE")
-        */
         console.log(" click successex !")
-        baelem.innerHTML = "click success"       
-      });
+        var baelem = document.getElementById("BeforeAfterClickid")
+        console.log("ssexx"+baelem)
+        baelem.addEventListener("click", () => {
+          console.log(" click successexx !")
+          /*
+          BeforeAfterMoudule.sendSocketNotification("BEFORECAPTURE")
+          BeforeAfterMoudule.sendNotification("LOADINGBEFORE")
+          */
+          
+          baelem.innerHTML = "click success"       
+        });
+      /*
       var baelem2 = document.getElementById("BeforeAfterClickid2")
       baelem2.addEventListener("click", () => {
         //
@@ -42,7 +48,7 @@ Module.register("MMM-BeforeAfter", {
         //
         console.log(" click2 successex !")
         baelem2.innerHTML = "click2 success"       
-      });
+      });*/
     }
   },
   socketNotificationReceived: function(notification, payload) {
