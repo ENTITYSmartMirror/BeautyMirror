@@ -19,7 +19,7 @@ Module.register("MMM-Modulebar",{
         // Allow the module to force modules to be shown (if hidden and locked by another module ex. profile-switcher).
         allowForce: true,
         // Determines if the border around the buttons should be shown.
-        showBorder: true,
+        showBorder: false,
         // The minimum width for all the buttons.
         minWidth: "0px",
         // The minimum height for all the buttons.
@@ -37,17 +37,17 @@ Module.register("MMM-Modulebar",{
 			"1": {
 				module: "MMM-Modulebar1",
 				text:   "남자헤어",
-				img:"https://image.flaticon.com/icons/svg/1751/1751434.svg",
-				width: "400",
-				height: "400",
+				img:"modules/MMM-Modulebar/man.jpg",
+				width: "450",
+				height: "450",
 			},
 
 			"2": {
 				module: "MMM-Modulebar2",
 				text:   "여자헤어",
-				img : "https://image.flaticon.com/icons/svg/1751/1751437.svg",
-				width: "400",
-				height: "400",
+				img : "modules/MMM-Modulebar/women.jpg",
+				width: "450",
+				height: "450",
 			}
 		}
 	},

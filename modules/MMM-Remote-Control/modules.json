@@ -350,6 +350,13 @@
     "desc": "Displays random Wikipedia snippets."
   },
   {
+    "longname": "MMM-LesJoiesDuCode",
+    "id": "Tomadelostacos/MMM-LesJoiesDuCode",
+    "url": "https://github.com/Tomadelostacos/MMM-LesJoiesDuCode",
+    "author": "Tomadelostacos",
+    "desc": "Displays the last post from Les Joies Du Code, or TheCodingLove (The english version)."
+  },
+  {
     "longname": "DWD-RealtimeIrishRail",
     "id": "archerydwd/DWD-RealtimeIrishRail",
     "url": "https://github.com/archerydwd/DWD-RealtimeIrishRail",
