@@ -92,7 +92,7 @@ Module.register("MMM-Testpython", {
         var age = payload3[1];
         console.log("Socket recevied 1: " + age);
         var change;
-        if (sex == "Male"){
+        if (sex == "male"){
           if(age <= 19){
             change = 1;
             console.log(age);
@@ -119,7 +119,7 @@ Module.register("MMM-Testpython", {
             console.log(change);
           }
         }
-        else if (sex == "Female"){
+        else if (sex == "female"){
           if(age <= 19){
             change = 6;
             console.log(age);
