@@ -486,18 +486,6 @@ var config = {
 			}
 		},
 		{
-			module: 'MMM-iFrame41', //24
-			position: "top_center",	// This can be any of the regions.
-			config: {
-				// See 'Configuration options' for more information.
-					url: ["http://127.0.0.1:9000/remote.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
-					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
-					width: "1000", // width of iframe
-					height: "1800", // height of iframe
-					frameWidth: "980", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
-				}
-		},
-		{
 				module: 'MMM-GoogleMapsTraffic',
 				position: 'top_center',
 				config: {
@@ -534,7 +522,7 @@ var config = {
 					"Slide 4": ["clock",'MMM-AfterImage','MMM-BeforeImage','MMM-BeforeAfter','mm-hide-all'],
 					"Slide 5": ['MMM-HistoryImage1','MMM-HistoryImage2','MMM-HistoryImage3','mm-hide-all',"clock"],
 					"Slide 6": ['MMM-Modulebar4','MMM-Modulebar5','MMM-EmbedYoutube1','MMM-EmbedYoutube2','MMM-iFrame40','mm-hide-all',"clock"],
-					"Slide 7": ['internet-monitor',"MMM-soccer",'MMM-MovieInfo','MMM-iFrame41','mm-hide-all',"clock"],
+					"Slide 7": ['MMM-MovieInfo','MMM-iFrame41','mm-hide-all',"clock"],
 				},
 				keyBindings: { 
 					enabled: true,
@@ -548,20 +536,7 @@ var config = {
 			}
 			
 		},
-		{
-			module: 'internet-monitor',
-						position: 'top_center',
-						config:{
-								type: '',
-								maxTime: 28000,
-								updateInterval: 0,
-								verbose: false,
-								displayStrength: true,
-								displaySpeed: true,
-								strengthIconSize: 80,
-								maxGaugeScale: 100,
-						},
-	},
+		
 	{
 	module: "MMM-soccer",
   	position: "top_left",
@@ -686,6 +661,18 @@ var config = {
 			config: {
 			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
+		},
+		{
+			module: 'MMM-iFrame41', //24
+			position: "bottom_center",	// This can be any of the regions.
+			config: {
+				// See 'Configuration options' for more information.
+					url: ["http://127.0.0.1:9000/remote.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
+					width: "1000", // width of iframe
+					height: "1000", // height of iframe
+					frameWidth: "600", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
+				}
 		},
 		
 		
