@@ -353,7 +353,7 @@ Module.register("MMM-HistoryImage3", {
 							
 					}) 
 					*/					
-					image.src = this.imageList[0];
+					image.src = this.imageList[this.imageList.length-3];
 					
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")

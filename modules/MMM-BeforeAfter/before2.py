@@ -13,4 +13,4 @@ cv2.imwrite("/home/pi/BeautyM/modules/MMM-BeforeAfter/minsoo/" + str(now) + ".pn
 
 cap.release()
 cv2.destroyAllWindows()
-print("python2 success !")
+print(now)

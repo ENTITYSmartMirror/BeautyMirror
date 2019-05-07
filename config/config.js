@@ -534,7 +534,7 @@ var config = {
 					"Slide 2": ["clock",'MMM-Modulebar', 'MMM-Modulebar1', 'MMM-Modulebar2', 'MMM-Modulebar3','mm-hide-all'],
 					"Slide 3": ['MMM-Testpython','MMM-iFrame17','MMM-iFrame18','MMM-iFrame19','MMM-iFrame20','MMM-iFrame21','MMM-iFrame22','MMM-Dynamic-Modules','mm-hide-all',"clock"],
 					"Slide 4": ["clock",'MMM-AfterImage','MMM-BeforeImage','MMM-BeforeAfter','mm-hide-all'],
-					"Slide 5": ['MMM-HistoryImage1','MMM-HistoryImage2','MMM-HistoryImage3','MMM-HistoryImage4','mm-hide-all',"clock"],
+					"Slide 5": ['MMM-HistoryImage1','MMM-HistoryImage2','MMM-HistoryImage3','mm-hide-all',"clock"],
 					"Slide 6": ['MMM-Modulebar4','MMM-Modulebar5','MMM-EmbedYoutube1','MMM-EmbedYoutube2','MMM-iFrame40','mm-hide-all',"clock"],
 					"Slide 7": ['internet-monitor',"MMM-soccer",'MMM-MovieInfo','MMM-iFrame41','mm-hide-all',"clock"],
 				},
@@ -677,7 +677,7 @@ var config = {
 			position: 'top_center',
 			header:" FUCK ",
 			config: {
-			imagePaths: ['modules/MMM-BeforeAfter/before']
+			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
 		},
 		{
@@ -685,7 +685,7 @@ var config = {
 			position: 'top_center',
 			header:" FUCK ",
 			config: {
-			imagePaths: ['modules/MMM-BeforeAfter/before']
+			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
 		},
 		{
@@ -693,17 +693,10 @@ var config = {
 			position: 'top_center',
 			header:" FUCK ",
 			config: {
-			imagePaths: ['modules/MMM-BeforeAfter/before']
+			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
 		},
-		{
-			module: "MMM-HistoryImage4",
-			position: 'top_center',
-			header:" FUCK ",
-			config: {
-			imagePaths: ['modules/MMM-BeforeAfter/before']
-			}
-		},
+		
 		
 			
 		

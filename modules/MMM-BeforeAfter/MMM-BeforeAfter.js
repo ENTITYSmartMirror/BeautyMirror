@@ -53,7 +53,7 @@ Module.register("MMM-BeforeAfter", {
   socketNotificationReceived: function(notification, payload) {
     switch(notification) {
       case "BEFORECAPTURESUCCESS":
-        console.log("Socket recevied payload : "+payload)
+        console.log("Socket recevied payload1: "+payload)
         var baelem2 = document.getElementById("BeforeAfterClickid")
         BeforeAfterMoudule.sendNotification("BEFOREIMAGE")
         //
@@ -62,12 +62,14 @@ Module.register("MMM-BeforeAfter", {
         baelem2.innerHTML = payload
         break
       case "AFTERCAPTURESUCCESS":
-        console.log("Socket recevied payload : "+payload)
+        console.log("Socket recevied payload1: "+payload)
         var baelem2 = document.getElementById("BeforeAfterClickid")
         BeforeAfterMoudule.sendNotification("AFTERIMAGE")
         //
         BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
         //
+        BeforeAfterMoudule.sendNotification("CUTDAY",payload)
+
         baelem2.innerHTML = payload
       break
     }
