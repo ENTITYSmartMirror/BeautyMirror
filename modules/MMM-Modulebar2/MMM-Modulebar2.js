@@ -19,11 +19,11 @@ Module.register("MMM-Modulebar2",{
         // Allow the module to force modules to be shown (if hidden and locked by another module ex. profile-switcher).
         allowForce: true,
         // Determines if the border around the buttons should be shown.
-        showBorder: true,
+        showBorder: false,
         // The minimum width for all the buttons.
         minWidth: "0px",
         // The minimum height for all the buttons.
-        minHeight: "70px",
+        minHeight: "0px",
         // The location of the symbol relative to the text. Options: left, right, top or bottom
         picturePlacement: "left",
         // The direction of the bar. Options: row, column, row-reverse or column-reverse

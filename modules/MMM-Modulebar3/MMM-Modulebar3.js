@@ -20,7 +20,7 @@ Module.register("MMM-Modulebar3",{
         // Allow the module to force modules to be shown (if hidden and locked by another module ex. profile-switcher).
         allowForce: true,
         // Determines if the border around the buttons should be shown.
-        showBorder: true,
+        showBorder: false,
         // The minimum width for all the buttons.
         minWidth: "0px",
         // The minimum height for all the buttons.

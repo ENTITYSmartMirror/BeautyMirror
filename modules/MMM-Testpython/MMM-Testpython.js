@@ -15,7 +15,7 @@ Module.register("MMM-Testpython", {
     subElement.id = "clickid1"
     element.appendChild(subElement)
     var subelement2 = document.createElement("p")
-    subelement2.innerHTML = "이 곳에 당신의 나이가 표시됩니다."
+    subelement2.innerHTML = "이 곳에 당신의 예상 나이가 표시됩니다."
     subelement2.id = "showage"
     element.appendChild(subelement2)
     return element
@@ -28,6 +28,8 @@ Module.register("MMM-Testpython", {
       var elem = document.getElementById("clickid1")
       elem.addEventListener("click", () => {
         Testpythons.sendSocketNotification("TEST")
+        var showage2 = document.getElementById("showage")
+        showage2.innerHTML = "당신의 나이를 분석중입니다."
         Testpythons.sendNotification('CHANGE_POSITIONS', 
         modules = {
               'MMM-iFrame17':{
@@ -76,7 +78,7 @@ Module.register("MMM-Testpython", {
       break;
       case "Modules All Change" :
       var ele2 = document.getElementById("showage")
-      ele2.innerHTML =  "이 곳에 당신의 나이가 표시됩니다."
+      ele2.innerHTML =  "이 곳에 당신의 예상 나이가 표시됩니다."
       }
   },
   socketNotificationReceived: function(notification, payload) {
@@ -152,7 +154,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame17':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
                 }
               })
               break
@@ -161,7 +163,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame18':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               }
             })
             break
@@ -188,7 +190,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame21':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               }
             })
             break
@@ -197,7 +199,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame22':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               } 
             })
             break
@@ -206,7 +208,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame23':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               } 
             })
             break
@@ -215,7 +217,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame24':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               } 
             })
             break
@@ -224,7 +226,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame25':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               } 
             })
             break
@@ -233,7 +235,7 @@ Module.register("MMM-Testpython", {
               modules = {
                 'MMM-iFrame26':{
                   visible: 'true',
-                  position: 'top_left',
+                  position: 'bottom_left',
               } 
             })
             break
