@@ -16,7 +16,7 @@ BeautyMirror² focuses on a modular plugin system and uses [Electron](http://ele
 A
 B
 C
-D
+F
 
 ## Table Of Contents
 
