@@ -82,7 +82,7 @@ Module.register("MMM-Modulebar5",{
 		// 클릭시
 		item.addEventListener("click", function () {
 			// 모든 모듈체크
-			for (var i = 0; i < modules.length; i++) {
+			for (var i = 1; i < modules.length; i++) {
 				// 현재 모듈 확인
 				if (modules[i].name === data.module) {
 					var idnr = modules[i].data.identifier.split("_");
@@ -100,17 +100,17 @@ Module.register("MMM-Modulebar5",{
 							
 							if (modules[i].name == 'MMM-iFrame40') {
 								console.log("Hiding opend "+ modules[i].name+" ID: "+idnr[1]+"button number"+num);
-								modules[25].hide(self.config.animationSpeed, {force: self.config.allowForce});
-								modules[27].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[26].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[28].hide(self.config.animationSpeed, {force: self.config.allowForce});
 								setTimeout(function(){
-									modules[24].show(self.config.animationSpeed, {force: self.config.allowForce});
+									modules[25].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
 							else if (modules[i].name == 'MMM-Modulebar4') {
 								console.log("Hiding opend "+ modules[i].name+" ID: "+idnr[1]+"button number"+num);
-								modules[24].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[25].hide(self.config.animationSpeed, {force: self.config.allowForce});
 								setTimeout(function(){
-									modules[27].show(self.config.animationSpeed, {force: self.config.allowForce});
+									modules[28].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
 						}else{
