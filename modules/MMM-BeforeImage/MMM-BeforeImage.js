@@ -317,7 +317,10 @@ Module.register("MMM-BeforeImage", {
 					var image = document.createElement("img");
 					image.id="imgid";
 					// if set to make grayscale, flag the class set in the .css file
-
+					image.addEventListener("click", () => {
+						console.log(" image click !!!!!")
+                                                      
+                                              });
 					
 					
 					if (this.config.makeImagesGrayscale)
