@@ -158,6 +158,12 @@ Module.register("MMM-AfterImage", {
 					// create the image dom bit
 					var image = document.createElement("img");
 					// if set to make grayscale, flag the class set in the .css file
+					
+					image.addEventListener("click", () => {
+						console.log(" after image click !!!!!");
+						this.config.a=3;
+						BeforeImages.sendNotification("AFTERIMAGECLICK");
+                                              });
 					if (this.config.makeImagesGrayscale)
 						image.className = "desaturate";
 					// create an empty string
@@ -177,7 +183,7 @@ Module.register("MMM-AfterImage", {
 					image.src = this.imageList[0];
 					}
 					if(this.config.a==1){
-						image.src = this.imageList[0];
+						image.src = this.imageList[1];
 						}
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-1];
@@ -200,12 +206,17 @@ Module.register("MMM-AfterImage", {
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
 		
+		if(notification === "Modules All Change"){
+			//console.log("this a ", this.config.a)
+			this.hide()
+
+		}
 		if(notification === "BEFOREIMAGE"){
 			//console.log("this a ", this.config.a)
+			this.show()
 			this.config.a=1;
 
 		}
-
 		if(notification === "AFTERIMAGE"){
 			//console.log("this a ", this.config.a)
 			this.config.a=2;

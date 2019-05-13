@@ -27,7 +27,7 @@
  */
 
  
-
+var BeforeImages;
 Module.register("MMM-BeforeImage", {
 
 	// Default module config.
@@ -83,7 +83,7 @@ Module.register("MMM-BeforeImage", {
     // load function
 
 	start: function () {
-
+		BeforeImages = this;
         // add identifier to the config
 
         this.config.identifier = this.identifier;
@@ -318,8 +318,9 @@ Module.register("MMM-BeforeImage", {
 					image.id="imgid";
 					// if set to make grayscale, flag the class set in the .css file
 					image.addEventListener("click", () => {
-						console.log(" image click !!!!!")
-                                                      
+						console.log(" image click !!!!!");
+						this.config.a=3;
+						BeforeImages.sendNotification("BEFOREIMAGECLICK");
                                               });
 					
 					

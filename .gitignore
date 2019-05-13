@@ -64,6 +64,9 @@ Temporary Items
 !/modules/node_helper/**
 
 # Ignore all modules except the default modules.
+modules/.DS_Store
+modules/MMM-BeforeAfter/.DS_Store
+modules/MMM-BeforeAfter/._.DS_Store
 !/modules/**
 !/modules/default
 !/modules/default/**

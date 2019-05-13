@@ -25,36 +25,24 @@ Module.register("MMM-BeforeAfter", {
   
   notificationReceived: function(notification, payload, sender) {
     switch(notification) {
-      case "Modules All Change" :
-        console.log(" click successex !")
-        var baelem = document.getElementById("BeforeAfterClickid")
-        console.log("ssexx"+baelem)
-        baelem.addEventListener("click", () => {
-          console.log(" click successexx !")
-          
+      case "BEFOREIMAGECLICK" :
+        var baelem = document.getElementById("BeforeAfterClickid")     
           BeforeAfterMoudule.sendSocketNotification("BEFORECAPTURE")
-          BeforeAfterMoudule.sendNotification("LOADINGBEFORE")
-          
-          
           baelem.innerHTML = "카메라 로딩 중"       
-        });
-      
+        break;
+      case "AFTERIMAGECLICK" :
       var baelem2 = document.getElementById("BeforeAfterClickid2")
-      baelem2.addEventListener("click", () => {
-        //
         BeforeAfterMoudule.sendSocketNotification("AFTERCAPTURE")
-        BeforeAfterMoudule.sendNotification("LOADINGAFTER")
-        //
-        console.log(" click2 successex !")
+        //BeforeAfterMoudule.sendNotification("LOADINGAFTER")
         baelem2.innerHTML = "카메라 로딩 중"       
-      });
+        break;
     }
   },
   socketNotificationReceived: function(notification, payload) {
     switch(notification) {
       case "BEFORECAPTURESUCCESS":
         console.log("Socket recevied payload1: "+payload)
-        var baelem2 = document.getElementById("BeforeAfterClickid")
+        var baelem = document.getElementById("BeforeAfterClickid")
         BeforeAfterMoudule.sendNotification("BEFOREIMAGE")
         //
         BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
