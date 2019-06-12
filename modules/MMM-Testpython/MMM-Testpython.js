@@ -18,7 +18,7 @@ Module.register("MMM-Testpython", {
     subElement.style.fontSize = "2em"
     element.appendChild(subElement)
     var subelement2 = document.createElement("p")
-    subelement2.innerHTML = "이 곳에 당신의 예상 나이가 표시됩니다."
+    subelement2.innerHTML = "이 곳에 예상 나이가 표시됩니다."
     subelement2.id = "showage"
     subelement2.className = "showage"
     subelement2.style.fontSize = "2em"
