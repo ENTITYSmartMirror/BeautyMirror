@@ -107,13 +107,13 @@ body {
 }
 
 .slider-pagination label {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius: 10%;
   display: inline-block;
   background-image: url(img/1.png);
   background-repeat: no-repeat;
-  background-size: 80px 80px;
+  background-size: 75px 75px;
   background-position: center center;
   margin: 30px;
   border: solid 0px rgba(255,255,255,1);
