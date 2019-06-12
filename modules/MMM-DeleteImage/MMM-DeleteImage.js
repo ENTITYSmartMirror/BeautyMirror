@@ -6,9 +6,12 @@
  * By EoF https://forum.magicmirror.builders/user/eof
  * MIT Licensed.
  */
-
+var DeleteImageS;
 Module.register("MMM-DeleteImage",{
-
+	defaults: {},
+    start: function (){
+        DeleteImageS = this;
+    },
 	getScripts: function() {
 		return ["modules/MMM-DeleteImage/js/jquery.js"];
 	},
@@ -35,8 +38,7 @@ Module.register("MMM-DeleteImage",{
 		
 		$(button).on("click", function(){
 			if(hidden){
-				$(overlay).fadeIn(1000);
-				$(button).fadeTo(1000, 0.3);
+				DeleteImageS.sendSocketNotification("DELETE")
 				$(text).html('Show');
 				hidden = false;
 			}else{
