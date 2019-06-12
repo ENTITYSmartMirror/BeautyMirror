@@ -83,7 +83,7 @@ Module.register("MMM-Testpython", {
       break;
       case "Modules All Change" :
       var ele2 = document.getElementById("showage")
-      ele2.innerHTML =  "이 곳에 당신의 예상 나이가 표시됩니다."
+      ele2.innerHTML =  "이 곳에 예상 나이가 표시됩니다."
       }
   },
   socketNotificationReceived: function(notification, payload) {
