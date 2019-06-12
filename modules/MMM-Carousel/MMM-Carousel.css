@@ -111,12 +111,10 @@ body {
   height: 75px;
   border-radius: 10%;
   display: inline-block;
-  background-image: url(img/1.png);
-  background-repeat: no-repeat;
+  background: rgba(255,255,255,0.2);
   background-size: 75px 75px;
-  background-position: center center;
-  margin: 30px;
-  border: solid 0px rgba(255,255,255,1);
+  margin: 0 30px;
+  border: solid 1px rgba(255,255,255,0.4);
   cursor: pointer !important;
 }
 
