@@ -646,7 +646,7 @@ var config = {
 		{
 			module: "MMM-HistoryImage1",
 			position: 'top_center',
-			header:" FUCK ",
+			header:" 최근 첫번째 사진입니다. ",
 			config: {
 			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
@@ -654,7 +654,7 @@ var config = {
 		{
 			module: "MMM-HistoryImage2",
 			position: 'top_center',
-			header:" FUCK ",
+			header:" 최근 두번째 사진입니다. ",
 			config: {
 			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
@@ -662,7 +662,7 @@ var config = {
 		{
 			module: "MMM-HistoryImage3",
 			position: 'top_center',
-			header:" FUCK ",
+			header:" 최근 세번째 사진입니다. ",
 			config: {
 			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}
