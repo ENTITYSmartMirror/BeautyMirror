@@ -40,7 +40,7 @@ Module.register("MMM-Modulebar5",{
                           },
 										"2": {
 												module: "MMM-Modulebar4",
-												img:"https://cdn.icon-icons.com/icons2/1183/PNG/512/1490133458-social-icons08_82209.png",
+												img:"https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-256.png",
 												width:"50",
 												height:"50",
 											},

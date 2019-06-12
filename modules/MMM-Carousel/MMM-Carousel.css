@@ -106,82 +106,15 @@ body {
   z-index: 1000;
 }
 
-.slider-pagination1 {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  z-index: 1000;
-}
-
-.slider-pagination2 {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  z-index: 1000;
-}
-
-.slider-pagination3 {
-  position: absolute;
-  bottom: 15px;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  z-index: 1000;
-}
 .slider-pagination label {
-  width: 200px;
-  height: 200px;
+  width: 75px;
+  height: 75px;
   border-radius: 10%;
   display: inline-block;
-  background-image: url(img/1.png);
-  background-repeat: no-repeat;
-  background-size: 200px 200px;
-  background-position: center center;
-  margin: 30px;
-  border: solid 0px rgba(255,255,255,1);
-  cursor: pointer !important;
-}
-.slider-pagination1 label {
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
-  display: inline-block;
-  background-image: url(img/2.png);
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: center center;
-  margin: 30px;
-  border: solid 0px rgba(255,255,255,1);
-  cursor: pointer !important;
-}
-.slider-pagination2 label {
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
-  display: inline-block;
-  background-image: url(img/3.png);
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: center center;
-  margin: 30px;
-  border: solid 0px rgba(255,255,255,1);
-  cursor: pointer !important;
-}
-.slider-pagination3 label {
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
-  display: inline-block;
-  background-image: url(img/4.png);
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: center center;
-  margin: 30px;
-  border: solid 0px rgba(255,255,255,1);
+  background: rgba(255,255,255,0.2);
+  background-size: 75px 75px;
+  margin: 0 30px;
+  border: solid 1px rgba(255,255,255,0.4);
   cursor: pointer !important;
 }
 

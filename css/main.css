@@ -8,6 +8,12 @@ html {
   display: none;
 }
 
+@font-face { font-family: 'NanumGothicBold';
+  src: url('/fonts/NanumGothic/NanumGothicBold.eot');
+  src: url('/fonts/NanumGothic/NanumGothicBold.eot') format('embedded-opentype'),
+  url('/fonts/NanumGothic/NanumGothicBold.woff') format('woff');
+}
+
 body {
   margin: 60px;
   position: absolute;
@@ -15,7 +21,7 @@ body {
   width: calc(100% - 120px);
   background: #000;
   color: #aaa;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'NanumGothic', sans-serif;
   font-weight: 400;
   font-size: 2em;
   line-height: 1.5em;
@@ -70,17 +76,17 @@ body {
 }
 
 .light {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'NanumGothic', sans-serif;
   font-weight: 300;
 }
 
 .regular {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'NanumGothic', sans-serif;
   font-weight: 400;
 }
 
 .bold {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'NanumGothic', sans-serif;
   font-weight: 700;
 }
 
@@ -95,7 +101,7 @@ body {
 header {
   text-transform: uppercase;
   font-size: 15px;
-  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-family: 'NanumGothic', Arial, Helvetica, sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #666;
   line-height: 15px;
