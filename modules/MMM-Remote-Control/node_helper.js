@@ -601,7 +601,7 @@ module.exports = NodeHelper.create(Object.assign({
                 "tvservice --preferred && sudo chvt 6 && sudo chvt 7";
             let monitorOffCommand = (this.initialized && "monitorOffCommand" in this.thisConfig.customCommand) ?
                 this.thisConfig.customCommand.monitorOffCommand :
-                "tvservice -o";
+                "nircmd.exe monitor off";
             let monitorStatusCommand = (this.initialized && "monitorStatusCommand" in this.thisConfig.customCommand) ?
                 this.thisConfig.customCommand.monitorStatusCommand :
                 "tvservice --status";
