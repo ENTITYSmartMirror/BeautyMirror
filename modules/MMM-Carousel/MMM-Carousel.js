@@ -385,26 +385,6 @@ Module.register('MMM-Carousel', {
             var paginationWrapper = document.createElement("div");
             paginationWrapper.className = "slider-pagination";
 
-            var paginationWrapper1 = document.createElement("div");
-            paginationWrapper1.className = "slider-pagination1";
-
-            var paginationWrapper2 = document.createElement("div");
-            paginationWrapper2.className = "slider-pagination2";
-            
-            var paginationWrapper3 = document.createElement("div");
-            paginationWrapper3.className = "slider-pagination2";
-            
-            var paginationWrapper4 = document.createElement("div");
-            paginationWrapper4.className = "slider-pagination2";
-            
-            var paginationWrapper5 = document.createElement("div");
-            paginationWrapper5.className = "slider-pagination2";
-
-
-            var paginationWrapper6 = document.createElement("div");
-            paginationWrapper6.className = "slider-pagination2";
-
-
             for (var i = 0; i < Object.keys(this.config.slides).length; i++) {
                 var input = document.createElement("input");
                 input.type = "radio";
@@ -414,7 +394,6 @@ Module.register('MMM-Carousel', {
                 input.onchange = makeOnChangeHandler(i);
                 paginationWrapper.appendChild(input); 
             }
-            
 
             if (this.config.showPageIndicators) {
                 for (var i = 0; i < Object.keys(this.config.slides).length; i++) {

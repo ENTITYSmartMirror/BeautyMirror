@@ -10,13 +10,18 @@ Module.register("MMM-Testpython", {
     var element = document.createElement("div")
     element.className = "myContent"
     element.id="divid1"
+    element.font = 4
     var subElement = document.createElement("p")
     subElement.innerHTML = "여기를 클릭하세요."
     subElement.id = "clickid1"
+    subElement.className = "click"
+    subElement.style.fontSize = "2em"
     element.appendChild(subElement)
     var subelement2 = document.createElement("p")
     subelement2.innerHTML = "이 곳에 당신의 예상 나이가 표시됩니다."
     subelement2.id = "showage"
+    subelement2.className = "showage"
+    subelement2.style.fontSize = "2em"
     element.appendChild(subelement2)
     return element
   },
