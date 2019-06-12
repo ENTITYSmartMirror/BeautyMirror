@@ -9,3 +9,4 @@ def removeExtensionFile(filePath, fileExtension):
     else:
         return 'Directory Not Found'
 print(removeExtensionFile('C:/BeautyM/modules/MMM-BeforeAfter/minsoo','.png'))
+print(removeExtensionFile('C:/BeautyM/modules/MMM-BeforeAfter/before','.png'))
