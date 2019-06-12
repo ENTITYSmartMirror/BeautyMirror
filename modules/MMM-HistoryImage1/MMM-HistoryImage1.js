@@ -385,6 +385,7 @@ Module.register("MMM-HistoryImage1", {
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
+		/*
 		if(notification === "CUTDAY"){
 			console.log("cut day notification success!", payload)
 			this.data.header=payload;
@@ -392,6 +393,7 @@ Module.register("MMM-HistoryImage1", {
 			
 
 		}
+		*/
 		
 	}
 

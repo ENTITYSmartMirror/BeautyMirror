@@ -352,8 +352,13 @@ Module.register("MMM-HistoryImage2", {
 					  this.config.a==1;
 							
 					}) 
-					*/					
-					image.src = this.imageList[this.imageList.length-2];
+					*/
+					if(this.config.a==0){
+						image.src = this.imageList[this.imageList.length-2];
+						
+						}		
+							
+					
 					
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")
@@ -382,7 +387,15 @@ Module.register("MMM-HistoryImage2", {
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
-		
+		/*
+		if(notification === "setDefault"){
+			console.log("Delete notification success!", payload)
+			this.config.a=1;
+			this.updateDom();
+			
+
+		}
+		*/
 		
 	}
 

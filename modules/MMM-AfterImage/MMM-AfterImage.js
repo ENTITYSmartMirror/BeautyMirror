@@ -211,6 +211,10 @@ Module.register("MMM-AfterImage", {
 			this.hide()
 
 		}
+		if(notification === "setDefault"){
+			//console.log("this a ", this.config.a)
+			this.config.a=0;
+		}
 		if(notification === "BEFOREIMAGE"){
 			//console.log("this a ", this.config.a)
 			this.show()

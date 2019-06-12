@@ -403,7 +403,10 @@ Module.register("MMM-BeforeImage", {
 			//console.log("this a ", this.config.a)
 			this.config.a=1;
 		}
-
+		if(notification === "setDefault"){
+			//console.log("this a ", this.config.a)
+			this.config.a=0;
+		}
 		if(notification === "AFTERIMAGE"){
 			//console.log("this a ", this.config.a)
 			this.config.a=2;
