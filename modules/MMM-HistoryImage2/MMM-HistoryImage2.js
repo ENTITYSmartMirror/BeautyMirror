@@ -78,6 +78,7 @@ Module.register("MMM-HistoryImage2", {
 
 		a:0,
 
+		c:0
 	},
 
     // load function
@@ -357,8 +358,12 @@ Module.register("MMM-HistoryImage2", {
 						image.src = this.imageList[this.imageList.length-2];
 						
 						}		
-							
-					
+					if(this.config.a==1){
+						image.src = this.imageList[0];
+						}		
+					this.config.c=image.src.toString().match(/.*\/(.+?)\./);
+				
+					console.log("filenameeeeeeeeeeeeeeeeeeeeeee",this.config.c[1],"file name end");
 					
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")
@@ -384,6 +389,18 @@ Module.register("MMM-HistoryImage2", {
 
 		return wrapper;
 
+	},
+	getHeader: function() {
+		if(this.config.c[1]==127)
+		{
+			return " ";
+			
+		}
+		else
+		{
+			return this.config.c[1]+"날 컷트 사진입니다.";
+		}
+		//return '2019-05-'+this.data.header;
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);

@@ -646,7 +646,7 @@ var config = {
 		{
 			module: "MMM-HistoryImage1",
 			position: 'top_center',
-			header:"최근 첫번째 사진입니다. ",
+			header:"asdf",
 			config: {
 			imagePaths: ['modules/MMM-BeforeAfter/minsoo']
 			}

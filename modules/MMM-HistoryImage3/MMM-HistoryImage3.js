@@ -358,6 +358,9 @@ Module.register("MMM-HistoryImage3", {
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")
 					
+					this.config.c=image.src.toString().match(/.*\/(.+?)\./);
+				
+					console.log("filenameeeeeeeeeeeeeeeeeeeeeee",this.config.c[1],"file name end");
 					
 					wrapper.appendChild(image);					
 
@@ -379,6 +382,18 @@ Module.register("MMM-HistoryImage3", {
 
 		return wrapper;
 
+	},
+	getHeader: function() {
+		if(this.config.c[1]==127)
+		{
+			return " ";
+			
+		}
+		else
+		{
+			return this.config.c[1]+"날 컷트 사진입니다.";
+		}
+		//return '2019-05-'+this.data.header;
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);

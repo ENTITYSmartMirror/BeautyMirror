@@ -40,10 +40,17 @@ var MM = (function() {
 			wrapper.appendChild(dom);
 
 			if (typeof module.data.header !== "undefined" && module.data.header !== "") {
+				if(module.data.header=="55")
+				{
+					Log.log("fucking");
+				}
+				else{
 				var moduleHeader = document.createElement("header");
 				moduleHeader.innerHTML = module.data.header;
 				moduleHeader.className = "module-header";
 				dom.appendChild(moduleHeader);
+				}
+				
 			}
 
 			var moduleContent = document.createElement("div");

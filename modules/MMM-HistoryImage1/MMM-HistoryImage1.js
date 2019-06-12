@@ -389,12 +389,12 @@ Module.register("MMM-HistoryImage1", {
 	getHeader: function() {
 		if(this.config.c[1]==1)
 		{
-			return "";
+			return "컷트를 한 기록이 없습니다!";
 			
 		}
 		else
 		{
-			return this.config.c[1];
+			return this.config.c[1]+"날 컷트 사진입니다.";
 		}
 		//return '2019-05-'+this.data.header;
 	},
