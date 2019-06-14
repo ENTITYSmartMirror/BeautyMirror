@@ -396,8 +396,11 @@ Module.register("MMM-HistoryImage2", {
 			return " ";
 			
 		}
-		else
+		else if(this.config.c[1]=1)
 		{
+			return "더이상 컷트기록이 없습니다!";
+		}
+		else{
 			return this.config.c[1]+"날 컷트 사진입니다.";
 		}
 		//return '2019-05-'+this.data.header;
