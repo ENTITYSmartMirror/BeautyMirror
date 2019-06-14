@@ -78,7 +78,7 @@ Module.register("MMM-HistoryImage2", {
 
 		a:0,
 
-		c:0
+		c:0,
 	},
 
     // load function

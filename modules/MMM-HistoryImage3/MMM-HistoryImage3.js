@@ -77,7 +77,7 @@ Module.register("MMM-HistoryImage3", {
 		delayUntilRestart: 0,
 
 		a:0,
-
+		c:0,
 	},
 
     // load function
