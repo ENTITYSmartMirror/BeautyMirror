@@ -93,13 +93,14 @@ Module.register("MMM-Testpython", {
         var payload3;
         payload3=payload.toString().split(",");
         console.log("Socket recevied 1: " + payload3);
-        var elemk = document.getElementById("showage");
-        var sex = payload3[0];
-        console.log("Socket recevied 1: " + sex);
+        var elemk = document.getElementById("clickid1")
+        var elemk2 = document.getElementById("showage");
+        var gender = payload3[0];
+        console.log("Socket recevied 1: " + gender);
         var age = payload3[1];
         console.log("Socket recevied 1: " + age);
         var change;
-        if (sex == "male"){
+        if (gender == "male"){
           if(age <= 19){
             change = 1;
             console.log(age);
@@ -126,7 +127,7 @@ Module.register("MMM-Testpython", {
             console.log(change);
           }
         }
-        else if (sex == "female"){
+        else if (gender == "female"){
           if(age <= 19){
             change = 6;
             console.log(age);
@@ -245,7 +246,8 @@ Module.register("MMM-Testpython", {
             })
             break
           } 
-        elemk.innerHTML = "당신의 예상 나이는 " + age + "세 입니다.";   
+        elemk.innerHTML = "";
+        elemk2.innerHTML = "고객님의 예상나이" + age + "세의 추천헤어입니다.";   
       break
     }
   }

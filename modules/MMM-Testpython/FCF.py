@@ -14,7 +14,7 @@ cv2.imwrite('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg',
 cap.release()
 cv2.destroyAllWindows()
 
-subscription_key = "05a8ccc1b12f4bf785e669f809123b40"
+subscription_key = "2ad26e5076914e9ca6ab0e80877d3e4a"
 
 image_path = os.path.join('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
 

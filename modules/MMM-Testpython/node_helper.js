@@ -13,7 +13,7 @@ module.exports = NodeHelper.create({
         console.log("notification : " + notification)
 	    PythonShell.run('C:/BeautyM/modules/MMM-Testpython/FCF.py', null, function (err, result) {
             if (err) throw err;
-            console.log("sex" + result);          
+            console.log("gender : " + result);          
             socketTestpython.sendSocketNotification("I_DID",result);
           });
 	       
