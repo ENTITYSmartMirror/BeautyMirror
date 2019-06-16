@@ -37,43 +37,43 @@ Module.register("MMM-Testpython", {
         showage2.innerHTML = "당신의 나이를 분석중입니다."
         Testpythons.sendNotification('CHANGE_POSITIONS', 
         modules = {
-              'MMM-iFrame17':{
+              'Man10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame18':{
+              'Man20s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame19':{
+              'Man30s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame20':{
+              'Man40s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame21':{
+              'Man50s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame22':{
+              'Woman10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame23':{
+              'Woman20s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame24':{
+              'Woman30s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame25':{
+              'Woman40s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame26':{
+              'Woman50s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
@@ -157,7 +157,7 @@ Module.register("MMM-Testpython", {
             case 1 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame17':{
+                'Man10s':{
                   visible: 'true',
                   position: 'bottom_left',
                 }
@@ -166,7 +166,7 @@ Module.register("MMM-Testpython", {
             case 2 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame18':{
+                'Man20s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -175,7 +175,7 @@ Module.register("MMM-Testpython", {
             case 3 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame19':{
+                'Man30s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -184,7 +184,7 @@ Module.register("MMM-Testpython", {
             case 4 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame20':{
+                'Man40s':{
                   visible: 'true',
                   position: 'top_right',
               }
@@ -193,7 +193,7 @@ Module.register("MMM-Testpython", {
             case 5 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame21':{
+                'Man50s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -202,7 +202,7 @@ Module.register("MMM-Testpython", {
             case 6 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame22':{
+                'Woman10s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -211,7 +211,7 @@ Module.register("MMM-Testpython", {
             case 7 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame23':{
+                'Woman20s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -220,7 +220,7 @@ Module.register("MMM-Testpython", {
             case 8 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame24':{
+                'Woman30s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -229,7 +229,7 @@ Module.register("MMM-Testpython", {
             case 9 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame25':{
+                'Woman40s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -238,7 +238,7 @@ Module.register("MMM-Testpython", {
             case 10 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame26':{
+                'Woman50s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 

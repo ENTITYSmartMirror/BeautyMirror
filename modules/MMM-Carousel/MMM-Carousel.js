@@ -331,30 +331,47 @@ Module.register('MMM-Carousel', {
         this.sendNotification('Modules All Change');
         this.sendNotification('CHANGE_POSITIONS', 
         modules = {
-              'MMM-iFrame17':{
+              'Man10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame18':{
+              'Man20s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame19':{
+              'Man30s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame20':{
+              'Man40s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame21':{
+              'Man50s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame22':{
+              'Woman10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
+              'Woman20s':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'Woman30s':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'Woman40s':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+              'Woman50s':{
+                visible: 'false',
+                position: 'bottom_left',
+              },
+
             });
        
     },
