@@ -180,16 +180,16 @@ Module.register("MMM-AfterImage", {
 					//console.log("this.imageList.length]",this.imageList.length)
 					//console.log("this a",this.config.a)
 					if(this.config.a==0){
-					image.src = this.imageList[0];
+					image.src = this.imageList[1];
 					}
 					if(this.config.a==1){
-						image.src = this.imageList[1];
+						image.src = this.imageList[2];
 						}
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-1];
 						}
 					if(this.config.a==3){
-						image.src = this.imageList[2];
+						image.src = this.imageList[3];
 						}
 					// ad the image to the dom
 					wrapper.appendChild(image);					
