@@ -208,7 +208,7 @@ Module.register("MMM-AfterImage", {
 		
 		if(notification === "Modules All Change"){
 			//console.log("this a ", this.config.a)
-			this.hide()
+			//this.hide()
 
 		}
 		if(notification === "setDefault"){
