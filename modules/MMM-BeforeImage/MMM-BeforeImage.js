@@ -369,7 +369,7 @@ Module.register("MMM-BeforeImage", {
 						image.src = this.imageList[this.imageList.length-2];
 						}
 					if(this.config.a==3){
-						image.src = this.imageList[3];
+						image.src = this.imageList[2];
 						}
 					// ad the image to the dom
 					//var elem = document.getElementById("imageclick")
