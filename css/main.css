@@ -71,7 +71,7 @@ body {
 }
 
 .thin {
-  font-family: Roboto, sans-serif;
+  font-family: 'NanumGothic', sans-serif;
   font-weight: 100;
 }
 
@@ -100,12 +100,12 @@ body {
 
 header {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 30px;
   font-family: 'NanumGothic', Arial, Helvetica, sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #666;
   line-height: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   margin-bottom: 10px;
   color: #999;
 }
