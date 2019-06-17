@@ -8,6 +8,7 @@ ret, frame = cap.read()
 cv2.imshow('frame', frame)
 cv2.imwrite('C:/BeautyM/modules/MMM-BeforeAfter/before/before.png', frame)
 
+
 cap.release()
 cv2.destroyAllWindows()
 print("python success !")

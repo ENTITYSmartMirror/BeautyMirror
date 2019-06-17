@@ -37,43 +37,43 @@ Module.register("MMM-Testpython", {
         showage2.innerHTML = "당신의 나이를 분석중입니다."
         Testpythons.sendNotification('CHANGE_POSITIONS', 
         modules = {
-              'MMM-iFrame17':{
+              'Man10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame18':{
+              'Man20s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame19':{
+              'Man30s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame20':{
+              'Man40s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame21':{
+              'Man50s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame22':{
+              'Woman10s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame23':{
+              'Woman20s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame24':{
+              'Woman30s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame25':{
+              'Woman40s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
-              'MMM-iFrame26':{
+              'Woman50s':{
                 visible: 'false',
                 position: 'bottom_left',
               },
@@ -93,13 +93,14 @@ Module.register("MMM-Testpython", {
         var payload3;
         payload3=payload.toString().split(",");
         console.log("Socket recevied 1: " + payload3);
-        var elemk = document.getElementById("showage");
-        var sex = payload3[0];
-        console.log("Socket recevied 1: " + sex);
+        var elemk = document.getElementById("clickid1")
+        var elemk2 = document.getElementById("showage");
+        var gender = payload3[0];
+        console.log("Socket recevied 1: " + gender);
         var age = payload3[1];
         console.log("Socket recevied 1: " + age);
         var change;
-        if (sex == "male"){
+        if (gender == "male"){
           if(age <= 19){
             change = 1;
             console.log(age);
@@ -126,7 +127,7 @@ Module.register("MMM-Testpython", {
             console.log(change);
           }
         }
-        else if (sex == "female"){
+        else if (gender == "female"){
           if(age <= 19){
             change = 6;
             console.log(age);
@@ -157,7 +158,7 @@ Module.register("MMM-Testpython", {
             case 1 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame17':{
+                'Man10s':{
                   visible: 'true',
                   position: 'bottom_left',
                 }
@@ -166,7 +167,7 @@ Module.register("MMM-Testpython", {
             case 2 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame18':{
+                'Man20s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -175,7 +176,7 @@ Module.register("MMM-Testpython", {
             case 3 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame19':{
+                'Man30s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -184,7 +185,7 @@ Module.register("MMM-Testpython", {
             case 4 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame20':{
+                'Man40s':{
                   visible: 'true',
                   position: 'top_right',
               }
@@ -193,7 +194,7 @@ Module.register("MMM-Testpython", {
             case 5 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame21':{
+                'Man50s':{
                   visible: 'true',
                   position: 'bottom_left',
               }
@@ -202,7 +203,7 @@ Module.register("MMM-Testpython", {
             case 6 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame22':{
+                'Woman10s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -211,7 +212,7 @@ Module.register("MMM-Testpython", {
             case 7 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame23':{
+                'Woman20s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -220,7 +221,7 @@ Module.register("MMM-Testpython", {
             case 8 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame24':{
+                'Woman30s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -229,7 +230,7 @@ Module.register("MMM-Testpython", {
             case 9 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame25':{
+                'Woman40s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
@@ -238,14 +239,15 @@ Module.register("MMM-Testpython", {
             case 10 : 
               this.sendNotification('CHANGE_POSITIONS', 
               modules = {
-                'MMM-iFrame26':{
+                'Woman50s':{
                   visible: 'true',
                   position: 'bottom_left',
               } 
             })
             break
           } 
-        elemk.innerHTML = "당신의 예상 나이는 " + age + "세 입니다.";   
+        elemk.innerHTML = "";
+        elemk2.innerHTML = "고객님의 예상나이" + age + "세의 추천헤어입니다.";   
       break
     }
   }

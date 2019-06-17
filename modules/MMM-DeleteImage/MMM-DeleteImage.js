@@ -31,7 +31,7 @@ Module.register("MMM-DeleteImage",{
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
-		text.innerHTML = "Delete";
+		text.innerHTML = "끝내기";
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(overlay);
@@ -43,12 +43,12 @@ Module.register("MMM-DeleteImage",{
 				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
 				DeleteImageS.sendNotification("setDefault")
 				DeleteImageS.sendSocketNotification("DELETE")
-				$(text).html('Show');
+				$(text).html('접속');
 				hidden = false;
 			}else{
 				$(overlay).fadeOut(1000);
 				$(button).fadeTo(1000, 1);
-				$(text).html('Delete');
+				$(text).html('끝내기');
 				hidden = true;
 			}
 		});
