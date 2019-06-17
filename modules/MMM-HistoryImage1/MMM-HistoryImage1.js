@@ -1,4 +1,4 @@
-
+﻿
 
 /* global Module */
 
@@ -394,7 +394,7 @@ Module.register("MMM-HistoryImage1", {
 		}
 		else
 		{
-			return "2019-"+this.config.c[1]+"날 컷트 사진입니다.";
+			return this.config.c[1]+"날 컷트 사진입니다.";
 		}
 		//return '2019-05-'+this.data.header;
 	},

@@ -6,7 +6,9 @@ cap = cv2.VideoCapture(0)
 cap.set(3,640)
 cap.set(4,480)
 ret, frame = cap.read()
-now = datetime.datetime.now().strftime("%d_%H-%M-%S")
+#now = datetime.datetime.now().strftime("%d_%H-%M-%S")
+now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
 cv2.imshow('frame', frame)
 
 cv2.imwrite('C:/BeautyM/modules/MMM-BeforeAfter/before/before2.png', frame)
