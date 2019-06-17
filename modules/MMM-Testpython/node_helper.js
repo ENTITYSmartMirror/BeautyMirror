@@ -11,7 +11,7 @@ module.exports = NodeHelper.create({
     switch(notification) {
       case "TEST":
         console.log("notification : " + notification)
-	    PythonShell.run('/home/pi/BeautyM/modules/MMM-Testpython/FCF.py', null, function (err, result) {
+	    PythonShell.run('C:/BeautyM/modules/MMM-Testpython/FCF.py', null, function (err, result) {
             if (err) throw err;
             console.log("sex" + result);          
             socketTestpython.sendSocketNotification("I_DID",result);

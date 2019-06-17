@@ -1,5 +1,12 @@
 [
   {
+    "longname": "mmpm",
+    "id": "Bee-Mar/mmpm",
+    "url": "https://github.com/Bee-Mar/mmpm",
+    "author": "Bee-Mar",
+    "desc": "The unofficial MagicMirror 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror modules."
+  },
+  {
     "longname": "MMM-Button",
     "id": "ptrbld/MMM-Button",
     "url": "https://github.com/ptrbld/MMM-Button",
@@ -308,6 +315,13 @@
     "desc": "Displaying NEWS with picture, touchable and customizable."
   },
   {
+    "longname": "MMM-News-QR",
+    "id": "nischi/MMM-News-QR",
+    "url": "https://github.com/nischi/MMM-News-QR",
+    "author": "Nischi",
+    "desc": "Add a QR Code with the link to the showing Newsfeed (Default Newsfeed Module)"
+  },
+  {
     "longname": "MMM-OpeningHours",
     "id": "Menturan/MMM-OpeningHours",
     "url": "https://github.com/Menturan/MMM-OpeningHours",
@@ -355,6 +369,13 @@
     "url": "https://github.com/Tomadelostacos/MMM-LesJoiesDuCode",
     "author": "Tomadelostacos",
     "desc": "Displays the last post from Les Joies Du Code, or TheCodingLove (The english version)."
+  },
+  {
+    "longname": "MMM-TransLoc",
+    "id": "OrangeHoopla/MMM-TransLoc",
+    "url": "https://github.com/OrangeHoopla/MMM-TransLoc",
+    "author": "OrangleHoopla",
+    "desc": "Display TransLoc locations for a bus stop, used by the Rider App"
   },
   {
     "longname": "DWD-RealtimeIrishRail",
@@ -945,6 +966,20 @@
     "desc": "Real Time Dutch traffic information from the ANWB"
   },
   {
+    "longname": "MMM-CoupEscooters",
+    "id": "bogomips/MMM-CoupEscooters",
+    "url": "https://github.com/bogomips/MMM-CoupEscooters",
+    "author": "Bogomips",
+    "desc": "Display COUP e-scooters around you and sort them by distance. It works for Berlin and other cities"
+  },
+  {
+    "longname": "MMM-PGHBus",
+    "id": "yuhanx0728/MMM-PGHBus",
+    "url": "https://github.com/yuhanx0728/MMM-PGHBus",
+    "author": "yuhanx0728",
+    "desc": "Real Time Pittsburgh bus information from Port Authority"
+  },
+  {
     "longname": "MMM-AlexaOnOff",
     "id": "shbatm/MMM-AlexaOnOff",
     "url": "https://github.com/shbatm/MMM-AlexaOnOff",
@@ -1064,20 +1099,6 @@
     "desc": "Voice control based on snowboy."
   },
   {
-    "longname": "MMM-FloGraph",
-    "id": "kagjerde/MMM-FloGraph",
-    "url": "https://github.com/kagjerde/MMM-FloGraph",
-    "author": "KAG",
-    "desc": "Displays tide graph for Norway"
-  },
-  {
-    "longname": "MMM-Flo",
-    "id": "kagjerde/MMM-Flo",
-    "url": "https://github.com/kagjerde/MMM-Flo",
-    "author": "KAG",
-    "desc": "Displays tide table for Norway"
-  },
-  {
     "longname": "MMM-3Day-Forecast",
     "id": "nigel-daniels/MMM-3Day-Forecast",
     "url": "https://github.com/nigel-daniels/MMM-3Day-Forecast",
@@ -1155,11 +1176,32 @@
     "desc": "A weather module that displays current, hourly and daily forecast information using data from the Dark Sky API."
   },
   {
+    "longname": "MMM-DarkSkyRadar",
+    "id": "vincep5/MMM-DarkSkyRadar",
+    "url": "https://github.com/vincep5/MMM-DarkSkyRadar",
+    "author": "vincep5",
+    "desc": "Display a radar map from DarkSky"
+  },
+  {
     "longname": "MMM-FHEM",
     "id": "BenRoe/MMM-FHEM",
     "url": "https://github.com/BenRoe/MMM-FHEM",
     "author": "BenRoe",
     "desc": "Display Readings/Values from your FHEM device like temperature or humidity."
+  },
+  {
+    "longname": "MMM-FloGraph",
+    "id": "kagjerde/MMM-FloGraph",
+    "url": "https://github.com/kagjerde/MMM-FloGraph",
+    "author": "KAG",
+    "desc": "Displays tide graph for Norway"
+  },
+  {
+    "longname": "MMM-Flo",
+    "id": "kagjerde/MMM-Flo",
+    "url": "https://github.com/kagjerde/MMM-Flo",
+    "author": "KAG",
+    "desc": "Displays tide table for Norway"
   },
   {
     "longname": "MMM-GPSWeather",
@@ -1468,6 +1510,13 @@
     "url": "https://github.com/MattLugar/wuforecast",
     "author": "MattLugar",
     "desc": "Weather Underground Forecast Module Retrieves forecast from Weather Underground. Also adds a percentage probability of precipitation to forecast display."
+  },
+  {
+    "longname": "MMM-RAIN-RADAR",
+    "id": "jojoduquartier/MMM-RAIN-RADAR",
+    "url": "https://github.com/jojoduquartier/MMM-RAIN-RADAR",
+    "author": "jojoDuQuartier",
+    "desc": "Displays a Precipitation Radar for your Location"
   },
   {
     "longname": "MMM-AllsvenskanStandings",
@@ -1786,9 +1835,9 @@
   },
   {
     "longname": "MMM-GoogleTasks",
-    "id": "jgauth/MMM-GoogleTasks",
-    "url": "https://github.com/jgauth/MMM-GoogleTasks",
-    "author": "jGauth",
+    "id": "jayked/MMM-GoogleTasks",
+    "url": "https://github.com/jayked/MMM-GoogleTasks",
+    "author": "jayked",
     "desc": "Display Google Tasks"
   },
   {
@@ -1909,6 +1958,13 @@
     "url": "https://github.com/ottopaulsen/MMM-MQTT",
     "author": "ottopaulsen",
     "desc": "A Magic Mirror Module that subscribes topics from MQTT message queues, and displays the payload values in a table, with configurable labels."
+  },
+  {
+    "longname": "MMM-MQTTfloorplan",
+    "id": "DMailMan/MMM-MQTTfloorplan",
+    "url": "https://github.com/DMailMan/MMM-MQTTfloorplan",
+    "author": "DMailMan",
+    "desc": "A Magic Mirror Module that subscribes to topics from MQTT message queues, and displays the sensor results on a floor plan of your house."
   },
   {
     "longname": "MMM-Memo",
@@ -2224,6 +2280,13 @@
     "url": "https://github.com/tkrywit/MMM-Solar",
     "author": "tkrywit",
     "desc": "Display statistics from your Enphase Energy microinverter PV system."
+  },
+  {
+    "longname": "MMM-SolarEdge",
+    "id": "bertieuk/MMM-SolarEdge",
+    "url": "https://github.com/bertieuk/MMM-SolarEdge",
+    "author": "bertieuk",
+    "desc": "Display statistics from your SolarEdge PV inverter system."
   },
   {
     "longname": "MMM-SnmpIntSpeed",
@@ -2653,6 +2716,13 @@
     "desc": "Displays and alerts mirror users on new phone notifications."
   },
   {
+    "longname": "MMM-Zabbix-Alerts",
+    "id": "spectroman/mmm-zabbix-alerts",
+    "url": "https://github.com/spectroman/mmm-zabbix-alerts",
+    "author": "Spectroman",
+    "desc": "Show the status of triggers from Zabbix via API calls."
+  },
+  {
     "longname": "Daily Pokemon",
     "id": "NolanKingdon/MMM-DailyPokemon",
     "url": "https://github.com/NolanKingdon/MMM-DailyPokemon",
@@ -2695,6 +2765,13 @@
     "desc": "Displays a private leaderboard in Advent of Code"
   },
   {
+    "longname": "MMM-ApexLegends",
+    "id": "retroflex/MMM-ApexLegends",
+    "url": "https://github.com/retroflex/MMM-ApexLegends",
+    "author": "retroflex",
+    "desc": "Shows stats (level, kills and global rank) for players of Apex Legends."
+  },
+  {
     "longname": "MMM-Astrology",
     "id": "cowboysdude/MMM-Astrology",
     "url": "https://github.com/cowboysdude/MMM-Astrology",
@@ -2728,6 +2805,13 @@
     "url": "https://github.com/darickc/MMM-BackgroundSlideshow",
     "author": "darickc",
     "desc": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame."
+  },
+  {
+    "longname": "MMM-BrawlStars",
+    "id": "retroflex/MMM-BrawlStars",
+    "url": "https://github.com/retroflex/MMM-BrawlStars",
+    "author": "retroflex",
+    "desc": "Shows stats (level, trophies and victories) for players of mobile game Brawl Stars."
   },
   {
     "longname": "MMM-Bob-Ross",
@@ -2954,6 +3038,13 @@
     "desc": "image gallery or wallpaper with your Google Photos account"
   },
   {
+    "longname": "MMM-GoogleCast",
+    "id": "ferferga/MMM-GoogleCast",
+    "url": "https://github.com/ferferga/MMM-GoogleCast",
+    "author": "ferferga",
+    "desc": "See what's playing in your Google Cast device in your MagicMirror"
+  },
+  {
     "longname": "MMM-HappyHours",
     "id": "aleckeller/MMM-HappyHours",
     "url": "https://github.com/aleckeller/MMM-HappyHours",
@@ -3169,6 +3260,13 @@
     "url": "https://github.com/eouia/MMM-OClock",
     "author": "eouia",
     "desc": "O-clock inspired by PolarClock Screensaver."
+  },
+  {
+    "longname": "MMM-Overwatch",
+    "id": "retroflex/MMM-Overwatch",
+    "url": "https://github.com/retroflex/MMM-Overwatch",
+    "author": "retroflex",
+    "desc": "Shows stats for Overwatch players."
   },
   {
     "longname": "MMM-PandorasMirror",

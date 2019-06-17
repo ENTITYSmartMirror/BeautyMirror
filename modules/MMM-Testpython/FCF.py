@@ -9,14 +9,14 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 ret, frame = cap.read()
-cv2.imwrite('/home/pi/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg', frame)
+cv2.imwrite('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg', frame)
 
 cap.release()
 cv2.destroyAllWindows()
 
-subscription_key = "05a8ccc1b12f4bf785e669f809123b40"
+subscription_key = "2ad26e5076914e9ca6ab0e80877d3e4a"
 
-image_path = os.path.join('/home/pi/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
+image_path = os.path.join('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
 
 assert subscription_key
 
