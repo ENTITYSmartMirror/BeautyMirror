@@ -7,7 +7,7 @@ cap.set(3,640)
 cap.set(4,480)
 ret, frame = cap.read()
 #now = datetime.datetime.now().strftime("%d_%H-%M-%S")
-now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+now = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 
 cv2.imshow('frame', frame)
 

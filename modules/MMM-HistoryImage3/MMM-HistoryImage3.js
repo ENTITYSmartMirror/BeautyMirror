@@ -75,7 +75,8 @@ Module.register("MMM-HistoryImage3", {
 		// a delay timer after all images have been shown, to wait to restart (in ms)
 
 		delayUntilRestart: 0,
-
+		d:0,
+		payload3:0,
 		a:0,
 		c:0,
 	},
@@ -359,7 +360,12 @@ Module.register("MMM-HistoryImage3", {
 					//var elem = document.getElementById("imageclick")
 					
 					this.config.c=image.src.toString().match(/.*\/(.+?)\./);
-				
+					this.config.d=this.config.c[1];
+					
+					// ad the image to the dom
+					//var elem = document.getElementById("imageclick")
+					
+        			this.config.payload3=this.config.d.split("-");
 					console.log("filenameeeeeeeeeeeeeeeeeeeeeee",this.config.c[1],"file name end");
 					
 					wrapper.appendChild(image);					
@@ -394,7 +400,7 @@ Module.register("MMM-HistoryImage3", {
 			return "더이상 컷트기록이 없습니다!";
 		}
 		else{
-			return this.config.c[1]+"날 컷트 사진입니다.";
+			return this.config.payload3[0]+"년"+this.config.payload3[1]+"월"+this.config.payload3[2]+"일"+this.config.payload3[3]+"시"+this.config.payload3[4]+"분"+this.config.payload3[5]+"초"+"에 하신 컷트 사진입니다.";
 		}
 		//return '2019-05-'+this.data.header;
 	},
