@@ -1,4 +1,4 @@
-/* global Module */
+﻿/* global Module */
 
 /* Magic Mirror
  * Module: MM Hide All
@@ -43,7 +43,7 @@ Module.register("MMM-DeleteImage",{
 				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
 				DeleteImageS.sendNotification("setDefault")
 				DeleteImageS.sendSocketNotification("DELETE")
-				$(text).html('접속');
+				$(text).html('끋내기');
 				hidden = false;
 			}else{
 				$(overlay).fadeOut(1000);
