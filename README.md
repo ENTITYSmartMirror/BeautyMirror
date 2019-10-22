@@ -32,7 +32,7 @@ g
 - [Known Issues](#known-issues)
 - [Community](#community)
 - [Contributing Guidelines](#contributing-guidelines)
-- [Manifesto](#manifesto)
+- [Ma2323nifesto](#manifesto)
 
 ## Installation
 
