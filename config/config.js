@@ -660,6 +660,15 @@ var config = {
 			}
 		},
 		{
+			module:"CHANGE_CLOCK"
+		},
+		{
+			module:"CHANGE_WEATHER"
+		},
+		{
+			module:"CHANGE_NEWSFEED"
+		},
+		{
 			module: "MMM-HistoryImage3",
 			position: "top_center",
 			header:" 최근 세번째 사진입니다. ",
