@@ -448,13 +448,11 @@ var config = {
 		{
 			module: "MMM-Remote-Control",
 			position: "center",
-			// uncomment the following line to show the URL of the remote control on the mirror
-			// , position: "center"
-			// you can hide this module afterwards from the remote control itself
+			
 			config: {
 				customCommand: {},  // Optional, See "Using Custom Commands" below
 				customMenu: "custom_menu.json", // Optional, See "Custom Menu Items" below
-				showModuleApiMenu: true, // Optional, Enable the Module Controls menu
+				showModuleApiMenu: true, // Optional, Enable the  Controls menu
 				apiKey: "",         // Optional, See API/README.md for details
 			}
 		},
