@@ -118,6 +118,10 @@ body {
   cursor: pointer !important;
 }
 
+.slider-pagination label:hover{
+  background:rgb(255, 255, 255)
+}
+
 .MMMCarouselCurrentPage {
   background: rgba(255,255,255,1) !important;
 }

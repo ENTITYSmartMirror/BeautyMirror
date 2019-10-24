@@ -17,14 +17,22 @@ body {
 }
 .newsfeed .dimmed{
      color:orange;
+     font-family: 'Jua', sans-serif;
 }
-
+.newsfeed .bright{
+  color:white;
+  font-family: 'Jua', sans-serif;
+}
 .currentweather .weathericon {
   position: absolute;
   z-index: 0;
   height: 200px;
   right: 180px;
   margin-top: -65px;
+}
+
+.currentweather .day{
+  font-family: 'Jua', sans-serif;
 }
 
 .currentweather .wi-day-sunny {

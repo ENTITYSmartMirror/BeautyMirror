@@ -5,6 +5,9 @@ Module.register("MMM-Testpython", {
     start: function (){
         Testpythons = this;
     },
+    getStyles: function(){
+      return ["Testpython.css"];
+    },
 
   getDom: function() {
     var element = document.createElement("div")

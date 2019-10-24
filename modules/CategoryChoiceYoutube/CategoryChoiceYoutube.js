@@ -96,7 +96,7 @@ Module.register("CategoryChoiceYoutube",{
 	},
     // Define required styles.
 	getStyles: function(){
-		return ["font-awesome.css", "MMM-Modulebar.css"];
+		return ["font-awesome.css", "MMM-Modulebar4.css"];
 	},
 
     // Override dom generator.
