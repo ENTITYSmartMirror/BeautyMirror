@@ -406,6 +406,7 @@ Module.register("MMM-BeforeImage", {
 		if(notification === "setDefault"){
 			//console.log("this a ", this.config.a)
 			this.config.a=0;
+			BeforeImages.updateDom();
 		}
 		if(notification === "AFTERIMAGE"){
 			//console.log("this a ", this.config.a)
