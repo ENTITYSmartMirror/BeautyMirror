@@ -35,6 +35,7 @@ Module.register("MMM-Testpython", {
       case "DOM_OBJECTS_CREATED":
       var elem = document.getElementById("clickid1")
       elem.addEventListener("click", () => {
+        Testpythons.sendNotification("camera_stop")
         Testpythons.sendSocketNotification("TEST")
         var showage2 = document.getElementById("showage")
         showage2.innerHTML = "당신의 나이를 분석중입니다."
