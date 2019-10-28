@@ -52,7 +52,7 @@ for face in faces:
     plt.text(origin[0], origin[1], "%s, %d"%(fa["gender"].capitalize(), fa["age"]),
              fontsize=20, weight="bold", va="bottom", color='dodgerblue')
 _ = plt.axis("off")
-plt.show()
+#plt.show()
 
 print(fa["gender"])
 print(fa["age"])

@@ -58,7 +58,7 @@ Module.register("CategoryChoicehairMenu",{
 
     // Define required styles.
 	getStyles: function(){
-		return ["font-awesome.css", "MMM-Modulebar.css"];
+		return ["font-awesome.css", "ChoiceMenu.css"];
 	},
 
 	notificationReceived: function(notification, payload){

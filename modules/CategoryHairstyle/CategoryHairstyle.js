@@ -82,7 +82,7 @@ Module.register("CategoryHairstyle",{
         // Builds a uniqe indentity / button.
 		item.id = self.identifier + "_button_" + num;
         // Sets a class to all buttons.
-		item.className = "modulebar-button";
+		item.className = "modulebar-button1";
         // Makes sure the width and height is at least the defined minimum.
 		item.style.minWidth = self.config.minWidth;
         item.style.minHeight = self.config.minHeight;

@@ -1,0 +1,166 @@
+/*****************************************************
+ * Magic Mirror 2                                    *
+ * Custom CSS for MMM-modulebar                      *
+ *                                                   *
+ * By Erik Pettersson                                *
+ * Based on the TouchNavigation CSS by Brian Janssen *
+ * MIT Licensed.                                     *
+ *                                                   *
+ *****************************************************/
+ @import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+ /* add default color for animation start  */
+  
+  
+  /* toggle this class */
+  
+  .color-bg-start {
+    background-color: rgb(140, 200, 255);
+  }
+  
+  
+  /* toggle class bg-animate-color */
+  
+  .bg-animate-color {
+    animation: random-bg .5s linear infinite ;
+  }
+  
+  
+  /* add animation to bg color  */
+  
+  @keyframes random-bg {
+    from {
+      filter: hue-rotate(0);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .start-fun {
+    background-color: #fff !important;
+    /* change color of button text when fun is started   */
+    color: salmon !important;
+  }
+  
+  /* pulsating effect on button */
+  @keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.3);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.3);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+.modulebar-menu {
+    display: flex;
+    align-items: stretch;
+}
+
+.modulebar-button1 {
+    z-index: 1;
+    /* Border */
+    border-style: solid;
+    border-width: 2px;
+    border-color: #aaa;
+    border-radius: 15px;
+
+    /* as container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2px;
+    padding: 6px 6px;
+
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    
+}
+.modulebar-button1:active {
+    animation: random-bg .5s linear , grow 1300ms ease;
+  }
+
+.modulebar-picture {
+    margin: 1px 1px;
+/*    width: 60px;*/
+/*    height: 60px;*/
+}
+
+.modulebar-text {
+    margin: -5px 0;
+}
+
+.currentweather header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:25px;
+}
+
+.weatherforecast header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:25px;
+}
+
+.MMM-AfterImage header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.MMM-BeforeImage header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.MMM-HistoryImage1 header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.MMM-HistoryImage2 header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.MMM-HistoryImage3 header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.CategoryHairstyle header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.CategoryManhair header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.CategoryWomanhair header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}
+
+.CategoryChoicehairMenu header{
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);  
+    font-size:55px;
+}

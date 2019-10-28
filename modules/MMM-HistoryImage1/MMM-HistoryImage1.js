@@ -390,7 +390,7 @@ Module.register("MMM-HistoryImage1", {
 	getHeader: function() {
 		if(this.config.c[1]==1)
 		{
-			return "컷트를 한 기록이 없습니다!";
+			return "컷트 기록이 없습니다!";
 			
 		}
 		else

@@ -623,13 +623,6 @@
     "desc": "Display the next public transport connections for a certain route."
   },
   {
-    "longname": "MMM-LothianBuses",
-    "id": "tbouron/MMM-LothianBuses",
-    "url": "https://github.com/tbouron/MMM-LothianBuses",
-    "author": "tbouron",
-    "desc": "Display live timetables for specific bus stops of Lothian buses network."
-  },
-  {
     "longname": "MMM-Luxembourg-Public-Transport",
     "id": "MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
     "url": "https://github.com/MarinescuEvghenii/MMM-Luxembourg-Public-Transport",
@@ -1118,13 +1111,6 @@
     "url": "https://github.com/Adman/MMM-imhdsk",
     "author": "Adman",
     "desc": "Display real-time estimations for public transport stops in Bratislava, Slovakia"
-  },
-  {
-    "longname": "MMM-Caltrain",
-    "id": "efritz09/MMM-Caltrain",
-    "url": "https://github.com/efritz09/MMM-Caltrain",
-    "author": "efritz09",
-    "desc": "Caltrain (San Francisco Bay Area) status monitoring"
   },
   {
     "longname": "MMM-AlexaOnOff",

@@ -72,5 +72,8 @@
     "socket.io": "^2.0.4",
     "valid-url": "latest",
     "walk": "latest"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

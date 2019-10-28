@@ -5,7 +5,9 @@ Module.register("MMM-BeforeAfter", {
     start: function (){
         BeforeAfterMoudule = this;
     },
-  
+    getStyles: function(){
+      return ["BeforeAfter.css"];
+    },
   getDom: function() {
     var BAelement = document.createElement("div")
     BAelement.className = "BeforeAftercontent"

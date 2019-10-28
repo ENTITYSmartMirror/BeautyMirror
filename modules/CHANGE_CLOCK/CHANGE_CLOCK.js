@@ -112,6 +112,7 @@ Module.register("CHANGE_CLOCK",{
         //get data with:
         var modulenames = Object.keys(object);
         var values = Object.values(object);
+        
 
         for (var i = 0; i < modulenames.length; i++) {
             var id = this.getid(modulenames[i]);
