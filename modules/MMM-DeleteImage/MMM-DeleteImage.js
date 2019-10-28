@@ -40,7 +40,7 @@ Module.register("MMM-DeleteImage",{
 			if(hidden){
 
 				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
-				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
+				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
 				DeleteImageS.sendNotification("setDefault")
 				DeleteImageS.sendSocketNotification("DELETE")
 				$(text).html('끋내기');
