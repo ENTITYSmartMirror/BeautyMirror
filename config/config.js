@@ -688,7 +688,7 @@ var config = {
 		},
 		{
 			module: 'camera',
-			position: 'lower_third',
+			position: 'middle_center',
 			config: {
 				selfieInterval: 3,  // Time interval in seconds before the photo will be taken.
 				emailConfig: {
