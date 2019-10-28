@@ -39,7 +39,7 @@ Module.register("MMM-DeleteImage",{
 		$(button).on("click", function(){
 			if(hidden){
 
-				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
+				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
 				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
 				DeleteImageS.sendNotification("setDefault")
 				DeleteImageS.sendSocketNotification("DELETE")
