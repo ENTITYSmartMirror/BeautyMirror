@@ -42,8 +42,8 @@ Module.register("MMM-DeleteImage",{
 				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
 				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
 				DeleteImageS.sendNotification("setDefault")
-				DeleteImageS.sendSocketNotification("DELETE")
-				$(text).html('끋내기');
+				DeleteImageS.sendSocketNotification("DELETEall")
+				$(text).html('New');
 				hidden = false;
 			}else{
 				$(overlay).fadeOut(1000);
@@ -54,5 +54,37 @@ Module.register("MMM-DeleteImage",{
 		});
 		
 		return wrapper;
-	}
+	},
+	notificationReceived: function(notification, payload) {
+		Log.info(this.name + " - received notification: " + notification);
+		
+		if(notification === "DELETEstart"){
+			//console.log("this a ", this.config.a)
+			DeleteImageS.sendSocketNotification("DELETE");
+			
+		}
+		
+/*
+		if(notification === "LOADINGAFTER"){
+			console.log("this a ", this.config.a)
+			this.config.a=3;
+
+		}
+*/
+	},
+	socketNotificationReceived: function(notification, payload) {
+		switch(notification) {
+		  case "DELETEgood":
+			console.log("Delete Socket recevied payload1: "+payload)
+			//var baelem = document.getElementById("BeforeAfterClickid")
+			DeleteImageS.sendNotification("setDefault")
+			//
+			//BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
+			//
+			//baelem.innerHTML = "자르기 전 사진찍기 완료!"
+		break
+		  
+		}
+	  }
+	
 });

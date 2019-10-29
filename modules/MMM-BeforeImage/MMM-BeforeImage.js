@@ -77,6 +77,7 @@ Module.register("MMM-BeforeImage", {
 		delayUntilRestart: 0,
 
 		a:0,
+		complete:0
 
 	},
 
@@ -361,12 +362,14 @@ Module.register("MMM-BeforeImage", {
 					if(this.config.a==0){
 					image.src = this.imageList[0];
 					
+					
 					}
 					if(this.config.a==1){
 						image.src = this.imageList[this.imageList.length-1];
 						}
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-2];
+						this.config.complete=1;
 						}
 					if(this.config.a==3){
 						image.src = this.imageList[2];
@@ -398,15 +401,27 @@ Module.register("MMM-BeforeImage", {
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
-		
+		if(notification === "DOM_OBJECTS_CREATED"){
+			BeforeImages.sendNotification("DELETEstart");
+		}
+		if(notification === "Modules All Change"){
+			if(BeforeImages.config.complete===1){
+				console.log("complete what :"+BeforeImages.config.complete);
+				BeforeImages.sendNotification("DELETEstart");
+				BeforeImages.config.complete=0;
+			}
+		}
 		if(notification === "BEFOREIMAGE"){
 			//console.log("this a ", this.config.a)
 			this.config.a=1;
+			
+			//BeforeImages.updateDom();
 		}
 		if(notification === "setDefault"){
 			//console.log("this a ", this.config.a)
 			this.config.a=0;
-			BeforeImages.updateDom();
+			//BeforeImages.sendSocketNotification('IMAGESLIDESHOW_REGISTER_CONFIG', this.config);
+			//BeforeImages.updateDom();
 		}
 		if(notification === "AFTERIMAGE"){
 			//console.log("this a ", this.config.a)
