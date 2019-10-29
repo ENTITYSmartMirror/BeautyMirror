@@ -319,6 +319,7 @@ Module.register("MMM-BeforeImage", {
 					image.id="imgid";
 					// if set to make grayscale, flag the class set in the .css file
 					image.addEventListener("click", () => {
+						BeforeImages.sendNotification("camera_stop")
 						console.log(" image click !!!!!");
 						this.config.a=3;
 						BeforeImages.sendNotification("BEFOREIMAGECLICK");
