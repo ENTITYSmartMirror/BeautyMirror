@@ -1,4 +1,4 @@
-![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
+﻿![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 
 <p align="center">
 	<a href="https://david-dm.org/MichMich/MagicMirror"><img src="https://david-dm.org/MichMich/MagicMirror.svg" alt="Dependency Status"></a>
@@ -18,7 +18,7 @@ B
 C
 F
 g
-## Table Of Contents
+## Table Of Contents seongwoo
 
 - [Installation](#installation)
   - [Raspberry Pi](#raspberry-pi)

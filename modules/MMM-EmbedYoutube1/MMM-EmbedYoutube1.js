@@ -16,7 +16,7 @@ Module.register("MMM-EmbedYoutube1", {
 		disablekb: false,
 		fs: true,
 		height: 800,
-		width: 1000,
+		width: 900,
 		loop: false,
 		modestbranding: false,
 		rel : false,

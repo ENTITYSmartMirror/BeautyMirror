@@ -11,7 +11,13 @@
 var MM = (function() {
 
 	var modules = [];
-
+	addEventListener("click", () => {
+		var audioFile = new Audio('http://www.blueb.co.kr/SRC/javascript/multimedia/Button.wav');
+  
+			 audioFile.play();
+		   audioFile.currentTime = 0;
+	 })
+	 
 	/* Private Methods */
 
 	/* createDomObjects()
