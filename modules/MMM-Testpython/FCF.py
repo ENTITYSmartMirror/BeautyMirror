@@ -60,4 +60,4 @@ try:
     print(fa["gender"])
     print(fa["age"])
 except Exception as e:
-    print("Face is not Find")
+    print("notFind")

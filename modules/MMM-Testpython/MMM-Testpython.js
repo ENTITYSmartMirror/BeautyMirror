@@ -34,9 +34,11 @@ Module.register("MMM-Testpython", {
     switch(notification) {
       case "DOM_OBJECTS_CREATED":
       var elem = document.getElementById("clickid1")
+      elem.innerHTML = "여기를 클릭하세요."
       elem.addEventListener("click", () => {
         Testpythons.sendNotification("camera_stop")
         Testpythons.sendSocketNotification("TEST")
+        elem.innerHTML = "분석중....."
         var showage2 = document.getElementById("showage")
         showage2.innerHTML = "당신의 나이를 분석중입니다."
         Testpythons.sendNotification('CHANGE_POSITIONS', 
@@ -86,14 +88,20 @@ Module.register("MMM-Testpython", {
       }) 
       break;
       case "Modules All Change" :
-      var ele2 = document.getElementById("showage")
-      ele2.innerHTML =  "이 곳에 예상 나이가 표시됩니다."
+          var elem = document.getElementById("clickid1")
+          elem.innerHTML = "여기를 클릭하세요."
+          var ele2 = document.getElementById("showage")
+          ele2.innerHTML =  "이 곳에 예상 나이가 표시됩니다."
+      break;
       }
   },
   socketNotificationReceived: function(notification, payload) {
     switch(notification) {
       case "I_DID":
-        console.log("Socket recevied 1: " + payload);
+        console.log("notnotnotnot :  " + payload);   
+        if(payload=="notFind"){
+            console.log("notFind");
+        }    
         var payload3;
         payload3=payload.toString().split(",");
         console.log("Socket recevied 1: " + payload3);
@@ -250,8 +258,17 @@ Module.register("MMM-Testpython", {
             })
             break
           } 
-        elemk.innerHTML = "";
-        elemk2.innerHTML = "고객님의 예상나이" + age + "세의 추천헤어입니다.";   
+          if(payload=="notFind"){
+            console.log("fuckyou notFind")
+            elemk.innerHTML = "다시 눌러주세요!";
+            elemk2.innerHTML = "얼굴인식실패!"; 
+          }
+          else if(payload!="notFind"){
+            elemk.innerHTML = "";
+            elemk2.innerHTML = "고객님의 예상나이" + age + "세의 추천헤어입니다."; 
+          }  
+        
+          
       break
     }
   }
