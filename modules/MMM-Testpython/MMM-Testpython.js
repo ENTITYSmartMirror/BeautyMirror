@@ -35,6 +35,11 @@ Module.register("MMM-Testpython", {
       case "DOM_OBJECTS_CREATED":
       var elem = document.getElementById("clickid1")
       elem.addEventListener("click", () => {
+        var audioFile = new Audio('modules/MMM-TestPython/sound.m4a');
+        audioFile.play();
+        audioFile.currentTime = 0;
+
+
         Testpythons.sendNotification("camera_stop")
         Testpythons.sendSocketNotification("TEST")
         var showage2 = document.getElementById("showage")
