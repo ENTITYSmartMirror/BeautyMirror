@@ -20,6 +20,7 @@ image_path = os.path.join('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/Cogni
 
 assert subscription_key
 
+#face_api_url = 'https://magicmirror.cognitiveservices.azure.com/face/v1.0/detect'
 face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
 
 image_data = open(image_path, "rb")
@@ -42,17 +43,21 @@ image = Image.open(BytesIO(image_read))
 
 plt.figure(figsize=(8, 8))
 ax = plt.imshow(image, alpha=1)
-for face in faces:
-    fr = face["faceRectangle"]
-    fa = face["faceAttributes"]
-    origin = (fr["left"], fr["top"])
-    p = patches.Rectangle(
-        origin, fr["width"], fr["height"], fill=False, linewidth=2, color='dodgerblue')
-    ax.axes.add_patch(p)
-    plt.text(origin[0], origin[1], "%s, %d"%(fa["gender"].capitalize(), fa["age"]),
-             fontsize=20, weight="bold", va="bottom", color='dodgerblue')
-_ = plt.axis("off")
-#plt.show()
 
-print(fa["gender"])
-print(fa["age"])
+try:
+    for face in faces:
+        fr = face["faceRectangle"]
+        fa = face["faceAttributes"]
+        origin = (fr["left"], fr["top"])
+        p = patches.Rectangle(
+            origin, fr["width"], fr["height"], fill=False, linewidth=2, color='dodgerblue')
+        ax.axes.add_patch(p)
+        plt.text(origin[0], origin[1], "%s, %d"%(fa["gender"].capitalize(), fa["age"]),
+                 fontsize=20, weight="bold", va="bottom", color='dodgerblue')
+    _ = plt.axis("off")
+    fig = plt.gcf()
+    fig.savefig('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
+    print(fa["gender"])
+    print(fa["age"])
+except Exception as e:
+    print("Face is not Find")
