@@ -36,6 +36,11 @@ Module.register("MMM-Testpython", {
       var elem = document.getElementById("clickid1")
       elem.innerHTML = "여기를 클릭하세요."
       elem.addEventListener("click", () => {
+        var audioFile = new Audio('modules/MMM-TestPython/sound.m4a');
+        audioFile.play();
+        audioFile.currentTime = 0;
+
+
         Testpythons.sendNotification("camera_stop")
         Testpythons.sendSocketNotification("TEST")
         elem.innerHTML = "분석중....."
