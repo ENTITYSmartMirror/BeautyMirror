@@ -7,7 +7,7 @@
  * MIT Licensed.
  */
 
-Module.register("ManCutdandy",{
+Module.register("ManCutDandy",{
 		// Default module config.
 		defaults: {
                                 frameWidth: "1500",

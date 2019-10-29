@@ -229,7 +229,7 @@ Module.register("CategoryManhair",{
 									modules[10].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
-							CategoryManhair.sendNotification("CategoryManhair is Clicked");
+							modulebar2.sendNotification("Modulebar1 is Clicked");
 						}
 					}
 				}

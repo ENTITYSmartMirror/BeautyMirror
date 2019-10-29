@@ -65,7 +65,7 @@ var config = {
 			}
 		},
 		{
-			module: "ManCutdandy",
+			module: "ManCutDandy",
 			position: "bottom_left",	// This can be any of the regions.
 			hide : "true",
 			config: {

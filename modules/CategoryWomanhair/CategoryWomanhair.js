@@ -56,7 +56,7 @@ Module.register("CategoryWomanhair",{
 				height: "50",
 			},
 			"4": {
-				module: "MMM-iFrame13",
+				module: "WomanCutHime",
 				text:   "히메",
 				img: "https://image.flaticon.com/icons/svg/1751/1751349.svg",
 				width: "50",
@@ -184,7 +184,7 @@ Module.register("CategoryWomanhair",{
 										modules[13].show(self.config.animationSpeed, {force: self.config.allowForce});
 									},500);
 							}
-							else if (modules[i].name == 'MMM-iFrame13') {
+							else if (modules[i].name == 'WomanCutHime') {
 								for(var num=1; num<18; num++ ){
 									console.log("Hiding opend "+ modules[num].name+" ID: "+idnr[1]);
 									modules[num].hide(self.config.animationSpeed, {force: self.config.allowForce});	
