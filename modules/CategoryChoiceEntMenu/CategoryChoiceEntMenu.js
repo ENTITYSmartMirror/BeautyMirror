@@ -109,12 +109,14 @@ Module.register("CategoryChoiceEntMenu",{
 							else if (modules[i].name == 'CategoryChoiceYoutube') {
 								console.log("Hiding opend "+ modules[i].name+" ID: "+idnr[1]+"button number"+num);
 								modules[25].hide(self.config.animationSpeed, {force: self.config.allowForce});
+								modules[26].hide(self.config.animationSpeed, {force: self.config.allowForce});
 								setTimeout(function(){
 									modules[28].show(self.config.animationSpeed, {force: self.config.allowForce});
 								},500);
 							}
 						}else{
 							// 모듈이 켜있는 상태일때 
+							modules[26].hide(self.config.animationSpeed, {force: self.config.allowForce});
 							modules[i].hide(self.config.animationSpeed, {force: self.config.allowForce});
 							console.log("Hiding "+modules[i].name+" ID: "+idnr[1]);
 							// hideURL이 설정되 있을 때

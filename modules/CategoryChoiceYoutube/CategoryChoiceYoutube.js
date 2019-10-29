@@ -154,7 +154,7 @@ Module.register("CategoryChoiceYoutube",{
 										CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"ScSn235gQx0_뮤직비디오");			
 											} 
 							else	if(num==3){
-								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"KUiouwhozkQ_영화");			
+								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"wzKcDqRcIx0_영화");			
 									} 
 							else	if(num==4){
 								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"L0oei9OH7Yo_뉴스");			
@@ -166,7 +166,7 @@ Module.register("CategoryChoiceYoutube",{
 								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"egyB02dbJKE_먹방");			
 									}
 							else	if(num==7){
-								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"Vw39vVf2HCI_해외여행");			
+								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"zOQ_t2dCMq0_해외여행");			
 									}
 							else	if(num==8){
 								CategoryChoiceYoutube.sendNotification('PLAYLISTCHANGE',"MFWtM11WJn0_몰카");			
