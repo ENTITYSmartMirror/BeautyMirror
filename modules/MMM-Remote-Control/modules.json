@@ -2051,6 +2051,13 @@
     "desc": "Display XML data from a HTTP response."
   },
   {
+    "longname": "MMM-HabiticaStats",
+    "id": "delightedCrow/MMM-HabiticaStats",
+    "url": "https://github.com/delightedCrow/MMM-HabiticaStats",
+    "author": "delightedCrow, ArrayOfFrost",
+    "desc": "Display your an overview of your [Habitica](https://habitica.com) player stats."
+  },
+  {
     "longname": "MMM-Homematic",
     "id": "Sickboy78/MMM-Homematic",
     "url": "https://github.com/Sickboy78/MMM-Homematic",
@@ -3922,7 +3929,7 @@
   {
     "longname": "WallberryTheme",
     "id": "delightedCrow/WallberryTheme",
-    "url": "httpss://github.com/delightedCrow/WallberryTheme",
+    "url": "https://github.com/delightedCrow/WallberryTheme",
     "author": "delightedCrow",
     "desc": "Re-themes MagicMirror² to look like a beautiful digital photo wall display. It adds a new font, styles, redesigned clock and weather displays, and rotating background image pulled from Unsplash.com"
   },

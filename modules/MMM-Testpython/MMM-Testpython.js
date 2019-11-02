@@ -104,6 +104,7 @@ Module.register("MMM-Testpython", {
     switch(notification) {
       case "I_DID":
         console.log("notnotnotnot :  " + payload);   
+        this.sendNotification("ageresult_success");
         if(payload=="notFind"){
             console.log("notFind");
         }    

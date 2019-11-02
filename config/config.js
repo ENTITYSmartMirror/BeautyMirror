@@ -513,7 +513,7 @@ var config = {
 				slides: {
 					main: ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage"],
 					"Slide 2": ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage"],
-					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage"],
+					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge"],
 					"Slide 4": ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage"],
 					"Slide 5": ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock"],
 					"Slide 6": ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage"],					
@@ -699,6 +699,14 @@ var config = {
 						}
 					}
 				}
+		},
+		{
+			module: "WhatAge",
+			position: "top_right",
+			header:"당신의 외모 나이는 몇살일까요?",
+			config: {
+				imagePaths: ["modules/MMM-Testpython/CognitiveFace"]
+			}
 		},
 		
 		
