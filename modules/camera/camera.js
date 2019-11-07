@@ -1,4 +1,3 @@
-
 'use strict';
 
 var cameravar;
@@ -33,6 +32,7 @@ Module.register("camera", {
 	},
 
     start: function() { 
+		cameravar=this;
 		this.message = "";
         this.sendSocketNotification('INIT_MAILER', this.config);
     },
@@ -101,10 +101,10 @@ Module.register("camera", {
 				this.camera.appendChild(this.commands);
 
 				wrapper.appendChild(this.camera);
-
+				if(this.config.a==0){
 				Webcam.set({
-					width: 1280,
-					height: 960,
+					width:640,
+					height: 480,
 					image_format: 'jpeg',
 					jpeg_quality: 90,
 					constraints: {
@@ -117,6 +117,24 @@ Module.register("camera", {
 						]
 					}
 				});
+			}
+			else if(this.config.a==1){
+				Webcam.set({
+					width: 560,
+					height: 480,
+					image_format: 'jpeg',
+					jpeg_quality: 90,
+					constraints: {
+						mandatory: {
+							minWidth: 640,
+							minHeight: 480
+						},
+						optional: [
+							{ minFrameRate: 60 }
+						]
+					}
+				});
+			}
 
 				Webcam.attach(this.cameraPreview);
 
@@ -151,10 +169,19 @@ Module.register("camera", {
 		if (notification === "camera_stop"){
 			this.display = false;
 			this.processing = false;
-			this.updateDom(500);
+			this.updateDom();
+		}
+		if (notification === "camera_start"){
+			this.display = true;
+			this.processing = true;
+			this.updateDom();
 		}
 		if (notification === "only_camera"){
-			
+			this.config.a=1;
+			this.updateDom(500);
+		}
+		if (notification === "show_camera"){
+			this.config.a=0;
 			this.updateDom(500);
 		}
 		
