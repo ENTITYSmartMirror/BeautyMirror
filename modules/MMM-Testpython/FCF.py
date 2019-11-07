@@ -14,14 +14,15 @@ cv2.imwrite('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg',
 cap.release()
 cv2.destroyAllWindows()
 
-subscription_key = "e90829078be54f04832525fddedf00b4"
+subscription_key = "62114331d85f48c99c133b2ac9027967"
 
 image_path = os.path.join('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
 
 assert subscription_key
 
 #face_api_url = 'https://magicmirror.cognitiveservices.azure.com/face/v1.0/detect'
-face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
+#face_api_url = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
+face_api_url = 'https://pay.cognitiveservices.azure.com/face/v1.0/detect'
 
 image_data = open(image_path, "rb")
 
