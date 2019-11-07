@@ -1,12 +1,13 @@
 
 'use strict';
 
-
+var cameravar;
 Module.register("camera", {
 
     counter: null,
 	// Default module config.
 	defaults: {
+		a:0,
         selfieInterval: 3,
 		emailConfig: {
 			service: 'Hotmail',
@@ -150,6 +151,10 @@ Module.register("camera", {
 		if (notification === "camera_stop"){
 			this.display = false;
 			this.processing = false;
+			this.updateDom(500);
+		}
+		if (notification === "only_camera"){
+			
 			this.updateDom(500);
 		}
 		
