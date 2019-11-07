@@ -114,6 +114,12 @@ Module.register('MMM-Carousel', {
 
         if (this.keyHandler && this.keyHandler.validate(notification, payload)) { return; }
 
+        if (notification === "only_camera") {
+            this.hide();
+        }
+        if (notification === "show_camera") {
+            this.show();
+        }
         if (notification === "CAROUSEL_NEXT") {
             this.manualTransition(undefined, 1);
             this.restartTimer();

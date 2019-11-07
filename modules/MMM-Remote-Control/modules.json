@@ -63,6 +63,13 @@
     "desc": "detecting 3D gesture with GroveGesture Sensor(PAJ7620u2)"
   },
   {
+    "longname": "MMM-Flick-Gestures",
+    "id": "jancalve/MMM-flick-gestures",
+    "url": "https://github.com/jancalve/MMM-flick-gestures",
+    "author": "jancalve",
+    "desc": "detecting 3D gesture with GestIC Sensor(MGC3130)"
+  },
+  {
     "longname": "mm-hide-all",
     "id": "masters1222/mm-hide-all",
     "url": "https://github.com/masters1222/mm-hide-all",
@@ -1148,6 +1155,13 @@
     "desc": "New Google Assistant embeding with screen output."
   },
   {
+    "longname": "MMM-AlexaControl",
+    "id": "JoChef2/MMM-AlexaControl",
+    "url": "https://github.com/JoChef2/MMM-AlexaControl",
+    "author": "JoChef2",
+    "desc": "The MMM-AlexaControl module allows you to control your Mirror with Alexa (every device that support Wemos devices). You can turn it on and off, change the page and send notifications to other modules."
+  },
+  {
     "longname": "MMM-GoogleAssistant",
     "id": "gauravsacc/MMM-GoogleAssistant",
     "url": "https://github.com/gauravsacc/MMM-GoogleAssistant",
@@ -1804,6 +1818,13 @@
     "url": "https://github.com/yourdawi/MMM-FortniteStats",
     "author": "Dawi",
     "desc": "Module to display Fortnite Stats."
+  },
+  {
+    "longname": "MMM-AirbarHelper",
+    "id": "ryanzor/MMM-AirbarHelper",
+    "url": "https://github.com/ryanzor/MMM-AirbarHelper",
+    "author": "Ryan Cooke",
+    "desc": "Module to add touch input to your mirror using a ~$50 usb plug and play sensor."
   },
   {
     "longname": "MMM-Airtable",

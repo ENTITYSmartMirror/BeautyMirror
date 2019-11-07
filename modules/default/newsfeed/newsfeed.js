@@ -338,6 +338,12 @@ Module.register("newsfeed",{
 
 	notificationReceived: function(notification, payload, sender) {
 		Log.info(this.name + " - received notification: " + notification);
+		if (notification === "only_camera") {
+            this.hide();
+        }
+        if (notification === "show_camera") {
+            this.show();
+        }
 		if(notification === "ARTICLE_NEXT"){
 			var before = this.activeItem;
 			this.activeItem++;

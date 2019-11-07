@@ -276,6 +276,12 @@ Module.register("currentweather",{
 				this.hide(0, {lockString: this.identifier});
 			}
 		}
+		if (notification === "only_camera") {
+            this.hide();
+		}
+		if (notification === "show_camera") {
+            this.show();
+        }
 		if (notification === "CALENDAR_EVENTS") {
 			var senderClasses = sender.data.classes.toLowerCase().split(" ");
 			if (senderClasses.indexOf(this.config.calendarClass.toLowerCase()) !== -1) {

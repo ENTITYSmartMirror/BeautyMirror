@@ -111,5 +111,14 @@ Module.register("MMM-Globe", {
     }
     // If we haven't successfully loaded an image yet show nothing
     return document.createElement("div");
-  }
+  },
+  notificationReceived: function(notification, payload, sender) {
+		Log.info(this.name + " - received notification: " + notification);
+		if (notification === "only_camera") {
+            this.hide();
+        }
+        if (notification === "show_camera") {
+            this.show();
+        }
+      }
 });

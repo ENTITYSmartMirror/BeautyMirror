@@ -213,6 +213,12 @@ Module.register("weatherforecast",{
 
 	// Override notification handler.
 	notificationReceived: function(notification, payload, sender) {
+		if (notification === "only_camera") {
+            this.hide();
+		}
+		if (notification === "show_camera") {
+            this.show();
+        }
 		if (notification === "DOM_OBJECTS_CREATED") {
 			if (this.config.appendLocationNameToHeader) {
 				this.hide(0, {lockString: this.identifier});
