@@ -6,7 +6,7 @@ from io import BytesIO
 import os
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 ret, frame = cap.read()
 cv2.imwrite('C:/AirportHelper/modules/WhatAge/face.jpg', frame)
