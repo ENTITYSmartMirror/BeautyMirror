@@ -371,6 +371,7 @@ Module.register("MMM-BeforeImage", {
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-2];
 						this.config.complete=1;
+						BeforeImages.sendNotification("camera_start");
 						}
 					if(this.config.a==3){
 						image.src = this.imageList[2];

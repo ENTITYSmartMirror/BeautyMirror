@@ -103,8 +103,8 @@ Module.register("camera", {
 				wrapper.appendChild(this.camera);
 				if(this.config.a==0){
 				Webcam.set({
-					width:640,
-					height: 480,
+					width:1280,
+					height: 960,
 					image_format: 'jpeg',
 					jpeg_quality: 90,
 					constraints: {
@@ -120,8 +120,8 @@ Module.register("camera", {
 			}
 			else if(this.config.a==1){
 				Webcam.set({
-					width: 560,
-					height: 480,
+					width: 1280,
+					height: 1920,
 					image_format: 'jpeg',
 					jpeg_quality: 90,
 					constraints: {
@@ -155,6 +155,13 @@ Module.register("camera", {
 			this.display = true;
 			this.updateDom(500);
 		}
+		/*
+		if (notification === "Modules All Change"){
+			this.display = true;
+			this.processing = true;
+			this.updateDom(500);
+		}
+		*/
 
         if (notification === "HIDE_CAMERA" && this.display == true){
 			this.display = false;
