@@ -6,7 +6,7 @@ from io import BytesIO
 import os
 import cv2
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 ret, frame = cap.read()
 cv2.imwrite('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg', frame)
