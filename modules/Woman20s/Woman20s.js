@@ -11,11 +11,10 @@ Module.register("Woman20s",{
 		// Default module config.
 		defaults: {
                                 frameWidth: "1500",
-				width:"100%",
+				width:"70%",
                                 updateInterval: 0.5 * 60 * 1000,
                                 url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/index.html"],
                                 scrolling: "yes",
-                                hidden : "true"
 		},
 
         start: function () {
