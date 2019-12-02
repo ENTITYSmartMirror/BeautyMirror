@@ -511,13 +511,13 @@ var config = {
 				showPageIndicators: true,
 				showPageControls: true,
 				slides: {
-					main: ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage"],
-					"Slide 2": ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage"],
-					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge"],
-					"Slide 4": ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage"],
-					"Slide 5": ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock"],
-					"Slide 6": ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage"],					
-					"Slide 7": ["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage"],
+					main: ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"],
+					"Slide 2": ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage","MMM-Snow"],
+					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge","MMM-Snow"],
+					"Slide 4": ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage","MMM-Snow"],
+					"Slide 5": ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"],
+					"Slide 6": ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"],					
+					"Slide 7": ["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage","MMM-Snow"],
 				},
 				keyBindings: { 
 					enabled: true,
@@ -708,6 +708,14 @@ var config = {
 				imagePaths: ["modules/MMM-Testpython/CognitiveFace"]
 			}
 		},
+		{
+		module: 'MMM-Snow',
+		position: 'fullscreen_above',
+		config: { // See 'Configuration options' for more information.
+			flakeCount: 100,
+			theme: "winter"			
+			}
+		}
 		
 		
 			

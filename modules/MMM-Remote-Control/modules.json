@@ -490,6 +490,13 @@
     "desc": "Display the availability of the city bikes around in Norway from A to B."
   },
   {
+    "longname": "MMM-Caltrain",
+    "id": "zzhenney/MMM-Caltrain",
+    "url": "https://github.com/zzhenney/MMM-Caltrain",
+    "author": "Zac Henney",
+    "desc": "Display departure times or estimated time to departure for the selected Caltrain station."
+  },
+  {
     "longname": "MMM-CTA",
     "id": "NateDee/MMM-CTA",
     "url": "https://github.com/NateDee/MMM-CTA",
@@ -700,13 +707,6 @@
     "desc": "A Magic Mirror Module that shows how many minutes until the next bus(es) goes from given bus stops."
   },
   {
-    "longname": "MMM-NesteBussAtB",
-    "id": "ottopaulsen/MMM-NesteBussAtB",
-    "url": "https://github.com/ottopaulsen/MMM-NesteBussAtB",
-    "author": "ottopaulsen",
-    "desc": "A Magic Mirror Module that shows how many minutes until the next bus(es) goes from given bus stops."
-  },
-  {
     "longname": "MMM-nstreinen",
     "id": "qistoph/MMM-nstreinen",
     "url": "https://github.com/qistoph/MMM-nstreinen",
@@ -894,6 +894,13 @@
     "url": "https://github.com/bendardenne/MMM-TomTomTraffic",
     "author": "bendardenne",
     "desc": "Show a map of a given area with TomTom traffic information"
+  },
+  {
+    "longname": "MMM-TomTomTrafficIncidents",
+    "id": "Travelbacon/MMM-TomTomTrafficIncidents",
+    "url": "https://github.com/Travelbacon/MMM-TomTomTrafficIncidents",
+    "author": "travelbacon",
+    "desc": "Shows on a TomTom map of your location the current traffic and actual traffic incidents like crashes and road construction. You can choose if you want traffic delay/jam or traffic speed/flow to be displayed."
   },
   {
     "longname": "MMM-Toulouse-Transports",
@@ -1132,6 +1139,13 @@
     "url": "https://github.com/efritz09/MMM-Caltrain",
     "author": "efritz09",
     "desc": "Caltrain (San Francisco Bay Area) status monitoring"
+  },
+  {
+    "longname": "MMM-CracowMPK",
+    "id": "wkra/MMM-CracowMPK",
+    "url": "https://github.com/wkra/MMM-CracowMPK",
+    "author": "wkra",
+    "desc": "Real time tram departure from selected stop in Cracow (Poland)."
   },
   {
     "longname": "MMM-AlexaOnOff",
@@ -1715,6 +1729,13 @@
     "desc": "Presents the real-time moon phase"
   },
   {
+    "longname": "MMM-yrWeather",
+    "id": "wkra/MMM-yrWeather",
+    "url": "https://github.com/wkra/MMM-yrWeather",
+    "author": "wkra",
+    "desc": "Display weather based on www.yr.no"
+  },
+  {
     "longname": "MMM-AllsvenskanStandings",
     "id": "retroflex/MMM-AllsvenskanStandings",
     "url": "https://github.com/retroflex/MMM-AllsvenskanStandings",
@@ -1811,6 +1832,13 @@
     "url": "https://github.com/fewieden/MMM-soccer",
     "author": "fewieden",
     "desc": "A module that displays standings from European Soccer (Football) leagues. (optional voice-control)"
+  },
+  {
+    "longname": "MMM-WiFiPassword",
+    "id": "TeraTech/MMM-WiFiPassword",
+    "url": "https://github.com/TeraTech/MMM-WiFiPassword",
+    "author": "TeraTech",
+    "desc": "Displays WiFi Password and QRCode"
   },
   {
     "longname": "MMM-FortniteStats",
@@ -2632,18 +2660,18 @@
     "desc": "This module gets real time arrival predictions for specifc stops using the TfL API."
   },
   {
-    "longname": "MMM-TPLink",
-    "id": "slametps/MMM-TPLink",
-    "url": "https://github.com/slametps/MMM-TPLink",
-    "author": "Slamet PS",
-    "desc": "Display the status of TPLink lights/plugs in your local network."
-  },
-  {
     "longname": "MMM-TelegramBot",
     "id": "eouia/MMM-TelegramBot",
     "url": "https://github.com/eouia/MMM-TelegramBot",
     "author": "eouia",
     "desc": "Remote controlling your MagicMirror on Telegram."
+  },
+  {
+    "longname": "MMM-Tibber",
+    "id": "ottopaulsen/MMM-Tibber",
+    "url": "https://github.com/ottopaulsen/MMM-Tibber",
+    "author": "ottopaulsen",
+    "desc": "Show electricity prices per hour for Tibber customers"
   },
   {
     "longname": "MMM-Timetable",
@@ -2679,6 +2707,13 @@
     "url": "https://github.com/MichMich/MMM-Toon",
     "author": "MichMich",
     "desc": "A Magic Mirror Module for the Toon Thermostat."
+  },
+  {
+    "longname": "MMM-TPLink",
+    "id": "slametps/MMM-TPLink",
+    "url": "https://github.com/slametps/MMM-TPLink",
+    "author": "Slamet PS",
+    "desc": "Display the status of TPLink lights/plugs in your local network."
   },
   {
     "longname": "MMM-Trello",
