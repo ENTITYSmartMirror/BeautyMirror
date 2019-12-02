@@ -384,7 +384,7 @@ var config = {
 					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자20대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "1000", // width of iframe
-					height: "1800", // height of iframe
+					height: "1000", // height of iframe
 					frameWidth: "980", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
 					hidden : "true",
 			}
@@ -398,7 +398,7 @@ var config = {
 					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자30대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "1000", // width of iframe
-					height: "1800", // height of iframe
+					height: "1000", // height of iframe
 					frameWidth: "980", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
 					hidden : "true",
 			}
@@ -412,7 +412,7 @@ var config = {
 					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자40대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "1000", // width of iframe
-					height: "1800", // height of iframe
+					height: "1000", // height of iframe
 					frameWidth: "980", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
 					hidden : "true",
 			}
@@ -426,7 +426,7 @@ var config = {
 					url: ["http://s3.us-east-2.amazonaws.com/beautymirror.com/demo/여자50대.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "1000", // width of iframe
-					height: "1800", // height of iframe
+					height: "1000", // height of iframe
 					frameWidth: "980", // width of embedded iframe, height is beeing calculated by aspect ratio of iframe
 					hidden : "true",
 			}
