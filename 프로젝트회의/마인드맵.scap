@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="BB778D39-5CA9-4435-A680-11C6DDF1070D">
+    <Notes>
+        <Note ID="0" FontSize="18.0" Position="820.0,301.0" Width="86.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1" Style="Cloud">0.572684 0.758969 0.558154</Border>
+                <Fill>0.715855 0.948712 0.697692</Fill>
+            </Appearance>
+            <String>스마트미러</String>
+            <ConnectedNoteIDs>8, 16, 18-21</ConnectedNoteIDs>
+            <PointsToNoteIDs>8, 16, 18-21</PointsToNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="16.0" Position="761.0,506.0" Width="20.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>집</String>
+            <ConnectedNoteIDs>0, 32-34</ConnectedNoteIDs>
+        </Note>
+        <Note ID="16" FontSize="18.0" Position="976.0,534.0" Width="51.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>헬스장</String>
+            <ConnectedNoteIDs>0, 33, 36-38</ConnectedNoteIDs>
+        </Note>
+        <Note ID="18" FontSize="18.0" Position="768.0,177.0" Width="55.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>미용실</String>
+            <ConnectedNoteIDs>0, 22, 24-25, 27, 55, 65</ConnectedNoteIDs>
+        </Note>
+        <Note ID="19" FontSize="18.0" Position="659.0,309.0" Width="86.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>공중화장실</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
+        <Note ID="20" FontSize="18.0" Position="978.0,237.0" Width="55.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>피팅룸</String>
+            <ConnectedNoteIDs>0, 35</ConnectedNoteIDs>
+        </Note>
+        <Note ID="21" FontSize="18.0" Position="692.0,409.0" Width="91.0" Shadow="Yes">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="5" Style="Cloud">0.681417 0.683209 0.975312</Border>
+                <Fill>0.999999 0.999974 0.999991</Fill>
+            </Appearance>
+            <String>지하철 역안</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
+        <Note ID="22" FontSize="14.0" Position="867.0,156.0" Width="158.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>헤어컷트동안 영상틀어주기</String>
+            <ConnectedNoteIDs>18, 28-29</ConnectedNoteIDs>
+        </Note>
+        <Note ID="24" FontSize="14.0" Position="533.0,177.0" Width="177.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>사용자가 누구인지 카메라 인식</String>
+            <ConnectedNoteIDs>18, 27, 54</ConnectedNoteIDs>
+        </Note>
+        <Note ID="25" FontSize="14.0" Position="458.0,258.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>사용자가 원하는 헤어스타일을 자기한테 가상체험</String>
+            <ConnectedNoteIDs>18, 67</ConnectedNoteIDs>
+        </Note>
+        <Note ID="27" FontSize="18.0" Position="483.0,85.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>사용자 얼굴형에 따른 머리추천</String>
+            <ConnectedNoteIDs>18, 24, 68</ConnectedNoteIDs>
+        </Note>
+        <Note ID="28" FontSize="14.0" Position="911.0,85.0" Width="45.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>유튜브</String>
+            <ConnectedNoteIDs>22</ConnectedNoteIDs>
+        </Note>
+        <Note ID="29" FontSize="14.0" Position="1071.0,152.0" Width="26.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>TV</String>
+            <ConnectedNoteIDs>22, 30-31</ConnectedNoteIDs>
+        </Note>
+        <Note ID="30" FontSize="14.0" Position="1069.0,68.0" Width="33.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>뉴스</String>
+            <ConnectedNoteIDs>29</ConnectedNoteIDs>
+        </Note>
+        <Note ID="31" FontSize="14.0" Position="1171.0,139.0" Width="33.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>예능</String>
+            <ConnectedNoteIDs>29</ConnectedNoteIDs>
+        </Note>
+        <Note ID="32" FontSize="16.0" Position="703.0,697.0" Width="64.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>가상화장</String>
+            <ConnectedNoteIDs>8, 49, 51-52</ConnectedNoteIDs>
+        </Note>
+        <Note ID="33" FontSize="16.0" Position="843.0,647.0" Width="50.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>유튜브</String>
+            <ConnectedNoteIDs>8, 16, 47-48</ConnectedNoteIDs>
+        </Note>
+        <Note ID="34" FontSize="16.0" Position="577.0,658.0" Width="68.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>도난 방지</String>
+            <ConnectedNoteIDs>8, 53</ConnectedNoteIDs>
+        </Note>
+        <Note ID="35" FontSize="18.0" Position="1069.0,216.0" Width="71.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>가상피팅</String>
+            <ConnectedNoteIDs>20</ConnectedNoteIDs>
+        </Note>
+        <Note ID="36" FontSize="18.0" Position="1062.0,535.0" Width="86.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>운동가이드</String>
+            <ConnectedNoteIDs>16, 42-43</ConnectedNoteIDs>
+        </Note>
+        <Note ID="37" FontSize="18.0" Position="1045.0,605.0" Width="76.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>운동 녹화</String>
+            <ConnectedNoteIDs>16, 40, 45</ConnectedNoteIDs>
+        </Note>
+        <Note ID="38" FontSize="18.0" Position="1034.0,464.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>사용자가 누구인지 카메라 인식</String>
+            <ConnectedNoteIDs>16, 40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="40" FontSize="18.0" Position="1034.0,377.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>사용자에 따라 전날 운동기록들 </String>
+            <ConnectedNoteIDs>37-38, 41, 46</ConnectedNoteIDs>
+        </Note>
+        <Note ID="41" FontSize="18.0" Position="1034.0,290.0" Width="158.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>오늘 해야할 운동안내</String>
+            <ConnectedNoteIDs>40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="42" FontSize="18.0" Position="1166.0,582.0" Width="117.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>운동카운트표시</String>
+            <ConnectedNoteIDs>36</ConnectedNoteIDs>
+        </Note>
+        <Note ID="43" FontSize="18.0" Position="1217.0,527.0" Width="271.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>자세교정(ex더 엉덩이를 내리세요)</String>
+            <ConnectedNoteIDs>36</ConnectedNoteIDs>
+        </Note>
+        <Note ID="45" FontSize="18.0" Position="1129.0,635.0" Width="343.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>다음날 트레이너에게 피드백 받는다</String>
+            <ConnectedNoteIDs>37</ConnectedNoteIDs>
+        </Note>
+        <Note ID="46" FontSize="18.0" Position="1268.0,380.0" Width="158.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>트레이너 피드백 확인</String>
+            <ConnectedNoteIDs>40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="47" FontSize="16.0" Position="783.0,714.0" Width="200.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>유용한 화장관련 영상을 검색후 틀어준다</String>
+            <ConnectedNoteIDs>33</ConnectedNoteIDs>
+        </Note>
+        <Note ID="48" FontSize="16.0" Position="1052.0,734.0" Width="292.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>유용한 운동 관련 영상을 검색후 틀어준다</String>
+            <ConnectedNoteIDs>33</ConnectedNoteIDs>
+        </Note>
+        <Note ID="49" FontSize="16.0" Position="764.0,770.0" Width="36.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>입술</String>
+            <ConnectedNoteIDs>32</ConnectedNoteIDs>
+        </Note>
+        <Note ID="51" FontSize="16.0" Position="727.0,803.0" Width="36.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>피부</String>
+            <ConnectedNoteIDs>32</ConnectedNoteIDs>
+        </Note>
+        <Note ID="52" FontSize="16.0" Position="693.0,769.0" Width="22.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>눈</String>
+            <ConnectedNoteIDs>32</ConnectedNoteIDs>
+        </Note>
+        <Note ID="53" FontSize="16.0" Position="506.0,703.0" Width="155.0">
+            <Appearance>
+                <Alignment>Center</Alignment>
+                <Border Weight="1">0.561855 0.71062 0.779401</Border>
+                <Fill>0.702319 0.888276 0.974252</Fill>
+            </Appearance>
+            <String>도둑이 들어왔나 안왔나</String>
+            <ConnectedNoteIDs>34</ConnectedNoteIDs>
+        </Note>
+        <Note ID="54" FontSize="14.0" Position="298.0,177.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>해당 사용자의 최근 방문기록/전에 컷트한 머리사진보기</String>
+            <ConnectedNoteIDs>24, 66</ConnectedNoteIDs>
+        </Note>
+        <Note ID="55" FontSize="18.0" Position="519.0,395.0" Width="107.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>모바일앱 연동</String>
+            <ConnectedNoteIDs>18, 56-57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="56" FontSize="18.0" Position="484.0,453.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>현재사용자수/대기자수 확인</String>
+            <ConnectedNoteIDs>55, 60</ConnectedNoteIDs>
+        </Note>
+        <Note ID="57" FontSize="18.0" Position="388.0,376.0" Width="107.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>미용실의 정보</String>
+            <ConnectedNoteIDs>55, 61-63</ConnectedNoteIDs>
+        </Note>
+        <Note ID="60" FontSize="18.0" Position="395.0,524.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>웹서핑을 통해 원하는 머리사진으로 예약</String>
+            <ConnectedNoteIDs>56</ConnectedNoteIDs>
+        </Note>
+        <Note ID="61" FontSize="18.0" Position="270.0,378.0" Width="91.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>미용사 정보</String>
+            <ConnectedNoteIDs>57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="62" FontSize="18.0" Position="305.0,319.0" Width="40.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>주소</String>
+            <ConnectedNoteIDs>57, 64</ConnectedNoteIDs>
+        </Note>
+        <Note ID="63" FontSize="18.0" Position="385.0,289.0" Width="40.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>가격</String>
+            <ConnectedNoteIDs>57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="64" FontSize="18.0" Position="288.0,247.0" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>길찾기</String>
+            <ConnectedNoteIDs>62</ConnectedNoteIDs>
+        </Note>
+        <Note ID="65" FontSize="17.0" Position="717.0,103.0" Width="121.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>컷트중 중간 상담</String>
+            <ConnectedNoteIDs>18</ConnectedNoteIDs>
+        </Note>
+        <Note ID="66" FontSize="14.0" Position="234.0,100.0" Width="222.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>전과 비교하여 개선방안 상담후 컷트</String>
+            <ConnectedNoteIDs>54</ConnectedNoteIDs>
+        </Note>
+        <Note ID="67" FontSize="14.0" Position="458.0,337.0" Width="76.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>선택 후 컷트</String>
+            <ConnectedNoteIDs>25</ConnectedNoteIDs>
+        </Note>
+        <Note ID="68" FontSize="18.0" Position="483.0,19.0" Width="96.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Border Weight="1">0.798177 0.714184 0.522055</Border>
+                <Fill>0.997722 0.89273 0.652569</Fill>
+            </Appearance>
+            <String>선택 후 컷트</String>
+            <ConnectedNoteIDs>27</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>0, 18-22, 28-37, 42, 49, 51-52, 55, 57, 61-65, 68</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="5B7647B0-0380-4FA7-8EDF-E8C0B67320EF" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="06639675-97D3-4530-B532-B91EE15304F4" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="921F3120-80D0-4285-96EB-504DA162043C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="894F3AF7-6745-4C7A-AFB0-D3E79781A78C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="981DA118-62C6-4A7C-93FB-EB1EE55C8121" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="A7ED0DBA-4CD6-4590-B531-45D5D1AC118B" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999767 0.98837 0.949907</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
