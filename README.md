@@ -15,6 +15,10 @@
 [![스마트미러](./door.png)](https://youtu.be/DuVUfmSpNm8?t=0s) 
 
 
+## 오픈소스 포럼 프로필 및 질문 내역들
+- 질문 예시
+![forum](./forum.png)
+- https://forum.magicmirror.builders/user/emrhssla
 
 ## 도움되는 사이트
 
