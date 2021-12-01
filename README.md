@@ -52,13 +52,14 @@
   2021.01.01 기준으로 사진 안뜸 -> AWS EC2 서비스 종료
 
 ## 페이지 3. 얼굴나이 인식을 하여 사용자 나이 정보에 맞는 헤어스타일 추천
+  2021.01.01 기준으로 얼굴인식 안됨 -> Azure Face API 종료
 ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge","MMM-Snow"]
 | 모듈이름             | 기존모듈    | 기능                                                      | 코딩내용 |비고  |
 | --------        | ------ | ------------------------------------------------------------ | ------- |-----|
 | **MMM-Testpython**   | 새 개발    | 얼굴인식하여 나이에 맞는 사진 출력 |[MMM-Testpython](https://github.com/ENTITYSmartMirror/BeautyMirror/tree/master/modules/MMM-Testpython) | python-shell 필요, [FCF.py](https://github.com/ENTITYSmartMirror/BeautyMirror/blob/master/modules/MMM-Testpython/FCF.py)-AzureFaceAPI실행, [node_helper](https://github.com/ENTITYSmartMirror/BeautyMirror/blob/master/modules/MMM-Testpython/node_helper.js)- js와 FCF.py연동 |
 | **mm-hide-all**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all) | 카메라 전체화면/기존화면 토글 버튼| [hide button custom](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified)| hide-all에서 모든 모듈 가리기에서 카메라 확대로 바꿈 |   
 | **MMM-DeleteImage**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all)  | 사진데이터 삭제 / 모든 모듈 재시작 및 초기화 | [Make DeleteImage and default all modules](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/f6c2d71bc0cdf31f3ef9c25807ff22665ae6b0d9)| python-shell 필요 |
-| **What-age**   | [MMM-ImageSlideshow](https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow)  | ![whateage](./whatage.png) 얼굴인식결과 사진출력| [Whatage.js and Whatage/node_helper.js commit](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/fd2f48f2be5668f680f0935368c7f0bef212a8df#diff-2737284afe2f19efb6df705585a168126c60931cb823c6712bf7fa4318904dae)| MMM-Testpython과 연결 |
+| **What-age**   | [MMM-ImageSlideshow](https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow)  | ![whateage](./Whatage.png) 얼굴인식결과 사진출력| [Whatage.js and Whatage/node_helper.js commit](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/fd2f48f2be5668f680f0935368c7f0bef212a8df#diff-2737284afe2f19efb6df705585a168126c60931cb823c6712bf7fa4318904dae)| MMM-Testpython과 연결 |
 
 ## 페이지 4.
 ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage","MMM-Snow"]
