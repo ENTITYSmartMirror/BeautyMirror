@@ -13,14 +13,17 @@
  */
 
 // call in the required classes
+var {PythonShell} = require('python-shell');
 var NodeHelper = require("node_helper");
 var FileSystemImageSlideshow = require("fs");
+var socketWhatAge;
 
 // the main module helper create
 module.exports = NodeHelper.create({
     // subclass start method, clears the initial config array
     start: function() {
         this.moduleConfigs = [];
+        console.log("Starting Node Helper for: " + this.name);
     },
     // shuffles an array at random and returns it
     shuffleArray: function(array) {
@@ -117,7 +120,16 @@ module.exports = NodeHelper.create({
             // send the image list back
             self.sendSocketNotification('IMAGESLIDESHOW_FILELIST', returnPayload );
         }
-    },     
+        else if (notification === "IMAGESLIDESHOW_RELOAD_FILELIST") {
+            // gather Images according to latest config. The config did not change, but the content of the specified folders might have
+            var imageList = this.gatherImageList(this.moduleConfigs[this.moduleConfigs.length - 1]);
+            // build the return payload
+            var returnPayload = { identifier: payload.identifier, imageList: imageList };
+            // send the image list back
+            this.sendSocketNotification('IMAGESLIDESHOW_FILELIST', returnPayload );
+        }
+        
+    },
 });
 
 //------------ end -------------

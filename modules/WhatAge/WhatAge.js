@@ -12,13 +12,14 @@
  * MIT Licensed.
  */
  
-Module.register("MMM-ImageSlideshow", {
+var WhatAge;
+Module.register("WhatAge", {
 	// Default module config.
 	defaults: {
         // an array of strings, each is a path to a directory with images
         imagePaths: [ 'modules/MMM-ImageSlideshow/exampleImages' ],
         // the speed at which to switch between images, in milliseconds
-		slideshowSpeed: 10 * 1000,
+		slideshowSpeed: 10 * 50,
         // if zero do nothing, otherwise set width to a pixel value
         fixedImageWidth: 0,
         // if zero do nothing, otherwise set height to a pixel value        
@@ -28,15 +29,20 @@ Module.register("MMM-ImageSlideshow", {
         // if true combine all images in all the paths
         // if false each path with be viewed seperately in the order listed
         treatAllPathsAsOne: false,
+	// if true reload the image list after each iteration
+	reloadImageList: true,
         // if true, all images will be made grayscale, otherwise as they are
         makeImagesGrayscale: false,
         // list of valid file extensions, seperated by commas
         validImageFileExtensions: 'bmp,jpg,gif,png',
 		// a delay timer after all images have been shown, to wait to restart (in ms)
 		delayUntilRestart: 0,
+		a:0,
 	},
     // load function
 	start: function () {
+		WhatAge = this;
+		WhatAge.sendNotification("CAROUSEL_NEXT");
         // add identifier to the config
         this.config.identifier = this.identifier;
         // ensure file extensions are lower case
@@ -44,19 +50,21 @@ Module.register("MMM-ImageSlideshow", {
         // set no error
 		this.errorMessage = null;
         if (this.config.imagePaths.length == 0) {
-            this.errorMessage = "MMM-ImageSlideshow: Missing required parameter."
-        }
+			this.errorMessage = "MMM-ImageSlideshow: Missing required parameter."
+		}
         else {
             // create an empty image list
             this.imageList = [];
             // set beginning image index to -1, as it will auto increment on start
             this.imageIndex = -1;
             // ask helper function to get the image list
+            console.log("MMM-ImageSlideshow sending socket notification");
             this.sendSocketNotification('IMAGESLIDESHOW_REGISTER_CONFIG', this.config);
 			// do one update time to clear the html
 			this.updateDom();
 			// set a blank timer
 			this.interval = null;
+			this.loaded = false;
         }
 	},
 	// Define required scripts.
@@ -66,16 +74,30 @@ Module.register("MMM-ImageSlideshow", {
 	},    
 	// the socket handler
 	socketNotificationReceived: function(notification, payload) {
+                console.log("MMM-ImageSlideshow recieved a socket notification: " + notification);
 		// if an update was received
 		if (notification === "IMAGESLIDESHOW_FILELIST") {
 			// check this is for this module based on the woeid
 			if (payload.identifier === this.identifier)
 			{
+				// extract new list
+				var newImageList = payload.imageList;
+				// check if anything has changed. return if not.
+				if (newImageList.length == this.imageList.length) {
+					var unchanged = true;
+					for (var i = 0 ; i < newImageList.length; i++) {
+						unchanged = this.imageList[i] == newImageList[i];
+						if (!unchanged)
+							break;
+					}
+					if (unchanged)
+						return;
+				}
 				// set the image list
 				this.imageList = payload.imageList;
                 // if image list actually contains images
                 // set loaded flag to true and update dom
-                if (this.imageList.length > 0) {
+                if (this.imageList.length > 0 && !this.loaded) {
                     this.loaded = true;
                     this.updateDom();
 					// set the timer schedule to the slideshow speed			
@@ -86,6 +108,16 @@ Module.register("MMM-ImageSlideshow", {
                 }
 			}
 		}
+		else if(notification =="Anaysis_success")
+		{
+			this.config.a=1;
+			console.log("fufufufufu 1: " + payload);
+			
+			this.sendNotification("agecomplete",payload);
+			this.sendNotification("camera_start");
+			console.log("fufufufufufufufufu");
+		}
+		
     },    
 	// Override dom generator.
 	getDom: function () {
@@ -93,7 +125,7 @@ Module.register("MMM-ImageSlideshow", {
         // if an error, say so (currently no errors can occur)
         if (this.errorMessage != null) {
             wrapper.innerHTML = this.errorMessage;
-        }
+		}
         // if no errors
         else {
             // if the image list has been loaded
@@ -113,6 +145,10 @@ Module.register("MMM-ImageSlideshow", {
 				var showSomething = true;
                 // if exceeded the size of the list, go back to zero
                 if (this.imageIndex == this.imageList.length) {
+                                       // console.log("MMM-ImageSlideshow sending reload request");
+				       // reload image list at end of iteration, if config option set
+                                       if (this.config.reloadImageList) 
+                                           this.sendSocketNotification('IMAGESLIDESHOW_RELOAD_FILELIST', this.config);
 					// if delay after last image, set to wait
 					if (this.config.delayUntilRestart > 0) {
 						this.imageIndex = -2;
@@ -131,6 +167,7 @@ Module.register("MMM-ImageSlideshow", {
 				if (showSomething) {
 					// create the image dom bit
 					var image = document.createElement("img");
+					image.id="imgid";
 					// if set to make grayscale, flag the class set in the .css file
 					if (this.config.makeImagesGrayscale)
 						image.className = "desaturate";
@@ -144,8 +181,15 @@ Module.register("MMM-ImageSlideshow", {
 					// if style string has antyhing, set it
 					if (styleString != '')
 						image.style = styleString;
-					// set the image location
-					image.src = encodeURI(this.imageList[this.imageIndex]);
+					// imageList는 modules/MMM-Testpython/CognitiveFace로 설정
+					// 초기화 버튼 클릭
+					if(this.config.a==0){
+					image.src = this.imageList[0];
+					}
+					// 얼굴 인식 성공시 
+					if(this.config.a==1){
+						image.src = this.imageList[this.imageList.length-1];
+						}
 					// ad the image to the dom
 					wrapper.appendChild(image);					
 				}
@@ -155,7 +199,28 @@ Module.register("MMM-ImageSlideshow", {
                 wrapper.innerHTML = "&nbsp;";
             }
         }
+		
         // return the dom
 		return wrapper;
+	},
+	notificationReceived: function(notification, payload) {
+		Log.info(this.name + " - received notification: " + notification);
+		// 얼굴인식시 - Testpython 모듈로부터 받은 신호
+		if(notification === "ageresult_success"){
+			this.config.a=1;
+		}
+		// 초기화시 
+		if(notification =="Modules All Change")
+		{
+			this.config.a=0;			
+		}
+		// hide 버튼 클릭시
+		if(notification =="only_camera")
+		{
+			this.hide();
+		}
+		if (notification === "show_camera") {
+            this.show();
+        }
 	}
 });
