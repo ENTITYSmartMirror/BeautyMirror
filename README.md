@@ -22,6 +22,7 @@
 
 ## 페이지 1. 카메라로 거울 기능
 ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"]
+[camera.js부분 셋팅](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified) - [camera](https://github.com/alexyak/camera/blob/master/camera.js)모듈 커스텀
 ## 페이지 2. 
 ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
 ## 페이지 3. 얼굴나이 인식
