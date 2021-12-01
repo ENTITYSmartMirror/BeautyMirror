@@ -513,7 +513,7 @@ var config = {
 				slides: {
 					main: ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"],
 					"Slide 2": ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage","MMM-Snow"],
-					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge","MMM-Snow"],
+					"Slide 3": ["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge","MMM-Snow","camera2"],
 					"Slide 4": ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage","MMM-Snow"],
 					"Slide 5": ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"],
 					"Slide 6": ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"],					
@@ -715,6 +715,20 @@ var config = {
 			flakeCount: 100,
 			theme: "winter"			
 			}
+		},
+		{
+			module: 'camera2',
+			position: 'middle_center',
+			config: {
+				selfieInterval: 3,  // Time interval in seconds before the photo will be taken.
+				emailConfig: {
+					service: 'Hotmail', // Email provider to use to send email with a photo.
+					auth: {
+						user: '<emrhssla@gmail.com>', // Your email account
+						pass: '<em89138913@#>'        // Your password for email account
+						}
+					}
+				}
 		}
 		
 		
