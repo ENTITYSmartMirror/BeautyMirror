@@ -178,11 +178,7 @@ Module.register("CategoryChoiceYoutube",{
         return item;
 	},
 	
-	notificationReceived: function(notification, payload) {
-		if(notification === 'Modules All Change'){
-			this.hide()
-		}
-	}
+	
 	
 });	
 
