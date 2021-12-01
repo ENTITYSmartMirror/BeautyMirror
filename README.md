@@ -35,6 +35,8 @@
 
 # 개발문서
 
+
+
 - ## 페이지 1. 카메라로 거울 기능
 
 > opencv 설치필요 X, 카메라 접근권한 허용 필요
@@ -51,6 +53,8 @@
 - ## 페이지 2. 헤어스타일 사진 목록
   2021.01.01 기준으로 사진 안뜸 -> AWS EC2 서비스 종료
 
+
+
 - ## 페이지 3. 얼굴나이 인식을 하여 사용자 나이 정보에 맞는 헤어스타일 추천
   2021.01.01 기준으로 얼굴인식 안됨 -> Azure Face API 종료
 
@@ -60,6 +64,8 @@
 | **mm-hide-all**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all) | 카메라 전체화면/기존화면 토글 버튼| [hide button custom](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified)| hide-all에서 모든 모듈 가리기에서 카메라 확대로 바꿈 |   
 | **MMM-DeleteImage**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all)  | 사진데이터 삭제 / 모든 모듈 재시작 및 초기화 | [Make DeleteImage and default all modules](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/f6c2d71bc0cdf31f3ef9c25807ff22665ae6b0d9)| python-shell 필요 |
 | **What-age**   | [MMM-ImageSlideshow](https://github.com/AdamMoses-GitHub/MMM-ImageSlideshow)  | ![whateage](./Whatage.png) 얼굴인식결과 사진출력| [Whatage.js and Whatage/node_helper.js commit](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/fd2f48f2be5668f680f0935368c7f0bef212a8df#diff-2737284afe2f19efb6df705585a168126c60931cb823c6712bf7fa4318904dae)| MMM-Testpython과 연결 |
+
+
 
 - ## 페이지 4. 미용 전/후 머리스타일 비교를 위하여 사진 찍고 출력
 
@@ -71,19 +77,21 @@
 | **mm-hide-all**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all) | 카메라 전체화면/기존화면 토글 버튼| [hide button custom](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified)| hide-all에서 모든 모듈 가리기에서 카메라 확대로 바꿈 |   
 | **MMM-DeleteImage**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all)  | 사진데이터 삭제 / 모든 모듈 재시작 및 초기화 | [Make DeleteImage and default all modules](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/f6c2d71bc0cdf31f3ef9c25807ff22665ae6b0d9)| python-shell 필요 |
 
+
+
 - ## 페이지 5. 머리 자르면서 Youtube와 웹툰보기
 ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"]
 
 | 모듈이름             | 기존모듈    | 기능                                                      | 코딩내용 |비고  |
 | --------        | ------ | ------------------------------------------------------------ | ------- |-----|
-| **CategoryChoiceYoutube**   | [MMM-Modulebar](https://github.com/Snille/MMM-Modulebar)    | Youtube 주제선택 카테고리 |[Make CategoryChoiceYoutube](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/c60e1d7043e8ace245882dd412529960ff34ca72) | MMM-EmbedYoutube1와 연결 |
+| **CategoryChoiceYoutube**   | [MMM-Modulebar](https://github.com/Snille/MMM-Modulebar)    | Youtube 주제선택 카테고리 |[Make CategoryChoiceYoutube](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/937e7d0a10d6cf47bc04b0b076221a97ee6058d2) | MMM-EmbedYoutube1와 연결 |
 | **MMM-EmbedYoutube1**   | [MMM-EmbedYoutube](https://github.com/nitpum/MMM-EmbedYoutube) | Youtube출력 | [Make EmbedYoutube1](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/31aa64ea42f2bc560ae31e7d13f7025828dcabcb)| [Youtube - IFrame Player API](https://developers.google.com/youtube/player_parameters?hl=ko#playlist) 사용 |
 | **CategoryChoiceEntMenu**   | [MMM-Modulebar](https://github.com/Snille/MMM-Modulebar)    | Youtube/Webtoon 선택 |[Make CategoryChoiceEntMenu](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/4e34dd5b4e04d849165aaea84b6cf3901cc20d25) |  |
 
-## 페이지 6.
-["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
-## 페이지 7.
-["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage","MMM-Snow"]
+- ## 페이지 6. 여태껏 헤어스타일링했던 사진 보기
+
+- ## 페이지 7. 모듈 조작하기
+
 ## 도움되는 사이트
 
 - [CSS↗️](https://forum.magicmirror.builders/category/8/custom-css): 매직미러의 CSS관련 질문 및 개발  
