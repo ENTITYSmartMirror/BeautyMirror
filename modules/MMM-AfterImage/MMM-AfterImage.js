@@ -182,12 +182,15 @@ Module.register("MMM-AfterImage", {
 					if(this.config.a==0){
 					this.hide();
 					}
+					// 달라진 나의 모습을 확인해보세요
 					if(this.config.a==1){
 						image.src = this.imageList[1];
 						}
+					// After이미지 출력
 					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-1];
 						}
+					// 로딩이미지 출력
 					if(this.config.a==3){
 						image.src = this.imageList[2];
 						}
@@ -211,12 +214,14 @@ Module.register("MMM-AfterImage", {
 			//this.hide()
 
 		}
+		// 처음시작 default화면
 		if(notification === "setDefault"){
 			//console.log("this a ", this.config.a)
 			this.hide();
 			this.config.a=0;
 			
 		}
+		// beforeimage가 찍혔을때
 		if(notification === "BEFOREIMAGE"){
 			//console.log("this a ", this.config.a)
 			this.show()
