@@ -21,8 +21,17 @@
 - https://forum.magicmirror.builders/user/emrhssla
 
 ## 페이지 1. 카메라로 거울 기능
-["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"]
-[camera.js부분 셋팅](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified) - [camera](https://github.com/alexyak/camera/blob/master/camera.js)모듈 커스텀
+
+
+| 모듈이름             | 기존모듈    | 기능                                                      | 코딩내용 |비고  |
+| --------        | ------ | ------------------------------------------------------------ | ------- |-----|
+| **camera**   | [camera](https://github.com/alexyak/camera/)   | 카메라띄우기       |[camera module custom](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified) | mm-hide-all와 연동됨 |
+| **mm-hide-all**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all) | 카메라 전체화면/기존화면 토글 버튼| [hide button custom](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/d4ffce5d281206308f708cd72624b06e304188ba?diff=unified)| hide-all에서 모든 모듈 가리기에서 카메라 확대로 바꿈 |   
+| **MMM-DeleteImage**   | [mm-hide-all](https://github.com/AlexDespain01/mm-hide-all)  | 사진데이터 삭제 / 모든 모듈 재시작 및 초기화 | [Make DeleteImage and default all modules](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/f6c2d71bc0cdf31f3ef9c25807ff22665ae6b0d9)| python-shell 필요 |
+
+
+
+
 ## 페이지 2. 
 ["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
 ## 페이지 3. 얼굴나이 인식
