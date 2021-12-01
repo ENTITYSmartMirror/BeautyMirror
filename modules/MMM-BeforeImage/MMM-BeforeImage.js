@@ -189,8 +189,9 @@ Module.register("MMM-BeforeImage", {
 					if(this.config.a==1){
 						image.src = this.imageList[this.imageList.length-1];
 						}
-					// AfterImage 사진 찍기 시작 이미지 버튼
+					// AfterImage 사진 찍기 완료
 					if(this.config.a==2){
+						// Before 이미지 띄우기
 						image.src = this.imageList[this.imageList.length-2];
 						this.config.complete=1;
 						BeforeImages.sendNotification("camera_start");
