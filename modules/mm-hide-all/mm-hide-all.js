@@ -7,8 +7,13 @@
  * MIT Licensed.
  */
 
+var hideall;
 Module.register("mm-hide-all",{
 
+	defaults: {},
+	start: function(){
+		hideall=this;
+	},
 	getScripts: function() {
 		return ["modules/mm-hide-all/js/jquery.js"];
 	},
@@ -24,7 +29,6 @@ Module.register("mm-hide-all",{
 		var overlay = document.createElement("div");
 		var hidden = true;
 		
-		overlay.className = "paint-it-black";
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
@@ -35,16 +39,27 @@ Module.register("mm-hide-all",{
 		
 		$(button).on("click", function(){
 			if(hidden){
-				$(overlay).fadeIn(1000);
+				hideall.sendNotification("only_camera");
+				/*
+				hideall.sendNotification('CHANGE_POSITIONS', 
+					modules = {
+						'clock':{
+							visible: 'true',
+							position: 'top_right',
+						}
+					}
+				);
+				*/
 				$(button).fadeTo(1000, 0.3);
 				$(text).html('Show');
 				hidden = false;
 			}else{
-				$(overlay).fadeOut(1000);
+				hideall.sendNotification("show_camera");
 				$(button).fadeTo(1000, 1);
 				$(text).html('Hide');
 				hidden = true;
 			}
+				console.log("camera start");
 		});
 		
 		return wrapper;
