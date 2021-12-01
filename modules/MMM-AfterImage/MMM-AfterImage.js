@@ -1,4 +1,3 @@
-
 /* global Module */
 
 /* MMM-ImageSlideshow.js
@@ -13,7 +12,9 @@
  * MIT Licensed.
  */
  
-Module.register("MMM-AfterImage", {
+var BeforeImages;
+Module.register("MMM-BeforeImage", {
+
 	// Default module config.
 	defaults: {
         // an array of strings, each is a path to a directory with images
@@ -29,18 +30,20 @@ Module.register("MMM-AfterImage", {
         // if true combine all images in all the paths
         // if false each path with be viewed seperately in the order listed
         treatAllPathsAsOne: false,
-	// if true reload the image list after each iteration
-	reloadImageList: true,
+		// 이미지 reload시 파일리스트
+		reloadImageList: true,
         // if true, all images will be made grayscale, otherwise as they are
         makeImagesGrayscale: false,
         // list of valid file extensions, seperated by commas
         validImageFileExtensions: 'bmp,jpg,gif,png',
 		// a delay timer after all images have been shown, to wait to restart (in ms)
 		delayUntilRestart: 0,
-		a: 0,
+		a:0,
+		complete:0
 	},
     // load function
 	start: function () {
+		BeforeImages = this;
         // add identifier to the config
         this.config.identifier = this.identifier;
         // ensure file extensions are lower case
@@ -62,6 +65,7 @@ Module.register("MMM-AfterImage", {
 			this.updateDom();
 			// set a blank timer
 			this.interval = null;
+			// 동적으로 사진띄우기 위해 loaded 설정
 			this.loaded = false;
         }
 	},
@@ -78,10 +82,7 @@ Module.register("MMM-AfterImage", {
 			// check this is for this module based on the woeid
 			if (payload.identifier === this.identifier)
 			{
-				// extract new list
 				var newImageList = payload.imageList;
-				//console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@imageList : ",newImageList.length,this.imageList.length)
-				// check if anything has changed. return if not.
 				if (newImageList.length == this.imageList.length) {
 					var unchanged = true;
 					for (var i = 0 ; i < newImageList.length; i++) {
@@ -96,6 +97,7 @@ Module.register("MMM-AfterImage", {
 				this.imageList = payload.imageList;
                 // if image list actually contains images
                 // set loaded flag to true and update dom
+				// 새로운 사진 Update
                 if (this.imageList.length > 0 && !this.loaded) {
                     this.loaded = true;
                     this.updateDom();
@@ -134,11 +136,9 @@ Module.register("MMM-AfterImage", {
 				var showSomething = true;
                 // if exceeded the size of the list, go back to zero
                 if (this.imageIndex == this.imageList.length) {
-                                       // console.log("MMM-ImageSlideshow sending reload request");
-				       // reload image list at end of iteration, if config option set
+                                       // 이미지 reload
                                        if (this.config.reloadImageList) 
                                            this.sendSocketNotification('IMAGESLIDESHOW_RELOAD_FILELIST', this.config);
-
 					// if delay after last image, set to wait
 					if (this.config.delayUntilRestart > 0) {
 						this.imageIndex = -2;
@@ -157,13 +157,16 @@ Module.register("MMM-AfterImage", {
 				if (showSomething) {
 					// create the image dom bit
 					var image = document.createElement("img");
-					// if set to make grayscale, flag the class set in the .css file
-					
+					image.id="imgid";
+					// 'Before사진 찍기' 시작하기 클릭시
 					image.addEventListener("click", () => {
-						console.log(" after image click !!!!!");
+						BeforeImages.sendNotification("camera_stop")
+						console.log(" image click !!!!!");
+						// 로딩중 화면을 띄우기
 						this.config.a=3;
-						BeforeImages.sendNotification("AFTERIMAGECLICK");
-                                              });
+						// BeforeAfter 모듈에게 python으로 사진찍기 위한 신호 전달
+						BeforeImages.sendNotification("BEFOREIMAGECLICK");
+                        });
 					if (this.config.makeImagesGrayscale)
 						image.className = "desaturate";
 					// create an empty string
@@ -176,25 +179,25 @@ Module.register("MMM-AfterImage", {
 					// if style string has antyhing, set it
 					if (styleString != '')
 						image.style = styleString;
-					// set the image location
-					//console.log("this.imageList.length]",this.imageList.length)
-					//console.log("this a",this.config.a)
+					//imgaeList = modules/MMM-BeforeAfter/before 저장해놓은 사진 load
+					//클릭해주세요 이미지
 					if(this.config.a==0){
-					this.hide();
+					image.src = this.imageList[0];
 					}
-					// 달라진 나의 모습을 확인해보세요
+					// 찍혀진 사진 출력
 					if(this.config.a==1){
-						image.src = this.imageList[1];
-						}
-					// After이미지 출력
-					if(this.config.a==2){
 						image.src = this.imageList[this.imageList.length-1];
 						}
-					// 로딩이미지 출력
+					// AfterImage 사진 찍기 시작 이미지 버튼
+					if(this.config.a==2){
+						image.src = this.imageList[this.imageList.length-2];
+						this.config.complete=1;
+						BeforeImages.sendNotification("camera_start");
+						}
+					// 로딩이미지
 					if(this.config.a==3){
 						image.src = this.imageList[2];
 						}
-					// ad the image to the dom
 					wrapper.appendChild(image);					
 				}
             }
@@ -208,35 +211,33 @@ Module.register("MMM-AfterImage", {
 	},
 	notificationReceived: function(notification, payload) {
 		Log.info(this.name + " - received notification: " + notification);
-		
-		if(notification === "Modules All Change"){
-			//console.log("this a ", this.config.a)
-			//this.hide()
-
+		if(notification === "DOM_OBJECTS_CREATED"){
+			// 모듈이 시작할땐 모든 사진 초기화
+			BeforeImages.sendNotification("DELETEstart");
 		}
-		// 처음시작 default화면
-		if(notification === "setDefault"){
-			//console.log("this a ", this.config.a)
-			this.hide();
-			this.config.a=0;
-			
+		// 사진데이터 초기화와 모든 모듈 재시작
+		if(notification === "Modules All Change"){
+			if(BeforeImages.config.complete===1){
+				console.log("complete what :"+BeforeImages.config.complete);
+				BeforeImages.sendNotification("DELETEstart");
+				BeforeImages.config.complete=0;
+			}
 		}
 		// beforeimage가 찍혔을때
 		if(notification === "BEFOREIMAGE"){
-			//console.log("this a ", this.config.a)
-			this.show()
 			this.config.a=1;
-
 		}
+		// 기본값으로 돌아가기
+		if(notification === "setDefault"){
+			this.config.a=0;
+		}
+		// Afterimage
 		if(notification === "AFTERIMAGE"){
-			//console.log("this a ", this.config.a)
 			this.config.a=2;
-
 		}
-		if(notification === "LOADINGAFTER"){
-			//console.log("this a ", this.config.a)
+		//로딩중이미지 출력
+		if(notification === "LOADINGBEFORE"){
 			this.config.a=3;
-
 		}
 	}
 });
