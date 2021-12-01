@@ -20,6 +20,14 @@
 ![forum](./forum.png)
 - https://forum.magicmirror.builders/user/emrhssla
 
+## 페이지 1.
+["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"]
+## 페이지 2. 
+
+## 페이지 3.
+
+## 페이지 4.
+
 ## 도움되는 사이트
 
 - [CSS↗️](https://forum.magicmirror.builders/category/8/custom-css): 매직미러의 CSS관련 질문 및 개발  
