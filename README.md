@@ -20,14 +20,20 @@
 ![forum](./forum.png)
 - https://forum.magicmirror.builders/user/emrhssla
 
-## 페이지 1.
+## 페이지 1. 카메라로 거울 기능
 ["clock","currentweather","weatherforecast","MMM-Globe","newsfeed","mm-hide-all","clock","camera","MMM-DeleteImage","MMM-Snow"]
 ## 페이지 2. 
-
-## 페이지 3.
-
+["clock","CategoryHairstyle", "CategoryManhair", "CategoryWomanhair", "CategoryChoicehairMenu","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
+## 페이지 3. 얼굴나이 인식
+["MMM-Testpython","Man10s","Man20s","Man30s","Man40s","Man50s","Woman10s","Woman20s","Woman30s","Woman40s","Woman50s","MMM-Dynamic-Modules","mm-hide-all","clock","MMM-DeleteImage","WhatAge","MMM-Snow"]
 ## 페이지 4.
-
+["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage","MMM-Snow"]
+## 페이지 5.
+["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"]
+## 페이지 6.
+["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
+## 페이지 7.
+["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage","MMM-Snow"]
 ## 도움되는 사이트
 
 - [CSS↗️](https://forum.magicmirror.builders/category/8/custom-css): 매직미러의 CSS관련 질문 및 개발  
