@@ -6,18 +6,15 @@
  * By EoF https://forum.magicmirror.builders/user/eof
  * MIT Licensed.
  */
-var DeleteImageS;
-Module.register("MMM-DeleteImage",{
-	defaults: {},
-    start: function (){
-        DeleteImageS = this;
-    },
+
+Module.register("mm-hide-all",{
+
 	getScripts: function() {
-		return ["modules/MMM-DeleteImage/js/jquery.js"];
+		return ["modules/mm-hide-all/js/jquery.js"];
 	},
 
 	getStyles: function() {
-		return ["MMM-DeleteImage-style.css"];
+		return ["mm-hide-all-style.css"];
 	},
 	
 	getDom: function() {
@@ -31,60 +28,25 @@ Module.register("MMM-DeleteImage",{
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
-		text.innerHTML = "끝내기";
+		text.innerHTML = "Hide";
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(overlay);
 		
 		$(button).on("click", function(){
 			if(hidden){
-
-				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
-				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
-				DeleteImageS.sendNotification("setDefault")
-				DeleteImageS.sendSocketNotification("DELETEall")
-				$(text).html('New');
+				$(overlay).fadeIn(1000);
+				$(button).fadeTo(1000, 0.3);
+				$(text).html('Show');
 				hidden = false;
 			}else{
 				$(overlay).fadeOut(1000);
 				$(button).fadeTo(1000, 1);
-				$(text).html('끝내기');
+				$(text).html('Hide');
 				hidden = true;
 			}
 		});
 		
 		return wrapper;
-	},
-	notificationReceived: function(notification, payload) {
-		Log.info(this.name + " - received notification: " + notification);
-		
-		if(notification === "DELETEstart"){
-			//console.log("this a ", this.config.a)
-			DeleteImageS.sendSocketNotification("DELETE");
-			
-		}
-		
-/*
-		if(notification === "LOADINGAFTER"){
-			console.log("this a ", this.config.a)
-			this.config.a=3;
-
-		}
-*/
-	},
-	socketNotificationReceived: function(notification, payload) {
-		switch(notification) {
-		  case "DELETEgood":
-			console.log("Delete Socket recevied payload1: "+payload)
-			//var baelem = document.getElementById("BeforeAfterClickid")
-			DeleteImageS.sendNotification("setDefault")
-			//
-			//BeforeAfterMoudule.sendNotification('SHOWCHANGEDIMAGE');
-			//
-			//baelem.innerHTML = "자르기 전 사진찍기 완료!"
-		break
-		  
-		}
-	  }
-	
+	}
 });
