@@ -78,6 +78,7 @@
 | --------        | ------ | ------------------------------------------------------------ | ------- |-----|
 | **CategoryChoiceYoutube**   | [MMM-Modulebar](https://github.com/Snille/MMM-Modulebar)    | Youtube 주제선택 카테고리 |[Make CategoryChoiceYoutube](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/c60e1d7043e8ace245882dd412529960ff34ca72) | MMM-EmbedYoutube1와 연결 |
 | **MMM-EmbedYoutube1**   | [MMM-EmbedYoutube](https://github.com/nitpum/MMM-EmbedYoutube) | Youtube출력 | [Make EmbedYoutube1](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/31aa64ea42f2bc560ae31e7d13f7025828dcabcb)| [Youtube - IFrame Player API](https://developers.google.com/youtube/player_parameters?hl=ko#playlist) 사용 |
+| **CategoryChoiceEntMenu**   | [MMM-Modulebar](https://github.com/Snille/MMM-Modulebar)    | Youtube/Webtoon 선택 |[Make CategoryChoiceEntMenu](https://github.com/ENTITYSmartMirror/BeautyMirror/commit/4e34dd5b4e04d849165aaea84b6cf3901cc20d25) |  |
 
 ## 페이지 6.
 ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"]
