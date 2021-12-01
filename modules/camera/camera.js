@@ -1,11 +1,12 @@
 'use strict';
 
-
+var cameravar;
 Module.register("camera", {
 
     counter: null,
 	// Default module config.
 	defaults: {
+		hidebutton:0,
         selfieInterval: 3,
 		emailConfig: {
 			service: 'Hotmail',
@@ -16,13 +17,13 @@ Module.register("camera", {
 		}
 	},
     
-	display: false,
+	display: true,
 
 	cameraPreview: null,
 	snapshot: null,
 	camera: null,
 	image: null,
-	processing: false,
+	processing: true,
 	message: null,
 	commands: null,
 
@@ -31,7 +32,9 @@ Module.register("camera", {
 	},
 
     start: function() { 
-		this.message = "Say 'SELFIE' to make a selfie or 'HIDE CAMERA' to hide";
+		// Delete message
+		cameravar=this;
+		this.message = "";
         this.sendSocketNotification('INIT_MAILER', this.config);
     },
 
@@ -99,10 +102,11 @@ Module.register("camera", {
 				this.camera.appendChild(this.commands);
 
 				wrapper.appendChild(this.camera);
-
+				// default camera
+				if(this.config.hidebutton==0){
 				Webcam.set({
-					width: 640,
-					height: 480,
+					width:1280,
+					height: 960,
 					image_format: 'jpeg',
 					jpeg_quality: 90,
 					constraints: {
@@ -115,6 +119,25 @@ Module.register("camera", {
 						]
 					}
 				});
+			}
+			// click hide button
+			else if(this.config.hidebutton==1){
+				Webcam.set({
+					width: 1280,
+					height: 1920,
+					image_format: 'jpeg',
+					jpeg_quality: 90,
+					constraints: {
+						mandatory: {
+							minWidth: 640,
+							minHeight: 480
+						},
+						optional: [
+							{ minFrameRate: 60 }
+						]
+					}
+				});
+			}
 
 				Webcam.attach(this.cameraPreview);
 
@@ -135,17 +158,40 @@ Module.register("camera", {
 			this.display = true;
 			this.updateDom(500);
 		}
-
+		
         if (notification === "HIDE_CAMERA" && this.display == true){
 			this.display = false;
 			this.updateDom(500);
 		}
-
+		
         if (notification === "SELFIE"){
 			if (!this.processing && this.display){
 				this.makeSelfie();
 			}
 		}
+		// camera off 
+		if (notification === "camera_stop"){
+			this.display = false;
+			this.processing = false;
+			this.updateDom();
+		}
+		//camrea on
+		if (notification === "camera_start"){
+			this.display = true;
+			this.processing = true;
+			this.updateDom();
+		}
+		// hide button toggle
+		if (notification === "only_camera"){
+			this.config.hidebutton=1;
+			this.updateDom(500);
+		}
+		// hide button toggle
+		if (notification === "show_camera"){
+			this.config.hidebutton=0;
+			this.updateDom(500);
+		}
+		
 
 	},
 
