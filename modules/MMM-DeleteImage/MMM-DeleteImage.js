@@ -6,15 +6,18 @@
  * By EoF https://forum.magicmirror.builders/user/eof
  * MIT Licensed.
  */
-
-Module.register("mm-hide-all",{
-
+var DeleteImageS;
+Module.register("MMM-DeleteImage",{
+	defaults: {},
+    start: function (){
+        DeleteImageS = this;
+    },
 	getScripts: function() {
-		return ["modules/mm-hide-all/js/jquery.js"];
+		return ["modules/MMM-DeleteImage/js/jquery.js"];
 	},
 
 	getStyles: function() {
-		return ["mm-hide-all-style.css"];
+		return ["MMM-DeleteImage-style.css"];
 	},
 	
 	getDom: function() {
@@ -28,25 +31,45 @@ Module.register("mm-hide-all",{
 		
 		button.className = "hide-toggle";
 		button.appendChild(text);
-		text.innerHTML = "Hide";
+		text.innerHTML = "끝내기";
 		
 		wrapper.appendChild(button);
 		wrapper.appendChild(overlay);
 		
 		$(button).on("click", function(){
 			if(hidden){
-				$(overlay).fadeIn(1000);
-				$(button).fadeTo(1000, 0.3);
-				$(text).html('Show');
+				//DeleteImageS.sendNotification("REMOTE_ACTION", {action: "MONITOROFF"});
+				DeleteImageS.sendNotification("REMOTE_ACTION", {action: "REFRESH"});
+				// 모든 모듈을 Default 상태로 notification 전달
+				DeleteImageS.sendNotification("setDefault")
+				// 사진 앨범 삭제 socketnotification 전달
+				DeleteImageS.sendSocketNotification("DELETEall")
+				$(text).html('New');
 				hidden = false;
 			}else{
 				$(overlay).fadeOut(1000);
 				$(button).fadeTo(1000, 1);
-				$(text).html('Hide');
+				$(text).html('끝내기');
 				hidden = true;
 			}
 		});
 		
 		return wrapper;
-	}
+	},
+	// 카메라 앨범삭제 테스트용
+	notificationReceived: function(notification, payload) {
+		Log.info(this.name + " - received notification: " + notification);
+		if(notification === "DELETEstart"){
+			DeleteImageS.sendSocketNotification("DELETE");
+		}
+	},
+	// 카메라앨범 삭제 및 초기화, python으로 삭제함
+	socketNotificationReceived: function(notification, payload) {
+		switch(notification) {
+		  case "DELETEgood":
+			console.log("Delete Socket recevied payload1: "+payload)
+			DeleteImageS.sendNotification("setDefault")
+		break
+		}
+	  }
 });
