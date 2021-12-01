@@ -9,14 +9,14 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 ret, frame = cap.read()
-cv2.imwrite('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg', frame)
+cv2.imwrite('./modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg', frame)
 
 cap.release()
 cv2.destroyAllWindows()
 
 subscription_key = "62114331d85f48c99c133b2ac9027967"
 
-image_path = os.path.join('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
+image_path = os.path.join('./modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
 
 assert subscription_key
 
@@ -57,7 +57,7 @@ try:
                  fontsize=20, weight="bold", va="bottom", color='dodgerblue')
     _ = plt.axis("off")
     fig = plt.gcf()
-    fig.savefig('C:/BeautyM/modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
+    fig.savefig('./modules/MMM-Testpython/CognitiveFace/CognitiveFace.jpg')
     print(fa["gender"])
     print(fa["age"])
 except Exception as e:

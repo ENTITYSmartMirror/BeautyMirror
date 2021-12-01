@@ -35,17 +35,20 @@ Module.register("MMM-Testpython", {
       case "DOM_OBJECTS_CREATED":
       var elem = document.getElementById("clickid1")
       elem.innerHTML = "여기를 클릭하세요."
+      // 클릭시
       elem.addEventListener("click", () => {
+        // 클릭 사운드
         var audioFile = new Audio('modules/MMM-TestPython/sound.m4a');
         audioFile.play();
         audioFile.currentTime = 0;
-
-
+        // 카메라 꺼짐
         Testpythons.sendNotification("camera_stop")
+        // 사진 분석 소켓을 node_helper에게 전달
         Testpythons.sendSocketNotification("TEST")
         elem.innerHTML = "분석중....."
         var showage2 = document.getElementById("showage")
         showage2.innerHTML = "당신의 나이를 분석중입니다."
+        // 사진 모듈의 포지션이 겹처서 overlapping 되는 것을 방지하기 위해 포지션 이동
         Testpythons.sendNotification('CHANGE_POSITIONS', 
         modules = {
               'Man10s':{
@@ -89,9 +92,10 @@ Module.register("MMM-Testpython", {
                 position: 'bottom_left',
               },
             });
-        console.log("hello~hello~hello~hello~hello~hello~hello~hello~hello~hello~")
+        console.log("All hair picture module -> hide")
       }) 
       break;
+      // REFLESH / 끝내기 버튼을 눌렀을시 초기화된다.
       case "Modules All Change" :
           var elem = document.getElementById("clickid1")
           elem.innerHTML = "여기를 클릭하세요."
@@ -102,12 +106,15 @@ Module.register("MMM-Testpython", {
   },
   socketNotificationReceived: function(notification, payload) {
     switch(notification) {
+      // 카메라 얼굴인식이 정상적으로 완료될 경우
       case "I_DID":
-        console.log("notnotnotnot :  " + payload);   
+        console.log("payload in Testpython when successful Azure API" + payload);   
         this.sendNotification("ageresult_success");
+        // 얼굴 인식 실패
         if(payload=="notFind"){
             console.log("notFind");
         }    
+        // 결과값 데이터 slice
         var payload3;
         payload3=payload.toString().split(",");
         console.log("Socket recevied 1: " + payload3);
@@ -118,6 +125,7 @@ Module.register("MMM-Testpython", {
         var age = payload3[1];
         console.log("Socket recevied 1: " + age);
         var change;
+        // 남자일시
         if (gender == "male"){
           if(age <= 19){
             change = 1;
@@ -145,6 +153,7 @@ Module.register("MMM-Testpython", {
             console.log(change);
           }
         }
+        // 여자일시
         else if (gender == "female"){
           if(age <= 19){
             change = 6;
@@ -264,11 +273,13 @@ Module.register("MMM-Testpython", {
             })
             break
           } 
+          // 얼굴 인식 실패
           if(payload=="notFind"){
             console.log("fuckyou notFind")
             elemk.innerHTML = "다시 눌러주세요!";
             elemk2.innerHTML = "얼굴인식실패!"; 
           }
+          // 얼굴 인식 성공 후 결과 값 출력
           else if(payload!="notFind"){
             elemk.innerHTML = "";
             elemk2.innerHTML = "고객님의 예상나이" + age + "세의 추천헤어입니다."; 

@@ -11,8 +11,8 @@ now = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 
 cv2.imshow('frame', frame)
 
-cv2.imwrite('C:/BeautyM/modules/MMM-BeforeAfter/before/before2.png', frame)
-cv2.imwrite("C:/BeautyM/modules/MMM-BeforeAfter/minsoo/" + str(now) + ".png", frame)
+cv2.imwrite('./modules/MMM-BeforeAfter/before/before2.png', frame)
+cv2.imwrite("./modules/MMM-BeforeAfter/minsoo/" + str(now) + ".png", frame)
 
 cap.release()
 cv2.destroyAllWindows()
