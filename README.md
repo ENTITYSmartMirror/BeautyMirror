@@ -80,7 +80,7 @@
 
 
 - ## 페이지 5. 머리 자르면서 Youtube와 웹툰보기
-["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"]
+
 
 | 모듈이름             | 기존모듈    | 기능                                                      | 코딩내용 |비고  |
 | --------        | ------ | ------------------------------------------------------------ | ------- |-----|
