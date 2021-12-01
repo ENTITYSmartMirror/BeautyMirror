@@ -12,9 +12,7 @@
  * MIT Licensed.
  */
  
-var BeforeImages;
-Module.register("MMM-BeforeImage", {
-
+Module.register("MMM-AfterImage", {
 	// Default module config.
 	defaults: {
         // an array of strings, each is a path to a directory with images
@@ -43,7 +41,6 @@ Module.register("MMM-BeforeImage", {
 	},
     // load function
 	start: function () {
-		BeforeImages = this;
         // add identifier to the config
         this.config.identifier = this.identifier;
         // ensure file extensions are lower case
@@ -157,15 +154,15 @@ Module.register("MMM-BeforeImage", {
 				if (showSomething) {
 					// create the image dom bit
 					var image = document.createElement("img");
-					image.id="imgid";
-					// 'Before사진 찍기' 시작하기 클릭시
+					// '달라진 나를 확인하세요(After 사진 찍기)' 클릭시
 					image.addEventListener("click", () => {
+						//보여지는 캠 끄기
 						BeforeImages.sendNotification("camera_stop")
-						console.log(" image click !!!!!");
+						console.log(" after image click !!!!!");
 						// 로딩중 화면을 띄우기
 						this.config.a=3;
-						// BeforeAfter 모듈에게 python으로 사진찍기 위한 신호 전달
-						BeforeImages.sendNotification("BEFOREIMAGECLICK");
+						// BeforeAfter 모듈에게 python으로 After사진찍기 위한 신호 전달
+						BeforeImages.sendNotification("AFTERIMAGECLICK");
                         });
 					if (this.config.makeImagesGrayscale)
 						image.className = "desaturate";
@@ -180,19 +177,17 @@ Module.register("MMM-BeforeImage", {
 					if (styleString != '')
 						image.style = styleString;
 					//imgaeList = modules/MMM-BeforeAfter/before 저장해놓은 사진 load
-					//클릭해주세요 이미지
+					// 초기 화면에는 beforeImage모듈만 보여줘야해서 본 모듈은 hide()로 가려준다.
 					if(this.config.a==0){
-					image.src = this.imageList[0];
+					this.hide();
 					}
-					// 찍혀진 사진 출력
+					// 달라진 나의 모습을 확인해보세요 
 					if(this.config.a==1){
-						image.src = this.imageList[this.imageList.length-1];
+						image.src = this.imageList[1];
 						}
-					// AfterImage 사진 찍기 시작 이미지 버튼
+					// 촬영된 After이미지 출력
 					if(this.config.a==2){
-						image.src = this.imageList[this.imageList.length-2];
-						this.config.complete=1;
-						BeforeImages.sendNotification("camera_start");
+						image.src = this.imageList[this.imageList.length-1];
 						}
 					// 로딩이미지
 					if(this.config.a==3){
@@ -210,25 +205,15 @@ Module.register("MMM-BeforeImage", {
 		return wrapper;
 	},
 	notificationReceived: function(notification, payload) {
-		Log.info(this.name + " - received notification: " + notification);
-		if(notification === "DOM_OBJECTS_CREATED"){
-			// 모듈이 시작할땐 모든 사진 초기화
-			BeforeImages.sendNotification("DELETEstart");
-		}
-		// 사진데이터 초기화와 모든 모듈 재시작
-		if(notification === "Modules All Change"){
-			if(BeforeImages.config.complete===1){
-				console.log("complete what :"+BeforeImages.config.complete);
-				BeforeImages.sendNotification("DELETEstart");
-				BeforeImages.config.complete=0;
-			}
-		}
+		Log.info(this.name + " - received notification: " + notification)
 		// beforeimage가 찍혔을때
 		if(notification === "BEFOREIMAGE"){
+			this.show()
 			this.config.a=1;
 		}
 		// 기본값으로 돌아가기
 		if(notification === "setDefault"){
+			this.hide();
 			this.config.a=0;
 		}
 		// Afterimage
@@ -236,7 +221,7 @@ Module.register("MMM-BeforeImage", {
 			this.config.a=2;
 		}
 		//로딩중이미지 출력
-		if(notification === "LOADINGBEFORE"){
+		if(notification === "LOADINGAFTER"){
 			this.config.a=3;
 		}
 	}
