@@ -2,7 +2,7 @@
 
 - 오픈소스[Magicmirror↗️](https://magicmirror.builders/)를 활용한 스마트미러이다.
 
-- 스마트미러를 목표로 제작하였지만, 여러 이유때문에 <span style="color:red">**거울필름을 사용하지않고 카메라로 거울역할**</span>을 대체하였다.
+- 스마트미러를 목표로 제작하였지만, 여러 이유때문에 <span style="color:red">**<ins>거울필름을 사용하지않고 카메라로 거울역할</ins>**</span>을 대체하였다.
   
 - 제작한 스마트미러는 총 2가지 종류이다.
 	
