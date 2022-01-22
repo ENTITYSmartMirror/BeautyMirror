@@ -231,7 +231,7 @@ Module.register("MMM-Remote-Control", {
         if (this.addresses.length === 0) {
             this.addresses = ["127.0.0.1"];
         }
-        wrapper.innerHTML = "http://127.0.0.1:9000/remote.html";
+        wrapper.innerHTML = "http://127.0.0.1:8080/remote.html";
         wrapper.className = "normal xsmall";
         return wrapper;
     },

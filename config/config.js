@@ -16,7 +16,7 @@ var config = {
 	                      // Default, when address config is left out, is "localhost"
 	port: 8080,
 	
-    ipWhitelist: [], // Set [] to allow all IP addresses
+    ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1","172.16.99.254", "::ffff:172.16.99.254", "::1","192.168.0.5", "::ffff:192.168.0.5", "::1"], // Set [] to allow all IP addresses
 	                                                       // or add a specific IPv4 of 192.168.1.5 :
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 	                                                       // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
@@ -517,7 +517,7 @@ var config = {
 					"Slide 4": ["clock","MMM-AfterImage","MMM-BeforeImage","MMM-BeforeAfter","MMM-DeleteImage","MMM-Snow"],
 					"Slide 5": ["CategoryChoiceYoutube","CategoryChoiceEntMenu","MMM-EmbedYoutube1","MMM-EmbedYoutube2","ShowWebtoon","mm-hide-all","clock","MMM-Snow"],
 					"Slide 6": ["MMM-HistoryImage1","MMM-HistoryImage2","MMM-HistoryImage3","mm-hide-all","MMM-DeleteImage","MMM-Snow"],					
-					"Slide 7": ["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage","MMM-Snow"],
+					"Slide 7": ["MMM-MovieInfo","ShowRemoteControl","mm-hide-all","clock","MMM-DeleteImage","MMM-Snow","MMM-SmartWebDisplay"],
 				},
 				keyBindings: { 
 					enabled: true,
@@ -679,7 +679,7 @@ var config = {
 			position: "bottom_center",	// This can be any of the regions.
 			config: {
 				// See "Configuration options" for more information.
-					url: ["http://127.0.0.1:9000/remote.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
+					url: ["http://192.168.0.5:8080/remote.html"],  // as many URLs you want or you can just ["ENTER IN URL"] if single URL.
 					updateInterval: 0.5 * 60 * 1000, // rotate URLs every 30 seconds
 					width: "1000", // width of iframe
 					height: "1000", // height of iframe
@@ -729,6 +729,25 @@ var config = {
 						}
 					}
 				}
+		},
+		{
+			
+			module: 'MMM-SmartWebDisplay',
+			position: 'middle_center',	// This can be any of the regions.
+			config: {
+					// See 'Configuration options' for more information.
+					logDebug: false, //set to true to get detailed debug logs. To see them : "Ctrl+Shift+i"
+					height:"100%", //hauteur du cadre en pixel ou %
+					width:"100%", //largeur
+               		updateInterval: 0, //in min. Set it to 0 for no refresh (for videos)
+                	NextURLInterval: 0.5, //in min, set it to 0 not to have automatic URL change. If only 1 URL given, it will be updated
+                	displayLastUpdate: true, //to display the last update of the URL
+					displayLastUpdateFormat: 'ddd - HH:mm:ss', //format of the date and time to display
+                	url: ["http://192.168.0.5:8080/remote.html"], //source of the URL to be displayed
+					scrolling: "no", // allow scrolling or not. html 4 only
+					shutoffDelay: 10000 //delay in miliseconds to video shut-off while using together with MMM-PIR-Sensor 
+			}
+				
 		}
 		
 		

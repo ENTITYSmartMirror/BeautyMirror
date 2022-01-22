@@ -13,7 +13,7 @@ Module.register("ShowRemoteControl",{
                         frameWidth: "1500",
                         width:"100%",
                         updateInterval: 0.5 * 60 * 1000,
-                        url: ["http://172.16.98.14:9000/remote.html"],
+                        url: ["http://192.168.0.5:8080/remote.html"],
                         scrolling: "yes",
                         visible : "true",
                         hidden : "false"

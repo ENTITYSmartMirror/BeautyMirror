@@ -14,6 +14,13 @@
     "desc": "The unofficial MagicMirror 3rd Party Package Manager. Automates searching, installation, removal, updating, and upgrading of MagicMirror modules."
   },
   {
+    "longname": "MMM-AutoDimmer",
+    "id": "Fifteen15Studios/MMM-AutoDimmer",
+    "url": "https://github.com/Fifteen15Studios/MMM-AutoDimmer",
+    "author": "Fifteen15Studios",
+    "desc": "Set a schedule to dim and brighten your screen."
+  },
+  {
     "longname": "MMM-BurnIn",
     "id": "werthdavid/MMM-BurnIn",
     "url": "https://github.com/werthdavid/MMM-BurnIn",
@@ -301,6 +308,13 @@
     "desc": "Prevent screen burn-in on your MagicMirror²"
   },
   {
+    "longname": "MMM-PersonalConfig",
+    "id": "CFenner/MMM-PersonalConfig-Template",
+    "url": "https://github.com/CFenner/MMM-PersonalConfig-Template",
+    "author": "CFenner",
+    "desc": "Module to version your personal config in a separate repository."
+  },
+  {
     "longname": "MMM-AVStock",
     "id": "eouia/MMM-AVStock",
     "url": "https://github.com/eouia/MMM-AVStock",
@@ -341,6 +355,13 @@
     "url": "https://github.com/glitch452/MMM-CoinMarketCap",
     "author": "glitch452",
     "desc": "Display cryptocurrency information from the Coin Market Cap website.  Ticker Price, Logos, Sparkline Graphs, etc..."
+  },
+  {
+    "longname": "COINSQUARE",
+    "id": "marcomerens/coinsquaremodule",
+    "url": "https://github.com/marcomerens/coinsquaremodule",
+    "author": "marcomerens",
+    "desc": "Displays cryptocurreency values and trends in different currencies based of COINSQUARE."
   },
   {
     "longname": "MMM-cryptocurrency",
@@ -665,6 +686,13 @@
     "desc": "Get your Google Calendars in the shape of MagicMirror's default calendar"
   },
   {
+    "longname": "MMM-Dorba-Trails",
+    "id": "drventure/MMM-Dorba-Trails",
+    "url": "https://github.com/drventure/MMM-Dorba-Trails",
+    "author": "drventure",
+    "desc": "Display status of mountain bike trails via the trailforks.com website"
+  },
+  {
     "longname": "DWD-RealtimeIrishRail",
     "id": "archerydwd/DWD-RealtimeIrishRail",
     "url": "https://github.com/archerydwd/DWD-RealtimeIrishRail",
@@ -983,14 +1011,14 @@
     "longname": "MMM-HK-KMB",
     "id": "winstonma/MMM-HK-KMB",
     "url": "https://github.com/winstonma/MMM-HK-KMB",
-    "author": "MMM-HK-KMB",
+    "author": "winstonma",
     "desc": "Display the KMB Estimated Time of Arrival in Hong Kong."
   },
   {
     "longname": "MMM-HK-Transport",
     "id": "winstonma/MMM-HK-Transport",
     "url": "https://github.com/winstonma/MMM-HK-Transport",
-    "author": "MMM-HK-Transport",
+    "author": "winstonma",
     "desc": "Display the transport info in Hong Kong."
   },
   {
@@ -2478,25 +2506,25 @@
     "desc": "Display weather based on www.yr.no"
   },
   {
-    "longname": "MMM-weather_plus",
-    "id": "hangorazvan/weather_plus",
-    "url": "https://github.com/hangorazvan/weather_plus",
-    "author": "hangorazvan",
-    "desc": "Modified currentweather module based on Openweathermap with Onecall endpoint"
-  },
-  {
-    "longname": "MMM-forecast_plus",
-    "id": "hangorazvan/forecast_plus",
-    "url": "https://github.com/hangorazvan/forecast_plus",
-    "author": "hangorazvan",
-    "desc": "Modified weatherforecast module with hourly forecast falls back and onecall enpoint"
-  },
-  {
     "longname": "MMM-DefaultWeatherAnimated",
     "id": "MatthiPi/MMM-DefaultWeatherAnimated",
     "url": "https://github.com/MatthiPi/MMM-DefaultWeatherAnimated",
     "author": "MatthiPi",
     "desc": "Adds animated icons and changes layout of default weather plugin"
+  },
+  {
+    "longname": "onecall",
+    "id": "hangorazvan/onecall",
+    "url": "https://github.com/hangorazvan/onecall",
+    "author": "hangorazvan",
+    "desc": "Modified deprecated current & forecast weather module based on Openweathermap with Onecall endpoint and Air Quality Index"
+  },
+  {
+    "longname": "weather",
+    "id": "hangorazvan/weather",
+    "url": "https://github.com/hangorazvan/weather",
+    "author": "hangorazvan",
+    "desc": "Modified default weather module with OpenWeatherMap OneCall endpoint, enhancements and extra data"
   },
   {
     "longname": "MMM-AllsvenskanStandings",
@@ -2651,6 +2679,13 @@
     "url": "https://github.com/C-Deck/MMM-GHIN",
     "author": "C-Deck",
     "desc": "A module that displays your official USGA Ghin handicap."
+  },
+  {
+    "longname": "MMM-CricketScores",
+    "id": "dsouzadrian/MMM-CricketScores",
+    "url": "https://github.com/dsouzadrian/MMM-CricketScores",
+    "author": "dsouzadrian",
+    "desc": "A module that displays cicket scores for ongoing live cricket matches."
   },
   {
     "longname": "MMM-Pinfo",
@@ -3528,6 +3563,13 @@
     "desc": "MMM-Loxone connects to your Loxone Miniserver and lets it communicate to your MagicMirror²."
   },
   {
+    "longname": "MMM-MacAddressScan",
+    "id": "doctorfree/MMM-MacAddressScan",
+    "url": "https://github.com/doctorfree/MMM-MacAddressScan",
+    "author": "doctorfree",
+    "desc": "A MagicMirror module which determines the status of devices on the network based on their MAC address. It can also look up devices by IP addresses or hostnames. This module is an enhanced clone of the excellent MMM-NetworkScanner module by [Ian Perrin](https://github.com/ianperrin)"
+  },
+  {
     "longname": "MMM-Mashie-Skolmat",
     "id": "Alvinger/MMM-Mashie-Skolmat",
     "url": "https://github.com/Alvinger/MMM-Mashie-Skolmat",
@@ -4284,6 +4326,13 @@
     "desc": "A fork of CFenners module with new features. It's used to display informations about the currently playing songs on your Sonos system."
   },
   {
+    "longname": "MMM-StatusPageIo",
+    "id": "spyder007/MMM-StatusPageIo",
+    "url": "https://github.com/spyder007/MMM-StatusPageIo",
+    "author": "spyder007",
+    "desc": "Display incidents and component status from a StatusPage.io site"
+  },
+  {
     "longname": "MMM-StopwatchTimer",
     "id": "Klettner/MMM-StopwatchTimer",
     "url": "https://github.com/Klettner/MMM-StopwatchTimer",
@@ -4352,6 +4401,13 @@
     "url": "https://github.com/WouterEekhout/MMM-Tado",
     "author": "WouterEekhout",
     "desc": "Module for your Tado Smart Thermostat."
+  },
+  {
+    "longname": "MMM-TelegramCommands",
+    "id": "doctorfree/MMM-TelegramCommands",
+    "url": "https://github.com/doctorfree/MMM-TelegramCommands",
+    "author": "doctorfree",
+    "desc": "Creates and manages Telegram commands to control a MagicMirror via the MirrorCommandLine tools. MMM-TelegramCommands requires the installation and configuration of the [MMM-TelegramBot](https://github.com/bugsounet/MMM-TelegramBot) module and the [MirrorCommandLine](https://gitlab.com/doctorfree/MirrorCommandLine) suite of command line utilites for the MagicMirror."
   },
   {
     "longname": "MMM-temp-ds18b20",
@@ -4492,6 +4548,13 @@
     "url": "https://github.com/phungorquan/MMM-VietNamEventsCalendar",
     "author": "phungorquan",
     "desc": "Display your google calendar, VietNam or your country events and your personal events."
+  },
+  {
+    "longname": "MMM-VUB-Resto",
+    "id": "OscarVsp/MMM-VUB-Resto",
+    "url": "https://github.com/OscarVsp/MMM-VUB-Resto",
+    "author": "Oscar Vsp",
+    "desc": "Get the menu of day of the VUB restaurant (Vrije Universiteit Brussel). Based on MMM-json."
   },
   {
     "longname": "MMM-WatchDog",
@@ -4707,7 +4770,7 @@
     "longname": "MMM-ConcertsCalendar",
     "id": "muilpp/MM-concert-calendar",
     "url": "https://github.com/muilpp/MM-concert-calendar",
-    "author": "Marc Pratllusà",
+    "author": "muilpp",
     "desc": "Shows concerts around you of the bands you listen to the most"
   },
   {
@@ -4849,6 +4912,13 @@
     "url": "https://github.com/darickc/MMM-BackgroundSlideshow",
     "author": "darickc",
     "desc": "Show fullscreen slideshow in background from images in a local folder. Great for a photo frame."
+  },
+  {
+    "longname": "BIRTHDAYS",
+    "id": "marcomerens/anniversarymodule",
+    "url": "https://github.com/marcomerens/anniversarymodule",
+    "author": "marcomerens",
+    "desc": "Show a table of upcoming birthdays for a list of people you provided. Nice not to forget birthdays."
   },
   {
     "longname": "MMM-BrawlStars",
@@ -5768,6 +5838,13 @@
     "desc": "Displays the Rotten Tomatoes meter score for the current box office and movies coming soon."
   },
   {
+    "longname": "MMM-RocketLeagueZ",
+    "id": "Zeprakadebra/MMM-RocketLeagueZ",
+    "url": "https://github.com/Zeprakadebra/MMM-RocketLeagueZ",
+    "author": "Zeprakadebra-GitHub",
+    "desc": "Displays Rocket League Stats on MichMich MagicMirror."
+  },
+  {
     "longname": "MMM-SearchLight",
     "id": "mykle1/MMM-SearchLight",
     "url": "https://github.com/mykle1/MMM-SearchLight",
@@ -6160,6 +6237,13 @@
     "desc": "Retro nixie clock display."
   },
   {
+    "longname": "MMM-BoredDaily",
+    "id": "CptMeetKat/MMM-BoredDaily",
+    "url": "https://github.com/CptMeetKat/MMM-BoredDaily",
+    "author": "CptMeetKat",
+    "desc": "Display ideas for when you're bored to keep your boring life fresh."
+  },
+  {
     "longname": "MMM-Breathwork",
     "id": "yashatgit/MMM-Breathwork",
     "url": "https://github.com/yashatgit/MMM-Breathwork",
@@ -6263,5 +6347,12 @@
     "url": "https://github.com/daniel-windsor/MMM-eswordoftheday",
     "author": "Dan Windsor",
     "desc": "Display a Spanish word of the day along with translations and example sentences."
+  },
+  {
+    "longname": "facts",
+    "id": "alanshen111/facts",
+    "url": "https://github.com/alanshen111/facts",
+    "author": "Alan Shen",
+    "desc": "Displays some ✨interesting✨ facts! Makes your mirror look like an RPG loading screen. Example screenshot included."
   }
 ]
