@@ -2688,6 +2688,13 @@
     "desc": "A module that displays cicket scores for ongoing live cricket matches."
   },
   {
+    "longname": "MMM-HRS-PickupPlan",
+    "id": "maan75/MMM-HRS-PickupPlan",
+    "url": "https://github.com/maan75/MMM-HRS-PickupPlan",
+    "author": "Martin Andreassen",
+    "desc": "Module to display upcoming pickup dates for garbage in the Norwegian municipalities of Harstad, Narvik, Evenes, Gratangen, Ibestad, Kvæfjord, Lavangen and Tjeldsund."
+  },
+  {
     "longname": "MMM-Pinfo",
     "id": "SalekurPolas/MMM-Pinfo",
     "url": "https://github.com/SalekurPolas/MMM-Pinfo",
@@ -3003,7 +3010,7 @@
     "desc": "Displays ComEd Hourly Pricing"
   },
   {
-    "longname": "MMM-Compliments_plus",
+    "longname": "Compliments_plus",
     "id": "hangorazvan/compliments_plus",
     "url": "https://github.com/hangorazvan/compliments_plus",
     "author": "hangorazvan",
@@ -3535,7 +3542,7 @@
     "desc": "Turns on or off a device connected to GPIO (in my case, an LCD screen) based on the input of a PIR device. Integrates nicely with MMM-Assistant (for voice control) and MMM-TelegramBot (for Telegram control)."
   },
   {
-    "longname": "MMM-lifecounter",
+    "longname": "lifecounter",
     "id": "hangorazvan/lifecounter",
     "url": "https://github.com/hangorazvan/lifecounter",
     "author": "hangorazvan",
@@ -4690,20 +4697,6 @@
     "desc": "Displays ToDo list(s) from NextCloud Tasks app"
   },
   {
-    "longname": "MMM-swatch",
-    "id": "hangorazvan/swatch",
-    "url": "https://github.com/hangorazvan/swatch",
-    "author": "hangorazvan",
-    "desc": "Simple Swatch .beat Internet Time MM2 module"
-  },
-  {
-    "longname": "MMM-yframe",
-    "id": "hangorazvan/yframe",
-    "url": "https://github.com/hangorazvan/yframe",
-    "author": "hangorazvan",
-    "desc": "HTML5 Video, Audio, Youtube, Vimeo, Soundcloud, Bandcamp, Audiomack & Web iframe module"
-  },
-  {
     "longname": "MMM-SE-Reputation",
     "id": "ChielChiel/MMM-SE-Reputation",
     "url": "https://github.com/ChielChiel/MMM-SE-Reputation",
@@ -4744,6 +4737,20 @@
     "url": "https://github.com/NikosNtigas/MMM-MALList",
     "author": "NikosNtigas",
     "desc": "Display the currently watching anime / currently reading manga of an [MyAnimeList](https://myanimelist.net) account."
+  },
+  {
+    "longname": "swatch",
+    "id": "hangorazvan/swatch",
+    "url": "https://github.com/hangorazvan/swatch",
+    "author": "hangorazvan",
+    "desc": "Simple Swatch .beat Internet Time MM2 module"
+  },
+  {
+    "longname": "yframe",
+    "id": "hangorazvan/yframe",
+    "url": "https://github.com/hangorazvan/yframe",
+    "author": "hangorazvan",
+    "desc": "HTML5 Video, Audio, Youtube, Vimeo, Soundcloud, Bandcamp, Audiomack & Web iframe module"
   },
   {
     "longname": "MMM-MD",
